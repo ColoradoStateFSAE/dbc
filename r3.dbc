@@ -36,6 +36,42 @@ BS_:
 BU_:
 
 
+BO_ 1142 group45: 8 Vector__XXX
+ SG_ brake_pressure_bias : 55|16@0- (1,0) [0|0] "kPa (Abs)" Vector__XXX
+ SG_ brake_pressure_rear_ratio : 39|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ brake_pressure_front_ratio : 23|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ brake_pressure_rear : 7|16@0+ (1,-101.3) [0|0] "kPa" Vector__XXX
+
+BO_ 1782 group52: 8 Vector__XXX
+ SG_ trip_meter_1 : 39|32@0- (1,0) [0|0] "m" Vector__XXX
+ SG_ total_fuel_used_since_trip : 7|32@0- (1,0) [0|0] "cc" Vector__XXX
+
+BO_ 1779 group50: 8 Vector__XXX
+ SG_ engine_protection_reason : 55|16@0+ (1,0) [0|0] "raw" Vector__XXX
+ SG_ engine_protection_severity_level : 47|8@0+ (1,0) [0|0] "raw" Vector__XXX
+ SG_ front_left_tyre_air_leak : 32|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ front_right_tyre_air_leak : 33|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ rear_left_tyre_air_leak : 34|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ rear_right_tyre_air_leak : 35|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ rear_tyre_recommended_pressure : 23|16@0+ (0.1,-101.3) [0|0] "kPa" Vector__XXX
+ SG_ front_tyre_recommended_pressure : 7|16@0+ (0.1,-101.3) [0|0] "kPa" Vector__XXX
+
+BO_ 1140 group43: 8 Vector__XXX
+ SG_ yaw_rate : 55|16@0- (0.1,0) [0|0] "deg/s" Vector__XXX
+ SG_ roll_rate : 39|16@0- (0.1,0) [0|0] "deg/s" Vector__XXX
+ SG_ pitch_rate : 23|16@0- (0.1,0) [0|0] "deg/s" Vector__XXX
+ SG_ vertical_g : 7|16@0- (0.1,0) [0|0] "m/s2" Vector__XXX
+
+BO_ 1139 group42: 8 Vector__XXX
+ SG_ traction_control_switch_state : 36|1@0- (1,0) [0|0] "boolean" Vector__XXX
+ SG_ total_fuel_used : 7|32@0+ (1,0) [0|0] "cc" Vector__XXX
+
+BO_ 1778 group49: 8 Vector__XXX
+ SG_ rear_right_tyre_sensor_battery : 55|16@0+ (0.001,0) [0|0] "V" Vector__XXX
+ SG_ rear_left_tyre_sensor_battery : 39|16@0+ (0.001,0) [0|0] "V" Vector__XXX
+ SG_ front_right_tyre_sensor_battery : 23|16@0+ (0.001,0) [0|0] "V" Vector__XXX
+ SG_ front_left_tyre_sensor_battery : 7|16@0+ (0.001,0) [0|0] "V" Vector__XXX
+
 BO_ 1777 group48: 8 Vector__XXX
  SG_ rear_right_tyre_temperature : 55|16@0+ (0.1,0) [0|0] "K" Vector__XXX
  SG_ rear_left_tyre_temperature : 39|16@0+ (0.1,0) [0|0] "K" Vector__XXX
@@ -102,6 +138,7 @@ BO_ 864 group0: 8 Vector__XXX
 
 
 
+CM_ SG_ 1142 brake_pressure_bias "Front-Rear";
 CM_ SG_ 992 oil_temperature "20-04";
 CM_ SG_ 992 fuel_temperature "20-03";
 CM_ SG_ 992 air_temperature "20-02";
