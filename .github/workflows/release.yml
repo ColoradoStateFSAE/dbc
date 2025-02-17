@@ -79,3 +79,14 @@ jobs:
           draft: false
           prerelease: false
           generateReleaseNotes: true
+
+      - name: Upload generated C files to release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            src/r3.c
+            src/r3.h
+            src/tcs.c
+            src/tcs.h
+          tag_name: ${{ env.VERSION }}
+          fail_on_unmatched_files: true
