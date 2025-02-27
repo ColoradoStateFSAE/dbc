@@ -39,6 +39,11 @@ BU_:
 BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ gear : 0|16@0+ (1,0) [0|0] "" Vector__XXX
 
+BO_ 1629 set_status: 8 Vector__XXX
+ SG_ over_rev : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ rpm_limiter : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ antistall : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+
 BO_ 1628 shift_controller: 5 Vector__XXX
  SG_ clutch_left : 31|16@0- (0.01,0) [0|0] "" Vector__XXX
  SG_ clutch_right : 15|16@0- (0.01,0) [0|0] "" Vector__XXX
