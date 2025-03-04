@@ -36,6 +36,88 @@ BS_:
 BU_:
 
 
+BO_ 995 group23: 8 Vector__XXX
+ SG_ fuel_trim_short_term_bank_4 : 55|16@0- (0.1,0) [0|0] "%" Vector__XXX
+ SG_ fuel_trim_short_term_bank_3 : 39|16@0- (0.1,0) [0|0] "%" Vector__XXX
+ SG_ fuel_trim_short_term_bank_2 : 23|16@0- (0.1,0) [0|0] "%" Vector__XXX
+ SG_ fuel_trim_short_term_bank_1 : 7|16@0- (0.1,0) [0|0] "%" Vector__XXX
+
+BO_ 994 group22: 8 Vector__XXX
+ SG_ fuel_level : 7|16@0+ (0.1,0) [0|0] "L" Vector__XXX
+
+BO_ 993 group21: 8 Vector__XXX
+ SG_ fuel_composition : 39|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ diff_oil_temperature : 23|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ gearbox_oil_temperature : 7|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+
+BO_ 886 group19: 8 Vector__XXX
+ SG_ absolute_humidity : 55|16@0+ (0.1,0) [0|0] "g/m3" Vector__XXX
+ SG_ specific_humidity : 39|16@0+ (100,0) [0|0] "ppm" Vector__XXX
+ SG_ relative_humidity : 23|16@0- (0.1,0) [0|0] "%" Vector__XXX
+ SG_ ambient_air_temperature : 7|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+
+BO_ 885 group18: 8 Vector__XXX
+ SG_ egt_sensor_9 : 55|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_12 : 39|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_11 : 23|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_10 : 7|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+
+BO_ 884 group17: 8 Vector__XXX
+ SG_ egt_sensor_8 : 55|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_7 : 39|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_6 : 23|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_5 : 7|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+
+BO_ 883 group16: 8 Vector__XXX
+ SG_ egt_sensor_4 : 55|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_3 : 39|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_2 : 23|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_1 : 7|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+
+BO_ 881 group14: 8 Vector__XXX
+ SG_ fuel_flow_return : 23|16@0+ (1,0) [0|0] "cc/min" Vector__XXX
+ SG_ fuel_flow : 7|16@0+ (1,0) [0|0] "cc/min" Vector__XXX
+
+BO_ 879 group12: 8 Vector__XXX
+ SG_ boost_control_output : 23|16@0+ (1,0) [0|0] "%" Vector__XXX
+ SG_ generic_output_1_duty_cycle : 7|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+
+BO_ 878 group11: 8 Vector__XXX
+ SG_ longitudinal_g : 55|16@0- (0.1,0) [0|0] "m/s2" Vector__XXX
+ SG_ launch_control_fuel_enrich : 39|16@0- (0.1,0) [0|0] "%" Vector__XXX
+ SG_ launch_control_ignition_retard : 23|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ engine_limiting_active : 7|16@0+ (1,0) [0|0] "boolean" Vector__XXX
+
+BO_ 877 group10: 8 Vector__XXX
+ SG_ exhaust_cam_angle_2 : 55|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ exhaust_cam_angle_1 : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
+
+BO_ 876 group9: 8 Vector__XXX
+ SG_ wheel_speed_rear_right : 55|16@0+ (0.1,0) [0|0] "km/h" Vector__XXX
+ SG_ wheel_speed_rear_left : 39|16@0+ (0.1,0) [0|0] "km/h" Vector__XXX
+ SG_ wheel_speed_front_right : 23|16@0+ (0.1,0) [0|0] "km/h" Vector__XXX
+ SG_ wheel_speed_front_left : 7|16@0+ (0.1,0) [0|0] "km/h" Vector__XXX
+
+BO_ 875 group8: 8 Vector__XXX
+ SG_ lateral_g : 55|16@0- (0.1,0) [0|0] "m/s2" Vector__XXX
+ SG_ turbo_speed_sensor_1 : 39|16@0+ (10,0) [0|0] "RPM" Vector__XXX
+ SG_ nos_pressure_sensor_1 : 16|16@1+ (0.22,-101.3) [0|0] "kPa" Vector__XXX
+ SG_ brake_pressure_front : 7|16@0+ (1,-101.3) [0|0] "kPa" Vector__XXX
+
+BO_ 873 group6: 8 Vector__XXX
+ SG_ trigger_system_error_count : 55|16@0+ (1,0) [0|0] "raw" Vector__XXX
+ SG_ trigger_sync_level : 23|16@0+ (1,0) [0|0] "raw" Vector__XXX
+ SG_ trigger_counter : 7|16@0+ (1,0) [0|0] "raw" Vector__XXX
+
+BO_ 874 group7: 8 Vector__XXX
+ SG_ knock_level_2 : 23|16@0+ (0.01,0) [0|0] "dB" Vector__XXX
+ SG_ knock_level_1 : 7|16@0+ (0.01,0) [0|0] "dB" Vector__XXX
+
+BO_ 867 group3: 8 Vector__XXX
+ SG_ launch_control_end_rpm : 55|16@0+ (1,0) [0|0] "RPM" Vector__XXX
+ SG_ wheel_diff : 23|16@0- (0.1,0) [0|0] "km/h" Vector__XXX
+ SG_ wheel_slip : 7|16@0- (0.1,0) [0|0] "km/h" Vector__XXX
+
 BO_ 1142 group45: 8 Vector__XXX
  SG_ brake_pressure_bias : 55|16@0- (1,0) [0|0] "kPa (Abs)" Vector__XXX
  SG_ brake_pressure_rear_ratio : 39|16@0+ (0.1,0) [0|0] "%" Vector__XXX
@@ -94,12 +176,22 @@ BO_ 992 group20: 8 Vector__XXX
  SG_ coolant_temperature : 7|16@0+ (0.1,0) [0|0] "K" Vector__XXX
 
 BO_ 996 group24: 8 Vector__XXX
+ SG_ traction_control_enabled : 31|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ traction_control_active : 30|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ torque_reduction_active : 17|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ aux_rpm_limiter_active : 21|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ launch_control_switch : 22|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ launch_control_active : 23|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ brake_pedal_switch : 10|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ transient_throttle_active : 11|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ decel_cut_active : 12|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ reverse_switch : 14|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ clutch_switch : 9|1@0+ (1,0) [0|0] "" Vector__XXX
  SG_ check_engine_light : 63|1@0+ (1,0) [0|0] "" Vector__XXX
  SG_ flat_shift_switch : 19|1@0+ (1,0) [0|0] "" Vector__XXX
  SG_ oil_pressure_light : 8|1@0+ (1,0) [0|0] "" Vector__XXX
  SG_ gear_switch : 13|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ neutral_switch : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ neutral_switch : 15|1@0+ (1,0) [0|0] "boolean" Vector__XXX
 
 BO_ 882 group15: 8 Vector__XXX
  SG_ barometric_pressure : 55|16@0+ (0.1,0) [0|0] "kPa (Abs)" Vector__XXX
@@ -143,6 +235,9 @@ CM_ SG_ 992 oil_temperature "20-04";
 CM_ SG_ 992 fuel_temperature "20-03";
 CM_ SG_ 992 air_temperature "20-02";
 CM_ SG_ 992 coolant_temperature "20-01";
+CM_ SG_ 996 brake_pedal_switch "24-01";
+CM_ SG_ 996 transient_throttle_active "24-01";
+CM_ SG_ 996 decel_cut_active "24-01";
 CM_ SG_ 996 clutch_switch "24-07";
 CM_ SG_ 996 check_engine_light "24-25";
 CM_ SG_ 996 flat_shift_switch "24-12";
