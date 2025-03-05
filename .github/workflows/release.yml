@@ -24,6 +24,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install cantools
 
+      - name: Test DBC
+        run: |
+          python run_tests.py
+
       - name: Generate C source from DBC
         run: |
           mkdir -p src/
