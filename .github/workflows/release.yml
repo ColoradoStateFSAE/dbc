@@ -8,6 +8,7 @@ on:
       
 jobs:
   test:
+    name: Run Tests
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -27,7 +28,7 @@ jobs:
         run: |
           python run_tests.py
 
-  build-and-release:
+  release:
     name: Generate and Release
     needs: test
     if: github.ref == 'refs/heads/main'
