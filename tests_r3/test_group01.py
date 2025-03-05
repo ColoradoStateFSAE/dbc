@@ -2,20 +2,15 @@ import unittest
 import cantools
 from cantools.database.can.signal import Signal
 from cantools.database.conversion import BaseConversion
-import run_tests
+import util
+
+db = cantools.database.load_file("r3.dbc")
+message = db.get_message_by_name("group01")
 
 class TestGroup01(unittest.TestCase):
-    db = None
-
-    def setUp(self):
-        if(self.db == None):
-            self.db = cantools.database.load_file("r3.dbc")
-
-        self.message = self.db.get_message_by_name("group01")
-
     def test_fuel_pressure(self):
-        run_tests.compare_signals(
-            self.message.signals[0],
+        util.compare_signals(
+            message.signals[0],
             Signal(
                 name="fuel_pressure",
                 start=-1+8,
@@ -33,8 +28,8 @@ class TestGroup01(unittest.TestCase):
         )
 
     def test_oil_pressure(self):
-        run_tests.compare_signals(
-            self.message.signals[1],
+        util.compare_signals(
+            message.signals[1],
             Signal(
                 name="oil_pressure",
                 start=-1+24,
@@ -52,8 +47,8 @@ class TestGroup01(unittest.TestCase):
         )
 
     def test_engine_demand(self):
-        run_tests.compare_signals(
-            self.message.signals[2],
+        util.compare_signals(
+            message.signals[2],
             Signal(
                 name="engine_demand",
                 start=-1+40,
@@ -71,8 +66,8 @@ class TestGroup01(unittest.TestCase):
         )
 
     def test_coolant_pressure(self):
-        run_tests.compare_signals(
-            self.message.signals[3],
+        util.compare_signals(
+            message.signals[3],
             Signal(
                 name="wastegate_pressure",
                 start=-1+56,
