@@ -1,7 +1,4 @@
 import unittest
-import cantools
-import cantools.database.can.signal
-import cantools.database.conversion
 
 def compare_signals(actual, expected):
     assert actual.name == expected.name
