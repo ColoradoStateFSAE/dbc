@@ -2,66 +2,66 @@ from cantools.database.can.signal import Signal
 from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
-class Test_group04(BaseTest):
+class Test_group20(BaseTest):
     file = "r3.dbc"
-    id = 0x364
+    id = 0x3E0
     signal_count = 4
 
-    def test_injection_stage_1_average_time(self):
+    def test_coolant_temperature(self):
         self.actual = self.message.signals[0]
 
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+8,
+            start=7,
             length=16,
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1/1000,
+                scale=1/10,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="ms"
+            unit="K"
         )
 
-    def test_injection_stage_2_average_time(self):
+    def test_air_temperature(self):
         self.actual = self.message.signals[1]
 
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+24,
+            start=23,
             length=16,
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1/1000,
+                scale=1/10,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="ms"
+            unit="K"
         )
 
-    def test_injection_stage_3_average_time(self):
+    def test_fuel_temperature(self):
         self.actual = self.message.signals[2]
 
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+40,
+            start=39,
             length=16,
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1/1000,
+                scale=1/10,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="ms"
+            unit="K"
         )
 
-    def test_injection_stage_4_average_time(self):
+    def test_oil_temperature(self):
         self.actual = self.message.signals[3]
 
         self.expected = Signal(
@@ -71,10 +71,10 @@ class Test_group04(BaseTest):
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1/1000,
+                scale=1/10,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="ms"
+            unit="K"
         )

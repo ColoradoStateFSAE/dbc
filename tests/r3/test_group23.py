@@ -2,66 +2,66 @@ from cantools.database.can.signal import Signal
 from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
-class Test_group04(BaseTest):
+class Test_group23(BaseTest):
     file = "r3.dbc"
-    id = 0x364
+    id = 0x3E3
     signal_count = 4
 
-    def test_injection_stage_1_average_time(self):
+    def test_fuel_trim_short_term_bank_1(self):
         self.actual = self.message.signals[0]
 
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+8,
+            start=7,
             length=16,
             byte_order="big_endian",
-            is_signed=False,
+            is_signed=True,
             conversion=BaseConversion.factory(
-                scale=1/1000,
+                scale=1/10,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="ms"
+            unit="%"
         )
 
-    def test_injection_stage_2_average_time(self):
+    def test_fuel_trim_short_term_bank_2(self):
         self.actual = self.message.signals[1]
 
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+24,
+            start=23,
             length=16,
             byte_order="big_endian",
-            is_signed=False,
+            is_signed=True,
             conversion=BaseConversion.factory(
-                scale=1/1000,
+                scale=1/10,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="ms"
+            unit="%"
         )
 
-    def test_injection_stage_3_average_time(self):
+    def test_fuel_trim_long_term_bank_2(self):
         self.actual = self.message.signals[2]
 
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+40,
+            start=39,
             length=16,
             byte_order="big_endian",
-            is_signed=False,
+            is_signed=True,
             conversion=BaseConversion.factory(
-                scale=1/1000,
+                scale=1/10,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="ms"
+            unit="%"
         )
 
-    def test_injection_stage_4_average_time(self):
+    def test_fuel_trim_long_term_bank_2(self):
         self.actual = self.message.signals[3]
 
         self.expected = Signal(
@@ -69,12 +69,12 @@ class Test_group04(BaseTest):
             start=55,
             length=16,
             byte_order="big_endian",
-            is_signed=False,
+            is_signed=True,
             conversion=BaseConversion.factory(
-                scale=1/1000,
+                scale=1/10,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="ms"
+            unit="%"
         )

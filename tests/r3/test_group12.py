@@ -2,12 +2,12 @@ from cantools.database.can.signal import Signal
 from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
-class Test_group03(BaseTest):
+class Test_group12(BaseTest):
     file = "r3.dbc"
-    id = 0x363
-    signal_count = 3
+    id = 0x36F
+    signal_count = 2
 
-    def test_wheel_slip(self):
+    def test_generic_output_1_duty_cycle(self):
         self.actual = self.message.signals[0]
 
         self.expected = Signal(
@@ -15,17 +15,17 @@ class Test_group03(BaseTest):
             start=-1+8,
             length=16,
             byte_order="big_endian",
-            is_signed=True,
+            is_signed=False,
             conversion=BaseConversion.factory(
                 scale=1/10,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="km/h"
+            unit="%"
         )
 
-    def test_wheel_diff(self):
+    def test_boost_control_output(self):
         self.actual = self.message.signals[1]
 
         self.expected = Signal(
@@ -33,30 +33,12 @@ class Test_group03(BaseTest):
             start=-1+24,
             length=16,
             byte_order="big_endian",
-            is_signed=True,
+            is_signed=False,
             conversion=BaseConversion.factory(
                 scale=1/10,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="km/h"
-        )
-
-    def test_launch_control_end_rpm(self):
-        self.actual = self.message.signals[2]
-
-        self.expected = Signal(
-            name=self.signal_name(),
-            start=55,
-            length=16,
-            byte_order="big_endian",
-            is_signed=False,
-            conversion=BaseConversion.factory(
-                scale=1,
-                offset=0
-            ),
-            minimum=None,
-            maximum=None,
-            unit="RPM"
+            unit="%"
         )

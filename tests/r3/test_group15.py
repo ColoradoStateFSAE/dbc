@@ -2,12 +2,12 @@ from cantools.database.can.signal import Signal
 from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
-class Test_group04(BaseTest):
+class Test_group15(BaseTest):
     file = "r3.dbc"
-    id = 0x364
-    signal_count = 4
+    id = 0x372
+    signal_count = 3
 
-    def test_injection_stage_1_average_time(self):
+    def test_battery_voltage(self):
         self.actual = self.message.signals[0]
 
         self.expected = Signal(
@@ -17,34 +17,16 @@ class Test_group04(BaseTest):
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1/1000,
+                scale=1/10,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="ms"
+            unit="Volts"
         )
 
-    def test_injection_stage_2_average_time(self):
+    def test_target_boost_level(self):
         self.actual = self.message.signals[1]
-
-        self.expected = Signal(
-            name=self.signal_name(),
-            start=-1+24,
-            length=16,
-            byte_order="big_endian",
-            is_signed=False,
-            conversion=BaseConversion.factory(
-                scale=1/1000,
-                offset=0
-            ),
-            minimum=None,
-            maximum=None,
-            unit="ms"
-        )
-
-    def test_injection_stage_3_average_time(self):
-        self.actual = self.message.signals[2]
 
         self.expected = Signal(
             name=self.signal_name(),
@@ -53,28 +35,28 @@ class Test_group04(BaseTest):
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1/1000,
+                scale=1/10,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="ms"
+            unit="kPa"
         )
 
-    def test_injection_stage_4_average_time(self):
-        self.actual = self.message.signals[3]
+    def test_barometric_pressure(self):
+        self.actual = self.message.signals[2]
 
         self.expected = Signal(
             name=self.signal_name(),
-            start=55,
+            start=-1+56,
             length=16,
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1/1000,
+                scale=1/10,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="ms"
+            unit="kPa (Abs)"
         )

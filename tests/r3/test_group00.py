@@ -1,19 +1,17 @@
 from cantools.database.can.signal import Signal
 from cantools.database.conversion import BaseConversion
-import inspect
 from tests.basetest import BaseTest
 
-class TestGroup00(BaseTest):
-    name = "group00"
+class Test_group00(BaseTest):
+    file = "r3.dbc"
     id = 0x360
     signal_count = 4
-    file = "r3.dbc"
 
     def test_rpm(self):
         self.actual = self.message.signals[0]
 
         self.expected = Signal(
-            name=inspect.currentframe().f_code.co_name[5:],
+            name=self.signal_name(),
             start=-1+8,
             length=16,
             byte_order="big_endian",
@@ -31,13 +29,13 @@ class TestGroup00(BaseTest):
         self.actual = self.message.signals[1]
 
         self.expected = Signal(
-            name=inspect.currentframe().f_code.co_name[5:],
+            name=self.signal_name(),
             start=-1+24,
             length=16,
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=0.1,
+                scale=1/10,
                 offset=0
             ),
             minimum=None,
@@ -49,13 +47,13 @@ class TestGroup00(BaseTest):
         self.actual = self.message.signals[2]
 
         self.expected = Signal(
-            name=inspect.currentframe().f_code.co_name[5:],
+            name=self.signal_name(),
             start=-1+40,
             length=16,
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=0.1,
+                scale=1/10,
                 offset=0
             ),
             minimum=None,
@@ -67,13 +65,13 @@ class TestGroup00(BaseTest):
         self.actual = self.message.signals[3]
 
         self.expected = Signal(
-            name=inspect.currentframe().f_code.co_name[5:],
-            start=-1+56,
+            name=self.signal_name(),
+            start=55,
             length=16,
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=0.1,
+                scale=1/10,
                 offset=-101.3
             ),
             minimum=None,

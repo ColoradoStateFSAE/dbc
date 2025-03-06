@@ -1,5 +1,7 @@
 import unittest
 import cantools
+import inspect
+import re
 
 def compare_signals(actual, expected):
     assert actual.name == expected.name
@@ -15,28 +17,33 @@ def compare_signals(actual, expected):
 
 class BaseTest(unittest.TestCase):
     file = None
-    name = None
     id = None
     signal_count = None
-    expected = None
     actual = None
+    expected = None
 
     @classmethod
     def setUpClass(cls):
         if cls.file is None:
             raise RuntimeError("'file' must be set")
-
-        if cls.name is None:
-            raise ValueError("'name' must be set")
         
         if cls.signal_count is None:
             raise ValueError("'signal_count' must be set")
 
         db = cantools.database.load_file(cls.file)
-        cls.message=db.get_message_by_name(cls.name)
+
+        pattern = r"Test_.+"
+        name = cls.__name__
+
+        if not re.fullmatch(pattern, name):
+            raise RuntimeError(f"Test fixture name '{name}' must be in the format 'Test_message_name'")
+        
+        name = name[5:]
+
+        cls.message=db.get_message_by_name(name)
         assert cls.message.frame_id == cls.id
         assert len(cls.message.signals) == cls.signal_count
-
+        
     def tearDown(self):
         if self.actual is None:
             raise RuntimeError("'actual' must be set")
@@ -45,5 +52,13 @@ class BaseTest(unittest.TestCase):
             raise ValueError("'expected' must be set")
         
         compare_signals(self.actual, self.expected)
+
+    def signal_name(self):
+        name = inspect.currentframe().f_back.f_code.co_name
+
+        if(name[:5] != "test_"):
+            raise RuntimeError(f"Test name '{name}' must start with 'test_'")
+        
+        return name[5:]
 
     

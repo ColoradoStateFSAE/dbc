@@ -182,8 +182,8 @@ BO_ 997 group25: 8 Vector__XXX
  SG_ ignition_switch : 7|8@0+ (1,0) [0|0] "boolean" Vector__XXX
 
 BO_ 995 group23: 8 Vector__XXX
- SG_ fuel_trim_short_term_bank_4 : 55|16@0- (0.1,0) [0|0] "%" Vector__XXX
- SG_ fuel_trim_short_term_bank_3 : 39|16@0- (0.1,0) [0|0] "%" Vector__XXX
+ SG_ fuel_trim_long_term_bank_2 : 55|16@0- (0.1,0) [0|0] "%" Vector__XXX
+ SG_ fuel_trim_long_term_bank_1 : 39|16@0- (0.1,0) [0|0] "%" Vector__XXX
  SG_ fuel_trim_short_term_bank_2 : 23|16@0- (0.1,0) [0|0] "%" Vector__XXX
  SG_ fuel_trim_short_term_bank_1 : 7|16@0- (0.1,0) [0|0] "%" Vector__XXX
 
@@ -202,10 +202,10 @@ BO_ 886 group19: 8 Vector__XXX
  SG_ ambient_air_temperature : 7|16@0+ (0.1,0) [0|0] "K" Vector__XXX
 
 BO_ 885 group18: 8 Vector__XXX
- SG_ egt_sensor_9 : 55|16@0+ (0.1,0) [0|0] "K" Vector__XXX
- SG_ egt_sensor_12 : 39|16@0+ (0.1,0) [0|0] "K" Vector__XXX
- SG_ egt_sensor_11 : 23|16@0+ (0.1,0) [0|0] "K" Vector__XXX
- SG_ egt_sensor_10 : 7|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_9 : 7|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_12 : 55|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_11 : 39|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_10 : 23|16@0+ (0.1,0) [0|0] "K" Vector__XXX
 
 BO_ 884 group17: 8 Vector__XXX
  SG_ egt_sensor_8 : 55|16@0+ (0.1,0) [0|0] "K" Vector__XXX
@@ -224,7 +224,7 @@ BO_ 881 group14: 8 Vector__XXX
  SG_ fuel_flow : 7|16@0+ (1,0) [0|0] "cc/min" Vector__XXX
 
 BO_ 879 group12: 8 Vector__XXX
- SG_ boost_control_output : 23|16@0+ (1,0) [0|0] "%" Vector__XXX
+ SG_ boost_control_output : 23|16@0+ (0.1,0) [0|0] "%" Vector__XXX
  SG_ generic_output_1_duty_cycle : 7|16@0+ (0.1,0) [0|0] "%" Vector__XXX
 
 BO_ 878 group11: 8 Vector__XXX
