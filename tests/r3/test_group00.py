@@ -1,21 +1,18 @@
-import unittest
-import cantools
 from cantools.database.can.signal import Signal
 from cantools.database.conversion import BaseConversion
-import util
+import inspect
+from tests.basetest import BaseTest
 
-db = cantools.database.load_file("r3.dbc")
-message = db.get_message_by_name("group00")
-
-class TestGroup00(unittest.TestCase):
-    def tearDown(self):
-        util.compare_signals(self.actual, self.expected)
+class TestGroup00(BaseTest):
+    name = "group00"
+    id = 0x360
+    file = "r3.dbc"
 
     def test_rpm(self):
-        self.actual = message.signals[0]
+        self.actual = self.message.signals[0]
 
         self.expected = Signal(
-            name="rpm",
+            name=inspect.currentframe().f_code.co_name[5:],
             start=-1+8,
             length=16,
             byte_order="big_endian",
@@ -26,14 +23,14 @@ class TestGroup00(unittest.TestCase):
             ),
             minimum=None,
             maximum=None,
-            unit="RPM",
+            unit="RPM"
         )
 
     def test_manifold_pressure(self):
-        self.actual = message.signals[1]
+        self.actual = self.message.signals[1]
 
         self.expected = Signal(
-            name="manifold_pressure",
+            name=inspect.currentframe().f_code.co_name[5:],
             start=-1+24,
             length=16,
             byte_order="big_endian",
@@ -44,14 +41,14 @@ class TestGroup00(unittest.TestCase):
             ),
             minimum=None,
             maximum=None,
-            unit="kPa (Abs)",
+            unit="kPa (Abs)"
         )
 
     def test_throttle_position(self):
-        self.actual = message.signals[2]
+        self.actual = self.message.signals[2]
 
         self.expected = Signal(
-            name="throttle_position",
+            name=inspect.currentframe().f_code.co_name[5:],
             start=-1+40,
             length=16,
             byte_order="big_endian",
@@ -62,14 +59,14 @@ class TestGroup00(unittest.TestCase):
             ),
             minimum=None,
             maximum=None,
-            unit="%",
+            unit="%"
         )
 
     def test_coolant_pressure(self):
-        self.actual = message.signals[3]
+        self.actual = self.message.signals[3]
 
         self.expected = Signal(
-            name="coolant_pressure",
+            name=inspect.currentframe().f_code.co_name[5:],
             start=-1+56,
             length=16,
             byte_order="big_endian",
@@ -80,8 +77,5 @@ class TestGroup00(unittest.TestCase):
             ),
             minimum=None,
             maximum=None,
-            unit="kPa",
+            unit="kPa"
         )
-
-if __name__ == '__main__':
-    unittest.main()

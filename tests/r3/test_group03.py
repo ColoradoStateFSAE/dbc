@@ -1,21 +1,18 @@
-import unittest
-import cantools
 from cantools.database.can.signal import Signal
 from cantools.database.conversion import BaseConversion
-import util
+import inspect
+from tests.basetest import BaseTest
 
-db = cantools.database.load_file("r3.dbc")
-message = db.get_message_by_name("group03")
-
-class TestGroup03(unittest.TestCase):
-    def tearDown(self):
-        util.compare_signals(self.actual, self.expected)
+class TestGroup03(BaseTest):
+    name = "group03"
+    id = 0x363
+    file = "r3.dbc"
 
     def test_wheel_slip(self):
-        self.actual = message.signals[0]
+        self.actual = self.message.signals[0]
 
         self.expected = Signal(
-            name="wheel_slip",
+            name=inspect.currentframe().f_code.co_name[5:],
             start=-1+8,
             length=16,
             byte_order="big_endian",
@@ -30,10 +27,10 @@ class TestGroup03(unittest.TestCase):
         )
 
     def test_wheel_diff(self):
-        self.actual = message.signals[1]
+        self.actual = self.message.signals[1]
 
         self.expected = Signal(
-            name="wheel_diff",
+            name=inspect.currentframe().f_code.co_name[5:],
             start=-1+24,
             length=16,
             byte_order="big_endian",
@@ -48,10 +45,10 @@ class TestGroup03(unittest.TestCase):
         )
 
     def test_launch_control_end_rpm(self):
-        self.actual = message.signals[2]
+        self.actual = self.message.signals[2]
 
         self.expected = Signal(
-            name="launch_control_end_rpm",
+            name=inspect.currentframe().f_code.co_name[5:],
             start=-1+56,
             length=16,
             byte_order="big_endian",
@@ -64,6 +61,3 @@ class TestGroup03(unittest.TestCase):
             maximum=None,
             unit="RPM",
         )
-
-if __name__ == '__main__':
-    unittest.main()

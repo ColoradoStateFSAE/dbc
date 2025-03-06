@@ -1,69 +1,63 @@
-import unittest
-import cantools
 from cantools.database.can.signal import Signal
 from cantools.database.conversion import BaseConversion
-import util
+import inspect
+from tests.basetest import BaseTest
 
-db = cantools.database.load_file("r3.dbc")
-message = db.get_message_by_name("group02")
+class TestGroup06(BaseTest):
+    name = "group06"
+    id = 0x369
+    file = "r3.dbc"
 
-class TestGroup02(unittest.TestCase):
-    def tearDown(self):
-        util.compare_signals(self.actual, self.expected)
-        
-    def test_injection_stage_1_duty_cycle(self):
-        self.actual = message.signals[0]
+    def test_trigger_system_error_count(self):
+        self.actual = self.message.signals[0]
 
         self.expected = Signal(
-            name="injection_stage_1_duty_cycle",
+            name=inspect.currentframe().f_code.co_name[5:],
             start=-1+8,
             length=16,
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=0.1,
+                scale=1,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="%",
+            unit="raw",
         )
 
-    def test_injection_stage_2_duty_cycle(self):
-        self.actual = message.signals[1]
+    def test_trigger_counter(self):
+        self.actual = self.message.signals[1]
 
         self.expected = Signal(
-            name="injection_stage_2_duty_cycle",
+            name=inspect.currentframe().f_code.co_name[5:],
             start=-1+24,
             length=16,
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=0.1,
+                scale=1,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="%",
+            unit="raw",
         )
 
-    def test_ignition_angle_leading(self):
-        self.actual = message.signals[2]
+    def test_trigger_sync_level(self):
+        self.actual = self.message.signals[2]
 
         self.expected = Signal(
-            name="ignition_angle_leading",
-            start=-1+40,
+            name=inspect.currentframe().f_code.co_name[5:],
+            start=-1+56,
             length=16,
             byte_order="big_endian",
-            is_signed=True,
+            is_signed=False,
             conversion=BaseConversion.factory(
-                scale=0.1,
+                scale=1,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="°",
+            unit="raw",
         )
-
-if __name__ == '__main__':
-    unittest.main()

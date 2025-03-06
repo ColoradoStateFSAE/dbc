@@ -1,21 +1,17 @@
-import unittest
-import cantools
 from cantools.database.can.signal import Signal
 from cantools.database.conversion import BaseConversion
-import util
-
-db = cantools.database.load_file("r3.dbc")
-message = db.get_message_by_name("group01")
-
-class TestGroup01(unittest.TestCase):
-    def tearDown(self):
-        util.compare_signals(self.actual, self.expected)
+import inspect
+from tests.basetest import BaseTest
+class TestGroup01(BaseTest):
+    name = "group01"
+    id = 0x361
+    file = "r3.dbc"
 
     def test_fuel_pressure(self):
-        self.actual = message.signals[0]
+        self.actual = self.message.signals[0]
 
         self.expected = Signal(
-            name="fuel_pressure",
+            name=inspect.currentframe().f_code.co_name[5:],
             start=-1+8,
             length=16,
             byte_order="big_endian",
@@ -30,10 +26,10 @@ class TestGroup01(unittest.TestCase):
         )
 
     def test_oil_pressure(self):
-        self.actual = message.signals[1]
+        self.actual = self.message.signals[1]
 
         self.expected = Signal(
-            name="oil_pressure",
+            name=inspect.currentframe().f_code.co_name[5:],
             start=-1+24,
             length=16,
             byte_order="big_endian",
@@ -48,10 +44,10 @@ class TestGroup01(unittest.TestCase):
         )
 
     def test_engine_demand(self):
-        self.actual = message.signals[2]
+        self.actual = self.message.signals[2]
 
         self.expected = Signal(
-            name="engine_demand",
+            name=inspect.currentframe().f_code.co_name[5:],
             start=-1+40,
             length=16,
             byte_order="big_endian",
@@ -66,10 +62,10 @@ class TestGroup01(unittest.TestCase):
         )
 
     def test_wastegate_pressure(self):
-        self.actual = message.signals[3]
+        self.actual = self.message.signals[3]
 
         self.expected = Signal(
-            name="wastegate_pressure",
+            name=inspect.currentframe().f_code.co_name[5:],
             start=-1+56,
             length=16,
             byte_order="big_endian",
@@ -82,6 +78,3 @@ class TestGroup01(unittest.TestCase):
             maximum=None,
             unit="kPa",
         )
-
-if __name__ == '__main__':
-    unittest.main()
