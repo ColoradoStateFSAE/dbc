@@ -1,7 +1,5 @@
 import unittest
 import cantools
-from cantools.database.can.signal import Signal
-from cantools.database.conversion import BaseConversion
 
 def compare_signals(actual, expected):
     assert actual.name == expected.name
@@ -19,6 +17,7 @@ class BaseTest(unittest.TestCase):
     file = None
     name = None
     id = None
+    signal_count = None
     expected = None
     actual = None
 
@@ -29,10 +28,14 @@ class BaseTest(unittest.TestCase):
 
         if cls.name is None:
             raise ValueError("'name' must be set")
+        
+        if cls.signal_count is None:
+            raise ValueError("'signal_count' must be set")
 
         db = cantools.database.load_file(cls.file)
         cls.message=db.get_message_by_name(cls.name)
         assert cls.message.frame_id == cls.id
+        assert len(cls.message.signals) == cls.signal_count
 
     def tearDown(self):
         if self.actual is None:

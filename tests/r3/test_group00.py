@@ -6,6 +6,7 @@ from tests.basetest import BaseTest
 class TestGroup00(BaseTest):
     name = "group00"
     id = 0x360
+    signal_count = 4
     file = "r3.dbc"
 
     def test_rpm(self):

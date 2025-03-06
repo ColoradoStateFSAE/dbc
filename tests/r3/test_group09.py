@@ -3,13 +3,13 @@ from cantools.database.conversion import BaseConversion
 import inspect
 from tests.basetest import BaseTest
 
-class TestGroup06(BaseTest):
-    name = "group06"
-    id = 0x369
-    signal_count = 3
+class TestGroup09(BaseTest):
+    name = "group09"
+    id = 0x36C
+    signal_count = 4
     file = "r3.dbc"
 
-    def test_trigger_system_error_count(self):
+    def test_wheel_speed_front_left(self):
         self.actual = self.message.signals[0]
 
         self.expected = Signal(
@@ -19,15 +19,15 @@ class TestGroup06(BaseTest):
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1,
+                scale=1/10,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="raw",
+            unit="km/h",
         )
 
-    def test_trigger_counter(self):
+    def test_wheel_speed_front_right(self):
         self.actual = self.message.signals[1]
 
         self.expected = Signal(
@@ -37,16 +37,34 @@ class TestGroup06(BaseTest):
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1,
+                scale=1/10,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="raw",
+            unit="km/h",
         )
 
-    def test_trigger_sync_level(self):
+    def test_wheel_speed_rear_left(self):
         self.actual = self.message.signals[2]
+
+        self.expected = Signal(
+            name=inspect.currentframe().f_code.co_name[5:],
+            start=-1+40,
+            length=16,
+            byte_order="big_endian",
+            is_signed=False,
+            conversion=BaseConversion.factory(
+                scale=1/10,
+                offset=0
+            ),
+            minimum=None,
+            maximum=None,
+            unit="km/h",
+        )
+
+    def test_wheel_speed_rear_right(self):
+        self.actual = self.message.signals[3]
 
         self.expected = Signal(
             name=inspect.currentframe().f_code.co_name[5:],
@@ -55,10 +73,10 @@ class TestGroup06(BaseTest):
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1,
+                scale=1/10,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="raw",
+            unit="km/h",
         )

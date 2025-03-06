@@ -6,6 +6,7 @@ from tests.basetest import BaseTest
 class TestGroup05(BaseTest):
     name = "group05"
     id = 0x368
+    signal_count = 4
     file = "r3.dbc"
 
     def test_wideband_sensor_1(self):

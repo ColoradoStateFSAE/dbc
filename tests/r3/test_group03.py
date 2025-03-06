@@ -6,6 +6,7 @@ from tests.basetest import BaseTest
 class TestGroup03(BaseTest):
     name = "group03"
     id = 0x363
+    signal_count = 3
     file = "r3.dbc"
 
     def test_wheel_slip(self):

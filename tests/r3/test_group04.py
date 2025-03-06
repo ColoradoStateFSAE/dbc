@@ -6,6 +6,7 @@ from tests.basetest import BaseTest
 class TestGroup04(BaseTest):
     name = "group04"
     id = 0x364
+    signal_count = 4
     file = "r3.dbc"
 
     def test_injection_stage_1_average_time(self):

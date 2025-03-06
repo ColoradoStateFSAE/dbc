@@ -6,6 +6,7 @@ from tests.basetest import BaseTest
 class TestGroup02(BaseTest):
     name = "group02"
     id = 0x362
+    signal_count = 3
     file = "r3.dbc"
         
     def test_injection_stage_1_duty_cycle(self):

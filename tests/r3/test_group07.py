@@ -6,6 +6,7 @@ from tests.basetest import BaseTest
 class TestGroup07(BaseTest):
     name = "group07"
     id = 0x36A
+    signal_count = 2
     file = "r3.dbc"
 
     def test_knock_level_1(self):

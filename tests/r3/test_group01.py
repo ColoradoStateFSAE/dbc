@@ -5,6 +5,7 @@ from tests.basetest import BaseTest
 class TestGroup01(BaseTest):
     name = "group01"
     id = 0x361
+    signal_count = 4
     file = "r3.dbc"
 
     def test_fuel_pressure(self):
