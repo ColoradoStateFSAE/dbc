@@ -120,13 +120,13 @@ BO_ 1003 group31: 8 Vector__XXX
  SG_ ignition_angle_bank_1 : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
  SG_ race_timer : 7|32@0+ (1,0) [0|0] "ms" Vector__XXX
 
-BO_ 868 group04: 8 Vector__XXX
+BO_ 868 group4: 8 Vector__XXX
  SG_ injection_stage_4_average_time : 55|16@0+ (0.001,0) [0|0] "ms" Vector__XXX
  SG_ injection_stage_3_average_time : 39|16@0+ (0.001,0) [0|0] "ms" Vector__XXX
  SG_ injection_stage_2_average_time : 23|16@0+ (0.001,0) [0|0] "ms" Vector__XXX
  SG_ injection_stage_1_average_time : 7|16@0+ (0.001,0) [0|0] "ms" Vector__XXX
 
-BO_ 866 group02: 8 Vector__XXX
+BO_ 866 group2: 8 Vector__XXX
  SG_ ignition_angle_leading : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
  SG_ injection_stage_2_duty_cycle : 23|16@0+ (0.1,0) [0|0] "%" Vector__XXX
  SG_ injection_stage_1_duty_cycle : 7|16@0+ (0.1,0) [0|0] "%" Vector__XXX
@@ -237,28 +237,28 @@ BO_ 877 group10: 8 Vector__XXX
  SG_ exhaust_cam_angle_2 : 55|16@0- (0.1,0) [0|0] "°" Vector__XXX
  SG_ exhaust_cam_angle_1 : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
 
-BO_ 876 group09: 8 Vector__XXX
+BO_ 876 group9: 8 Vector__XXX
  SG_ wheel_speed_rear_right : 55|16@0+ (0.1,0) [0|0] "km/h" Vector__XXX
  SG_ wheel_speed_rear_left : 39|16@0+ (0.1,0) [0|0] "km/h" Vector__XXX
  SG_ wheel_speed_front_right : 23|16@0+ (0.1,0) [0|0] "km/h" Vector__XXX
  SG_ wheel_speed_front_left : 7|16@0+ (0.1,0) [0|0] "km/h" Vector__XXX
 
-BO_ 875 group08: 8 Vector__XXX
+BO_ 875 group8: 8 Vector__XXX
  SG_ lateral_g : 55|16@0- (0.1,0) [0|0] "m/s2" Vector__XXX
  SG_ turbo_speed_sensor_1 : 39|16@0+ (10,0) [0|0] "RPM" Vector__XXX
  SG_ nos_pressure_sensor_1 : 23|16@0+ (0.22,-101.3) [0|0] "kPa" Vector__XXX
  SG_ brake_pressure_front : 7|16@0+ (1,-101.3) [0|0] "kPa" Vector__XXX
 
-BO_ 873 group06: 8 Vector__XXX
+BO_ 873 group6: 8 Vector__XXX
  SG_ trigger_system_error_count : 7|16@0+ (1,0) [0|0] "raw" Vector__XXX
  SG_ trigger_sync_level : 55|16@0+ (1,0) [0|0] "raw" Vector__XXX
  SG_ trigger_counter : 23|16@0+ (1,0) [0|0] "raw" Vector__XXX
 
-BO_ 874 group07: 8 Vector__XXX
+BO_ 874 group7: 8 Vector__XXX
  SG_ knock_level_2 : 23|16@0+ (0.01,0) [0|0] "dB" Vector__XXX
  SG_ knock_level_1 : 7|16@0+ (0.01,0) [0|0] "dB" Vector__XXX
 
-BO_ 867 group03: 8 Vector__XXX
+BO_ 867 group3: 8 Vector__XXX
  SG_ launch_control_end_rpm : 55|16@0+ (1,0) [0|0] "RPM" Vector__XXX
  SG_ wheel_diff : 23|16@0- (0.1,0) [0|0] "km/h" Vector__XXX
  SG_ wheel_slip : 7|16@0- (0.1,0) [0|0] "km/h" Vector__XXX
@@ -397,19 +397,19 @@ BO_ 880 group13: 8 Vector__XXX
  SG_ intake_cam_angle_1 : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
  SG_ vehicle_speed : 7|16@0+ (0.1,0) [0|0] "km/h" Vector__XXX
 
-BO_ 872 group05: 8 Vector__XXX
+BO_ 872 group5: 8 Vector__XXX
  SG_ wideband_sensor_4 : 55|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
  SG_ wideband_sensor_3 : 39|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
  SG_ wideband_sensor_2 : 23|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
  SG_ wideband_sensor_1 : 7|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
 
-BO_ 865 group01: 8 Vector__XXX
+BO_ 865 group1: 8 Vector__XXX
  SG_ wastegate_pressure : 55|16@0+ (0.1,-101.3) [0|0] "kPa" Vector__XXX
  SG_ engine_demand : 39|16@0+ (0.1,0) [0|0] "%" Vector__XXX
  SG_ oil_pressure : 23|16@0+ (0.1,-101.3) [0|0] "kPa" Vector__XXX
  SG_ fuel_pressure : 7|16@0+ (0.1,-101.3) [0|0] "kPa" Vector__XXX
 
-BO_ 864 group00: 8 Vector__XXX
+BO_ 864 group0: 8 Vector__XXX
  SG_ coolant_pressure : 55|16@0+ (0.1,-101.3) [0|0] "kPa" Vector__XXX
  SG_ throttle_position : 39|16@0+ (0.1,0) [0|0] "%" Vector__XXX
  SG_ manifold_pressure : 23|16@0+ (0.1,0) [0|0] "kPa (Abs)" Vector__XXX
