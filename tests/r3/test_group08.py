@@ -8,11 +8,9 @@ class Test_group08(BaseTest):
     signal_count = 4
 
     def test_brake_pressure_front(self):
-        self.actual = self.message.signals[0]
-
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+8,
+            start=7,
             length=16,
             byte_order="big_endian",
             is_signed=False,
@@ -26,11 +24,9 @@ class Test_group08(BaseTest):
         )
 
     def test_nos_pressure_sensor_1(self):
-        self.actual = self.message.signals[1]
-
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+24,
+            start=23,
             length=16,
             byte_order="big_endian",
             is_signed=False,
@@ -44,11 +40,9 @@ class Test_group08(BaseTest):
         )
 
     def test_turbo_speed_sensor_1(self):
-        self.actual = self.message.signals[2]
-
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+40,
+            start=39,
             length=16,
             byte_order="big_endian",
             is_signed=False,
@@ -62,8 +56,6 @@ class Test_group08(BaseTest):
         )
 
     def test_lateral_g(self):
-        self.actual = self.message.signals[3]
-
         self.expected = Signal(
             name=self.signal_name(),
             start=55,

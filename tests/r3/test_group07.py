@@ -8,11 +8,9 @@ class Test_group07(BaseTest):
     signal_count = 2
 
     def test_knock_level_1(self):
-        self.actual = self.message.signals[0]
-
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+8,
+            start=7,
             length=16,
             byte_order="big_endian",
             is_signed=False,
@@ -26,11 +24,9 @@ class Test_group07(BaseTest):
         )
 
     def test_knock_level_2(self):
-        self.actual = self.message.signals[1]
-
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+24,
+            start=23,
             length=16,
             byte_order="big_endian",
             is_signed=False,

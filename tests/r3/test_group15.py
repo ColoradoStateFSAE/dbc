@@ -8,11 +8,9 @@ class Test_group15(BaseTest):
     signal_count = 3
 
     def test_battery_voltage(self):
-        self.actual = self.message.signals[0]
-
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+8,
+            start=7,
             length=16,
             byte_order="big_endian",
             is_signed=False,
@@ -26,11 +24,9 @@ class Test_group15(BaseTest):
         )
 
     def test_target_boost_level(self):
-        self.actual = self.message.signals[1]
-
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+40,
+            start=39,
             length=16,
             byte_order="big_endian",
             is_signed=False,
@@ -44,11 +40,9 @@ class Test_group15(BaseTest):
         )
 
     def test_barometric_pressure(self):
-        self.actual = self.message.signals[2]
-
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+56,
+            start=55,
             length=16,
             byte_order="big_endian",
             is_signed=False,

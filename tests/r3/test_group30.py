@@ -2,12 +2,12 @@ from cantools.database.can.signal import Signal
 from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
-class Test_group00(BaseTest):
+class Test_group30(BaseTest):
     file = "r3.dbc"
-    id = 0x360
+    id = 0x3EA
     signal_count = 4
 
-    def test_rpm(self):
+    def test_gearbox_line_pressure(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=7,
@@ -15,15 +15,15 @@ class Test_group00(BaseTest):
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1,
-                offset=0
+                scale=1/10,
+                offset=-101.3
             ),
             minimum=None,
             maximum=None,
-            unit="RPM"
+            unit="kPa"
         )
 
-    def test_manifold_pressure(self):
+    def test_injection_stage_3_duty_cycle(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=23,
@@ -36,10 +36,10 @@ class Test_group00(BaseTest):
             ),
             minimum=None,
             maximum=None,
-            unit="kPa (Abs)"
+            unit="%"
         )
 
-    def test_throttle_position(self):
+    def test_injection_stage_4_duty_cycle(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=39,
@@ -55,7 +55,7 @@ class Test_group00(BaseTest):
             unit="%"
         )
 
-    def test_coolant_pressure(self):
+    def test_crank_case_pressure(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=55,

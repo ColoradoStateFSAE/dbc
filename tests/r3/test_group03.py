@@ -8,11 +8,9 @@ class Test_group03(BaseTest):
     signal_count = 3
 
     def test_wheel_slip(self):
-        self.actual = self.message.signals[0]
-
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+8,
+            start=7,
             length=16,
             byte_order="big_endian",
             is_signed=True,
@@ -26,11 +24,9 @@ class Test_group03(BaseTest):
         )
 
     def test_wheel_diff(self):
-        self.actual = self.message.signals[1]
-
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+24,
+            start=23,
             length=16,
             byte_order="big_endian",
             is_signed=True,
@@ -44,8 +40,6 @@ class Test_group03(BaseTest):
         )
 
     def test_launch_control_end_rpm(self):
-        self.actual = self.message.signals[2]
-
         self.expected = Signal(
             name=self.signal_name(),
             start=55,

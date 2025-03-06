@@ -8,8 +8,6 @@ class Test_group20(BaseTest):
     signal_count = 4
 
     def test_coolant_temperature(self):
-        self.actual = self.message.signals[0]
-
         self.expected = Signal(
             name=self.signal_name(),
             start=7,
@@ -26,8 +24,6 @@ class Test_group20(BaseTest):
         )
 
     def test_air_temperature(self):
-        self.actual = self.message.signals[1]
-
         self.expected = Signal(
             name=self.signal_name(),
             start=23,
@@ -44,8 +40,6 @@ class Test_group20(BaseTest):
         )
 
     def test_fuel_temperature(self):
-        self.actual = self.message.signals[2]
-
         self.expected = Signal(
             name=self.signal_name(),
             start=39,
@@ -62,8 +56,6 @@ class Test_group20(BaseTest):
         )
 
     def test_oil_temperature(self):
-        self.actual = self.message.signals[3]
-
         self.expected = Signal(
             name=self.signal_name(),
             start=55,

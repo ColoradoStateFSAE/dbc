@@ -2,12 +2,12 @@ from cantools.database.can.signal import Signal
 from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
-class Test_group00(BaseTest):
+class Test_group26(BaseTest):
     file = "r3.dbc"
-    id = 0x360
+    id = 0x3E6
     signal_count = 4
 
-    def test_rpm(self):
+    def test_nos_pressure_sensor_2(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=7,
@@ -15,15 +15,15 @@ class Test_group00(BaseTest):
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1,
-                offset=0
+                scale=11/50,
+                offset=-101.3
             ),
             minimum=None,
             maximum=None,
-            unit="RPM"
+            unit="kPa"
         )
 
-    def test_manifold_pressure(self):
+    def test_nos_pressure_sensor_3(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=23,
@@ -31,15 +31,15 @@ class Test_group00(BaseTest):
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1/10,
-                offset=0
+                scale=11/50,
+                offset=-101.3
             ),
             minimum=None,
             maximum=None,
-            unit="kPa (Abs)"
+            unit="kPa"
         )
 
-    def test_throttle_position(self):
+    def test_nos_pressure_sensor_4(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=39,
@@ -47,15 +47,15 @@ class Test_group00(BaseTest):
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1/10,
-                offset=0
+                scale=11/50,
+                offset=-101.3
             ),
             minimum=None,
             maximum=None,
-            unit="%"
+            unit="kPa"
         )
 
-    def test_coolant_pressure(self):
+    def test_turbo_speed_sensor_2(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=55,
@@ -63,10 +63,10 @@ class Test_group00(BaseTest):
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1/10,
-                offset=-101.3
+                scale=10,
+                offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="kPa"
+            unit="RPM"
         )

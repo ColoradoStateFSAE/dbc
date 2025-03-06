@@ -8,11 +8,9 @@ class Test_group10(BaseTest):
     signal_count = 2
 
     def test_exhaust_cam_angle_1(self):
-        self.actual = self.message.signals[0]
-
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+40,
+            start=39,
             length=16,
             byte_order="big_endian",
             is_signed=True,
@@ -26,11 +24,9 @@ class Test_group10(BaseTest):
         )
 
     def test_exhaust_cam_angle_2(self):
-        self.actual = self.message.signals[1]
-
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+56,
+            start=55,
             length=16,
             byte_order="big_endian",
             is_signed=True,

@@ -8,11 +8,9 @@ class Test_group01(BaseTest):
     signal_count = 4
 
     def test_fuel_pressure(self):
-        self.actual = self.message.signals[0]
-
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+8,
+            start=7,
             length=16,
             byte_order="big_endian",
             is_signed=False,
@@ -26,11 +24,9 @@ class Test_group01(BaseTest):
         )
 
     def test_oil_pressure(self):
-        self.actual = self.message.signals[1]
-
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+24,
+            start=23,
             length=16,
             byte_order="big_endian",
             is_signed=False,
@@ -44,11 +40,9 @@ class Test_group01(BaseTest):
         )
 
     def test_engine_demand(self):
-        self.actual = self.message.signals[2]
-
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+40,
+            start=39,
             length=16,
             byte_order="big_endian",
             is_signed=False,
@@ -62,8 +56,6 @@ class Test_group01(BaseTest):
         )
 
     def test_wastegate_pressure(self):
-        self.actual = self.message.signals[3]
-
         self.expected = Signal(
             name=self.signal_name(),
             start=55,

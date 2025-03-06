@@ -8,8 +8,6 @@ class Test_group22(BaseTest):
     signal_count = 1
 
     def test_fuel_level(self):
-        self.actual = self.message.signals[0]
-
         self.expected = Signal(
             name=self.signal_name(),
             start=7,

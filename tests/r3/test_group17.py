@@ -8,11 +8,9 @@ class Test_group17(BaseTest):
     signal_count = 4
 
     def test_egt_sensor_5(self):
-        self.actual = self.message.signals[0]
-
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+8,
+            start=7,
             length=16,
             byte_order="big_endian",
             is_signed=False,
@@ -26,11 +24,9 @@ class Test_group17(BaseTest):
         )
 
     def test_egt_sensor_6(self):
-        self.actual = self.message.signals[1]
-
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+24,
+            start=23,
             length=16,
             byte_order="big_endian",
             is_signed=False,
@@ -44,11 +40,9 @@ class Test_group17(BaseTest):
         )
 
     def test_egt_sensor_7(self):
-        self.actual = self.message.signals[2]
-
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+40,
+            start=39,
             length=16,
             byte_order="big_endian",
             is_signed=False,
@@ -62,11 +56,9 @@ class Test_group17(BaseTest):
         )
 
     def test_egt_sensor_8(self):
-        self.actual = self.message.signals[3]
-
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+56,
+            start=55,
             length=16,
             byte_order="big_endian",
             is_signed=False,

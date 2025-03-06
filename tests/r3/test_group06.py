@@ -8,8 +8,6 @@ class Test_group06(BaseTest):
     signal_count = 3
 
     def test_trigger_system_error_count(self):
-        self.actual = self.message.signals[0]
-
         self.expected = Signal(
             name=self.signal_name(),
             start=-1+8,
@@ -26,8 +24,6 @@ class Test_group06(BaseTest):
         )
 
     def test_trigger_counter(self):
-        self.actual = self.message.signals[1]
-
         self.expected = Signal(
             name=self.signal_name(),
             start=-1+24,
@@ -44,8 +40,6 @@ class Test_group06(BaseTest):
         )
 
     def test_trigger_sync_level(self):
-        self.actual = self.message.signals[2]
-
         self.expected = Signal(
             name=self.signal_name(),
             start=-1+56,

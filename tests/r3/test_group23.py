@@ -8,8 +8,6 @@ class Test_group23(BaseTest):
     signal_count = 4
 
     def test_fuel_trim_short_term_bank_1(self):
-        self.actual = self.message.signals[0]
-
         self.expected = Signal(
             name=self.signal_name(),
             start=7,
@@ -26,8 +24,6 @@ class Test_group23(BaseTest):
         )
 
     def test_fuel_trim_short_term_bank_2(self):
-        self.actual = self.message.signals[1]
-
         self.expected = Signal(
             name=self.signal_name(),
             start=23,
@@ -44,8 +40,6 @@ class Test_group23(BaseTest):
         )
 
     def test_fuel_trim_long_term_bank_2(self):
-        self.actual = self.message.signals[2]
-
         self.expected = Signal(
             name=self.signal_name(),
             start=39,
@@ -62,8 +56,6 @@ class Test_group23(BaseTest):
         )
 
     def test_fuel_trim_long_term_bank_2(self):
-        self.actual = self.message.signals[3]
-
         self.expected = Signal(
             name=self.signal_name(),
             start=55,

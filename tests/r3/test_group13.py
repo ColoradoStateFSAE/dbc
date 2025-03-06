@@ -8,11 +8,9 @@ class Test_group13(BaseTest):
     signal_count = 3
 
     def test_vehicle_speed(self):
-        self.actual = self.message.signals[0]
-
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+8,
+            start=7,
             length=16,
             byte_order="big_endian",
             is_signed=False,
@@ -26,11 +24,9 @@ class Test_group13(BaseTest):
         )
 
     def test_intake_cam_angle_1(self):
-        self.actual = self.message.signals[1]
-
         self.expected = Signal(
             name=self.signal_name(),
-            start=-1+40,
+            start=39,
             length=16,
             byte_order="big_endian",
             is_signed=True,
@@ -44,8 +40,6 @@ class Test_group13(BaseTest):
         )
     
     def test_intake_cam_angle_2(self):
-        self.actual = self.message.signals[2]
-
         self.expected = Signal(
             name=self.signal_name(),
             start=55,

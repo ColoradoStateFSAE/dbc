@@ -19,7 +19,6 @@ class BaseTest(unittest.TestCase):
     file = None
     id = None
     signal_count = None
-    actual = None
     expected = None
 
     @classmethod
@@ -45,13 +44,18 @@ class BaseTest(unittest.TestCase):
         assert len(cls.message.signals) == cls.signal_count
         
     def tearDown(self):
-        if self.actual is None:
-            raise RuntimeError("'actual' must be set")
-
         if self.expected is None:
             raise ValueError("'expected' must be set")
         
-        compare_signals(self.actual, self.expected)
+        for signal in self.message.signals:
+            if(signal.name == self.expected.name):
+                actual = signal
+                break
+
+        if(actual == None):
+            raise RuntimeError(f"Could not find signal '{self.expected.name}' in message '{self.message.name}'")
+        
+        compare_signals(actual, self.expected)
 
     def signal_name(self):
         name = inspect.currentframe().f_back.f_code.co_name

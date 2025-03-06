@@ -8,8 +8,6 @@ class Test_group21(BaseTest):
     signal_count = 3
 
     def test_gearbox_oil_temperature(self):
-        self.actual = self.message.signals[0]
-
         self.expected = Signal(
             name=self.signal_name(),
             start=7,
@@ -26,8 +24,6 @@ class Test_group21(BaseTest):
         )
 
     def test_diff_oil_temperature(self):
-        self.actual = self.message.signals[1]
-
         self.expected = Signal(
             name=self.signal_name(),
             start=23,
@@ -44,8 +40,6 @@ class Test_group21(BaseTest):
         )
 
     def test_fuel_composition(self):
-        self.actual = self.message.signals[2]
-
         self.expected = Signal(
             name=self.signal_name(),
             start=39,
