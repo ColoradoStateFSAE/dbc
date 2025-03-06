@@ -111,7 +111,7 @@ BO_ 1005 group33: 8 Vector__XXX
 
 BO_ 1004 group32: 8 Vector__XXX
  SG_ tq_mgmt_drvshft_rpm_target : 7|16@0- (1,0) [0|0] "RPM" Vector__XXX
- SG_ tq_mgmt_drvshft_rpm_t_ing_corr : 55|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ tq_mgmt_drvshft_rpm_t_ign_corr : 55|16@0- (0.1,0) [0|0] "°" Vector__XXX
  SG_ tq_mgmt_drvshft_rpm_err_ign_corr : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
  SG_ tq_mgmt_drvshft_rpm_err : 23|16@0- (1,0) [0|0] "RPM" Vector__XXX
 
@@ -386,7 +386,7 @@ BO_ 882 group15: 8 Vector__XXX
  SG_ battery_voltage : 7|16@0+ (0.1,0) [0|0] "Volts" Vector__XXX
 
 BO_ 1136 group39: 8 Vector__XXX
- SG_ gear : 63|8@0- (1,0) [0|0] "raw" Vector__XXX
+ SG_ gear : 63|8@0- (1,0) [0|0] "" Vector__XXX
  SG_ gear_selector_position : 55|8@0- (1,0) [0|0] "" Vector__XXX
  SG_ wideband_bank_2 : 39|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
  SG_ wideband_bank_1 : 23|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
