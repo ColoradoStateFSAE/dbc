@@ -2,6 +2,7 @@ import unittest
 import cantools
 import inspect
 import re
+import warnings
 
 def compare_signals(actual, expected):
     assert actual.name == expected.name
@@ -20,6 +21,7 @@ class BaseTest(unittest.TestCase):
     id = None
     signal_count = None
     expected = None
+    test_count = 0
 
     @classmethod
     def setUpClass(cls):
@@ -29,24 +31,30 @@ class BaseTest(unittest.TestCase):
         if cls.signal_count is None:
             raise ValueError("'signal_count' must be set")
 
-        db = cantools.database.load_file(cls.file)
-
         pattern = r"Test_.+"
-        name = cls.__name__
 
-        if not re.fullmatch(pattern, name):
-            raise RuntimeError(f"Test fixture name '{name}' must be in the format 'Test_message_name'")
-        
-        name = name[5:]
+        if not re.fullmatch(pattern, cls.__name__):
+            raise RuntimeError(f"Test fixture name '{cls.__name__}' must be in the format 'Test_message_name'")
 
-        cls.message=db.get_message_by_name(name)
+        db = cantools.database.load_file(cls.file)
+        cls.message=db.get_message_by_name(cls.__name__[5:])
         assert cls.message.frame_id == cls.id
         assert len(cls.message.signals) == cls.signal_count
-        
+
+    @classmethod
+    def tearDownClass(cls):
+        if(cls.signal_count != cls.test_count):
+            warn = "\033[33m"
+            reset = "\033[0m"
+            print(warn + f"\n{cls.__name__}: found {cls.test_count} tests but expected {cls.signal_count}" + reset)
+
     def tearDown(self):
+        self.__class__.test_count += 1
+        
         if self.expected is None:
             raise ValueError("'expected' must be set")
         
+        actual = None
         for signal in self.message.signals:
             if(signal.name == self.expected.name):
                 actual = signal

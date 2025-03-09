@@ -2,12 +2,12 @@ from cantools.database.can.signal import Signal
 from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
-class Test_group23(BaseTest):
+class Test_group43(BaseTest):
     file = "r3.dbc"
-    id = 0x3E3
+    id = 0x474
     signal_count = 4
 
-    def test_fuel_trim_short_term_bank_1(self):
+    def test_vertical_g(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=7,
@@ -20,10 +20,10 @@ class Test_group23(BaseTest):
             ),
             minimum=None,
             maximum=None,
-            unit="%"
+            unit="m/s2"
         )
 
-    def test_fuel_trim_short_term_bank_2(self):
+    def test_pitch_rate(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=23,
@@ -36,10 +36,10 @@ class Test_group23(BaseTest):
             ),
             minimum=None,
             maximum=None,
-            unit="%"
+            unit="deg/s"
         )
 
-    def test_fuel_trim_long_term_bank_1(self):
+    def test_roll_rate(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=39,
@@ -52,10 +52,10 @@ class Test_group23(BaseTest):
             ),
             minimum=None,
             maximum=None,
-            unit="%"
+            unit="deg/s"
         )
 
-    def test_fuel_trim_long_term_bank_2(self):
+    def test_yaw_rate(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=55,
@@ -68,5 +68,5 @@ class Test_group23(BaseTest):
             ),
             minimum=None,
             maximum=None,
-            unit="%"
+            unit="deg/s"
         )

@@ -46,9 +46,9 @@ BO_ 1784 group54: 8 Vector__XXX
  SG_ exhaust_cutout_state : 7|8@0- (1,0) [0|0] "enum" Vector__XXX
 
 BO_ 1783 group53: 8 Vector__XXX
- SG_ water_inj_adv_solen_duty_cycle : 55|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ water_inj_adv_solen_duty_cycle : 55|16@0+ (0.1,0) [0|0] "%" Vector__XXX
  SG_ calculated_air_temperature : 39|16@0+ (0.1,0) [0|0] "K" Vector__XXX
- SG_ generic_output_1_20_states : 7|32@0+ (1,1) [0|0] "bit-field" Vector__XXX
+ SG_ generic_output_1_20_states : 7|32@0+ (1,0) [0|0] "bit-field" Vector__XXX
 
 BO_ 1780 group51: 8 Vector__XXX
  SG_ right_indicator_state : 4|1@0+ (1,0) [0|0] "boolean" Vector__XXX
@@ -67,10 +67,10 @@ BO_ 1143 group46: 8 Vector__XXX
  SG_ engine_limiter_max_rpm : 7|16@0+ (1,0) [0|0] "RPM" Vector__XXX
 
 BO_ 1141 group44: 8 Vector__XXX
- SG_ aux_3_fuel_pump_duty_cycle : 55|16@0+ (1,0) [0|0] "%" Vector__XXX
- SG_ aux_2_fuel_pump_duty_cycle : 39|16@0+ (1,0) [0|0] "%" Vector__XXX
- SG_ aux_1_fuel_pump_duty_cycle : 23|16@0+ (1,0) [0|0] "%" Vector__XXX
- SG_ primary_fuel_pump_duty_cycle : 7|16@0+ (1,0) [0|0] "%" Vector__XXX
+ SG_ aux_3_fuel_pump_duty_cycle : 55|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ aux_2_fuel_pump_duty_cycle : 39|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ aux_1_fuel_pump_duty_cycle : 23|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ primary_fuel_pump_duty_cycle : 7|16@0+ (0.1,0) [0|0] "%" Vector__XXX
 
 BO_ 1138 group41: 8 Vector__XXX
  SG_ cruise_control_input_state : 51|12@0+ (1,0) [0|0] "bit-field" Vector__XXX
@@ -271,10 +271,10 @@ BO_ 1142 group45: 8 Vector__XXX
 
 BO_ 1782 group52: 8 Vector__XXX
  SG_ trip_meter_1 : 39|32@0- (1,0) [0|0] "m" Vector__XXX
- SG_ total_fuel_used_since_trip : 7|32@0- (1,0) [0|0] "cc" Vector__XXX
+ SG_ total_fuel_used_since_trip_1 : 7|32@0- (1,0) [0|0] "cc" Vector__XXX
 
 BO_ 1779 group50: 8 Vector__XXX
- SG_ engine_protection_reason : 55|16@0+ (1,0) [0|0] "raw" Vector__XXX
+ SG_ engine_protection_reason : 55|16@0+ (1,0) [0|0] "enum" Vector__XXX
  SG_ engine_protection_severity_level : 47|8@0+ (1,0) [0|0] "raw" Vector__XXX
  SG_ front_left_tyre_air_leak : 32|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ front_right_tyre_air_leak : 33|1@0+ (1,0) [0|0] "boolean" Vector__XXX

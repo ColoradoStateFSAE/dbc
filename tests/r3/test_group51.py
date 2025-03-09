@@ -2,71 +2,87 @@ from cantools.database.can.signal import Signal
 from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
-class Test_group23(BaseTest):
+class Test_group51(BaseTest):
     file = "r3.dbc"
-    id = 0x3E3
-    signal_count = 4
+    id = 0x6F4
+    signal_count = 5
 
-    def test_fuel_trim_short_term_bank_1(self):
+    def test_park_light_state(self):
         self.expected = Signal(
             name=self.signal_name(),
-            start=7,
-            length=16,
+            start=0,
+            length=1,
             byte_order="big_endian",
-            is_signed=True,
+            is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1/10,
+                scale=1,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="%"
+            unit="boolean"
         )
-
-    def test_fuel_trim_short_term_bank_2(self):
+    
+    def test_head_light_state(self):
         self.expected = Signal(
             name=self.signal_name(),
-            start=23,
-            length=16,
+            start=1,
+            length=1,
             byte_order="big_endian",
-            is_signed=True,
+            is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1/10,
+                scale=1,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="%"
+            unit="boolean"
         )
-
-    def test_fuel_trim_long_term_bank_1(self):
+    
+    def test_high_beam_light_state(self):
         self.expected = Signal(
             name=self.signal_name(),
-            start=39,
-            length=16,
+            start=2,
+            length=1,
             byte_order="big_endian",
-            is_signed=True,
+            is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1/10,
+                scale=1,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="%"
+            unit="boolean"
         )
-
-    def test_fuel_trim_long_term_bank_2(self):
+    
+    def test_left_indicator_state(self):
         self.expected = Signal(
             name=self.signal_name(),
-            start=55,
-            length=16,
+            start=3,
+            length=1,
             byte_order="big_endian",
-            is_signed=True,
+            is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1/10,
+                scale=1,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="%"
+            unit="boolean"
+        )
+    
+    def test_right_indicator_state(self):
+        self.expected = Signal(
+            name=self.signal_name(),
+            start=4,
+            length=1,
+            byte_order="big_endian",
+            is_signed=False,
+            conversion=BaseConversion.factory(
+                scale=1,
+                offset=0
+            ),
+            minimum=None,
+            maximum=None,
+            unit="boolean"
         )

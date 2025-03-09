@@ -2,44 +2,44 @@ from cantools.database.can.signal import Signal
 from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
-class Test_group23(BaseTest):
+class Test_group41(BaseTest):
     file = "r3.dbc"
-    id = 0x3E3
-    signal_count = 4
+    id = 0x472
+    signal_count = 5
 
-    def test_fuel_trim_short_term_bank_1(self):
+    def test_cruise_control_target_speed(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=7,
             length=16,
             byte_order="big_endian",
-            is_signed=True,
+            is_signed=False,
             conversion=BaseConversion.factory(
                 scale=1/10,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="%"
+            unit="km/h"
         )
 
-    def test_fuel_trim_short_term_bank_2(self):
+    def test_cruise_control_last_target_speed(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=23,
             length=16,
             byte_order="big_endian",
-            is_signed=True,
+            is_signed=False,
             conversion=BaseConversion.factory(
                 scale=1/10,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="%"
+            unit="km/h"
         )
 
-    def test_fuel_trim_long_term_bank_1(self):
+    def test_cruise_control_speed_error(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=39,
@@ -52,21 +52,37 @@ class Test_group23(BaseTest):
             ),
             minimum=None,
             maximum=None,
-            unit="%"
+            unit="km/h"
         )
 
-    def test_fuel_trim_long_term_bank_2(self):
+    def test_cruise_control_controller_state(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=55,
-            length=16,
+            length=4,
             byte_order="big_endian",
-            is_signed=True,
+            is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1/10,
+                scale=1,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="%"
+            unit="enum"
+        )
+
+    def test_cruise_control_input_state(self):
+        self.expected = Signal(
+            name=self.signal_name(),
+            start=51,
+            length=12,
+            byte_order="big_endian",
+            is_signed=False,
+            conversion=BaseConversion.factory(
+                scale=1,
+                offset=0
+            ),
+            minimum=None,
+            maximum=None,
+            unit="bit-field"
         )
