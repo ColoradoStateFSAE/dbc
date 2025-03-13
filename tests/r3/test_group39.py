@@ -68,7 +68,7 @@ class Test_group39(BaseTest):
             ),
             minimum=None,
             maximum=None,
-            unit=None
+            unit="enum"
         )
 
     def test_gear(self):
@@ -84,5 +84,5 @@ class Test_group39(BaseTest):
             ),
             minimum=None,
             maximum=None,
-            unit=None
+            unit="enum"
         )

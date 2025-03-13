@@ -14,7 +14,10 @@ class Test_group28(BaseTest):
             length=16,
             byte_order="big_endian",
             is_signed=False,
-            conversion=None,
+            conversion=BaseConversion.factory(
+                scale=1,
+                offset=0
+            ),
             minimum=None,
             maximum=None,
             unit=None
@@ -27,7 +30,10 @@ class Test_group28(BaseTest):
             length=16,
             byte_order="big_endian",
             is_signed=False,
-            conversion=None,
+            conversion=BaseConversion.factory(
+                scale=1,
+                offset=0
+            ),
             minimum=None,
             maximum=None,
             unit=None
@@ -40,7 +46,10 @@ class Test_group28(BaseTest):
             length=16,
             byte_order="big_endian",
             is_signed=False,
-            conversion=None,
+            conversion=BaseConversion.factory(
+                scale=1,
+                offset=0
+            ),
             minimum=None,
             maximum=None,
             unit=None
@@ -53,7 +62,10 @@ class Test_group28(BaseTest):
             length=16,
             byte_order="big_endian",
             is_signed=False,
-            conversion=None,
+            conversion=BaseConversion.factory(
+                scale=1,
+                offset=0
+            ),
             minimum=None,
             maximum=None,
             unit=None

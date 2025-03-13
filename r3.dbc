@@ -36,8 +36,6 @@ BS_:
 BU_:
 
 
-BO_ 1792 group55: 8 Vector__XXX
-
 BO_ 1784 group54: 8 Vector__XXX
  SG_ gen_open_loop_mtr_cntrl_3_state : 39|8@0- (1,0) [0|0] "enum" Vector__XXX
  SG_ gen_open_loop_mtr_cntrl_2_state : 31|8@0- (1,0) [0|0] "enum" Vector__XXX
@@ -318,7 +316,7 @@ BO_ 1139 group42: 8 Vector__XXX
  SG_ antilag_switch_state : 38|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ antilag_output_state : 37|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ rolling_antilag_switch_state : 39|1@0+ (1,0) [0|0] "boolean" Vector__XXX
- SG_ traction_control_switch_state : 36|1@0- (1,0) [0|0] "boolean" Vector__XXX
+ SG_ traction_control_switch_state : 36|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ total_fuel_used : 7|32@0+ (1,0) [0|0] "cc" Vector__XXX
 
 BO_ 1778 group49: 8 Vector__XXX
@@ -386,8 +384,8 @@ BO_ 882 group15: 8 Vector__XXX
  SG_ battery_voltage : 7|16@0+ (0.1,0) [0|0] "Volts" Vector__XXX
 
 BO_ 1136 group39: 8 Vector__XXX
- SG_ gear : 63|8@0- (1,0) [0|0] "" Vector__XXX
- SG_ gear_selector_position : 55|8@0- (1,0) [0|0] "" Vector__XXX
+ SG_ gear : 63|8@0- (1,0) [0|0] "enum" Vector__XXX
+ SG_ gear_selector_position : 55|8@0- (1,0) [0|0] "enum" Vector__XXX
  SG_ wideband_bank_2 : 39|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
  SG_ wideband_bank_1 : 23|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
  SG_ wideband_overall : 7|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX

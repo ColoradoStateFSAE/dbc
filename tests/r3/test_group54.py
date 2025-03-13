@@ -2,71 +2,87 @@ from cantools.database.can.signal import Signal
 from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
-class Test_group00(BaseTest):
+class Test_group54(BaseTest):
     file = "r3.dbc"
-    id = 0x360
-    signal_count = 4
+    id = 0x6F8
+    signal_count = 5
 
-    def test_rpm(self):
+    def test_exhaust_cutout_state(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=7,
-            length=16,
+            length=8,
             byte_order="big_endian",
-            is_signed=False,
+            is_signed=True,
             conversion=BaseConversion.factory(
                 scale=1,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="RPM"
+            unit="enum"
         )
 
-    def test_manifold_pressure(self):
+    def test_nitrous_bottle_opener_state(self):
+        self.expected = Signal(
+            name=self.signal_name(),
+            start=15,
+            length=8,
+            byte_order="big_endian",
+            is_signed=True,
+            conversion=BaseConversion.factory(
+                scale=1,
+                offset=0
+            ),
+            minimum=None,
+            maximum=None,
+            unit="enum"
+        )
+
+    def test_gen_open_loop_mtr_cntrl_1_state(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=23,
-            length=16,
+            length=8,
             byte_order="big_endian",
-            is_signed=False,
+            is_signed=True,
             conversion=BaseConversion.factory(
-                scale=1/10,
+                scale=1,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="kPa (Abs)"
+            unit="enum"
         )
 
-    def test_throttle_position(self):
+    def test_gen_open_loop_mtr_cntrl_2_state(self):
+        self.expected = Signal(
+            name=self.signal_name(),
+            start=31,
+            length=8,
+            byte_order="big_endian",
+            is_signed=True,
+            conversion=BaseConversion.factory(
+                scale=1,
+                offset=0
+            ),
+            minimum=None,
+            maximum=None,
+            unit="enum"
+        )
+
+    def test_gen_open_loop_mtr_cntrl_3_state(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=39,
-            length=16,
+            length=8,
             byte_order="big_endian",
-            is_signed=False,
+            is_signed=True,
             conversion=BaseConversion.factory(
-                scale=1/10,
+                scale=1,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="%"
-        )
-
-    def test_coolant_pressure(self):
-        self.expected = Signal(
-            name=self.signal_name(),
-            start=55,
-            length=16,
-            byte_order="big_endian",
-            is_signed=False,
-            conversion=BaseConversion.factory(
-                scale=1/10,
-                offset=-101.3
-            ),
-            minimum=None,
-            maximum=None,
-            unit="kPa"
+            unit="enum"
         )
