@@ -36,22 +36,19 @@ BS_:
 BU_:
 
 
-BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
- SG_ gear : 0|16@0+ (1,0) [0|0] "" Vector__XXX
-
 BO_ 1629 set_status: 8 Vector__XXX
  SG_ over_rev : 5|1@0+ (1,0) [0|0] "" Vector__XXX
  SG_ rpm_limiter : 6|1@0+ (1,0) [0|0] "" Vector__XXX
  SG_ antistall : 7|1@0+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 1628 shift_controller: 5 Vector__XXX
- SG_ clutch_left : 31|16@0- (0.01,0) [0|0] "" Vector__XXX
- SG_ clutch_right : 15|16@0- (0.01,0) [0|0] "" Vector__XXX
- SG_ down : 1|1@0- (1,0) [0|1] "" Vector__XXX
- SG_ up : 0|1@0- (1,0) [0|1] "" Vector__XXX
+BO_ 1628 shift_controller: 8 Vector__XXX
+ SG_ clutch_left : 31|16@0+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ clutch_right : 15|16@0+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ down : 6|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ up : 7|1@0+ (1,0) [0|0] "boolean" Vector__XXX
 
 BO_ 1625 clutch: 4 Vector__XXX
- SG_ position_percentage : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ position_percentage : 23|16@0+ (1,0) [0|0] "%" Vector__XXX
  SG_ position : 7|16@0+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 1626 set_clutch: 4 Vector__XXX
@@ -90,7 +87,6 @@ BO_ 1621 shift_settings: 8 Vector__XXX
 
 
 
-CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
 BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_DEF_  "MultiplexExtEnabled" "No";
