@@ -56,8 +56,8 @@ BO_ 513 neopixel: 64 Vector__XXX
  SG_ brightness : 384|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 512 encoder: 8 Vector__XXX
- SG_ button : 7|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ rotary_dial : 15|8@0- (1,0) [0|0] "" Vector__XXX
+ SG_ button : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ rotary_dial : 7|16@0- (1,0) [0|0] "" Vector__XXX
 
 
 
