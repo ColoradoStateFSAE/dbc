@@ -51,8 +51,9 @@ jobs:
       - name: Generate C source from DBC
         run: |
           mkdir -p src/
-          python -m cantools generate_c_source r3.dbc --output-directory src/
+          python -m cantools generate_c_source haltech.dbc --output-directory src/
           python -m cantools generate_c_source tcs.dbc --output-directory src/
+          python -m cantools generate_c_source display.dbc --output-directory src/
           echo "Generated C source files from DBC."
 
       - name: Determine new version
@@ -108,8 +109,8 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            src/r3.c
-            src/r3.h
+            src/haltech.c
+            src/haltech.h
             src/tcs.c
             src/tcs.h
           tag_name: ${{ env.VERSION }}

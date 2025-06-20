@@ -2,7 +2,7 @@ import unittest
 
 if __name__ == "__main__":
     loader = unittest.TestLoader()
-    haltech_suite = loader.discover("tests/r3")
+    haltech_suite = loader.discover("tests/haltech")
     tcs_suite = loader.discover("tests/tcs")
 
     runner = unittest.TextTestRunner()
