@@ -2,16 +2,16 @@ from cantools.database.can.signal import Signal
 from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
-class Test_set_clutch_settings(BaseTest):
+class Test_servo(BaseTest):
     file = "tcs.dbc"
-    id = 0x658
-    signal_count = 4
+    id = 0x100
+    signal_count = 3
 
-    def test_set_start(self):
+    def test_servo_position(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=7,
-            length=16,
+            length=12,
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
@@ -20,10 +20,10 @@ class Test_set_clutch_settings(BaseTest):
             ),
             minimum=None,
             maximum=None,
-            unit=None
+            unit="microseconds"
         )
 
-    def test_set_end(self):
+    def test_servo_percentage(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=23,
@@ -36,14 +36,14 @@ class Test_set_clutch_settings(BaseTest):
             ),
             minimum=None,
             maximum=None,
-            unit=None
+            unit="%"
         )
-
-    def test_set_friction(self):
+        
+    def test_set_servo_position(self):
         self.expected = Signal(
             name=self.signal_name(),
-            start=39,
-            length=16,
+            start=8,
+            length=1,
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
@@ -52,21 +52,5 @@ class Test_set_clutch_settings(BaseTest):
             ),
             minimum=None,
             maximum=None,
-            unit=None
-        )
-
-    def test_set_auto_launch(self):
-        self.expected = Signal(
-            name=self.signal_name(),
-            start=55,
-            length=16,
-            byte_order="big_endian",
-            is_signed=False,
-            conversion=BaseConversion.factory(
-                scale=1,
-                offset=0
-            ),
-            minimum=None,
-            maximum=None,
-            unit=None
+            unit="boolean"
         )

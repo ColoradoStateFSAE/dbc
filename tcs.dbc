@@ -36,54 +36,24 @@ BS_:
 BU_:
 
 
-BO_ 1629 set_status: 8 Vector__XXX
- SG_ over_rev : 5|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ rpm_limiter : 6|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ antistall : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+BO_ 257 status: 8 Vector__XXX
+ SG_ over_rev : 7|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ antistall : 6|1@0+ (1,0) [0|0] "boolean" Vector__XXX
 
-BO_ 1628 shift_controller: 8 Vector__XXX
- SG_ clutch_left : 31|16@0+ (0.01,0) [0|100] "%" Vector__XXX
- SG_ clutch_right : 15|16@0+ (0.01,0) [0|100] "%" Vector__XXX
- SG_ down : 6|1@0+ (1,0) [0|0] "boolean" Vector__XXX
- SG_ up : 7|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+BO_ 256 servo: 8 Vector__XXX
+ SG_ set_servo_position : 8|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ servo_percentage : 23|16@0+ (1,0) [0|0] "%" Vector__XXX
+ SG_ servo_position : 7|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
 
-BO_ 1625 clutch: 4 Vector__XXX
- SG_ position_percentage : 23|16@0+ (1,0) [0|0] "%" Vector__XXX
- SG_ position : 7|16@0+ (1,0) [0|0] "" Vector__XXX
-
-BO_ 1626 set_clutch: 4 Vector__XXX
- SG_ set_state : 23|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ set_position : 7|16@0+ (1,0) [0|0] "" Vector__XXX
-
-BO_ 1627 analog_input: 8 Vector__XXX
- SG_ input_left_raw : 55|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ input_left_travel : 39|16@0+ (1,0) [0|0] "%" Vector__XXX
- SG_ input_right_raw : 23|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ input_right_travel : 7|16@0+ (1,0) [0|0] "%" Vector__XXX
-
-BO_ 1624 set_clutch_settings: 8 Vector__XXX
- SG_ set_auto_launch : 55|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ set_friction : 39|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ set_end : 23|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ set_start : 7|16@0+ (1,0) [0|0] "" Vector__XXX
-
-BO_ 1622 set_shift_settings: 8 Vector__XXX
- SG_ set_timeout : 55|16@0+ (1,0) [0|0] "ms" Vector__XXX
- SG_ set_output : 39|16@0+ (1,0) [0|0] "ms" Vector__XXX
- SG_ set_down_delay : 23|16@0+ (1,0) [0|0] "ms" Vector__XXX
- SG_ set_up_delay : 7|16@0+ (1,0) [0|0] "ms" Vector__XXX
-
-BO_ 1623 clutch_settings: 8 Vector__XXX
- SG_ auto_launch : 55|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ friction : 39|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ end : 23|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ start : 7|16@0+ (1,0) [0|0] "" Vector__XXX
-
-BO_ 1621 shift_settings: 8 Vector__XXX
- SG_ timeout : 55|16@0+ (1,0) [0|0] "ms" Vector__XXX
- SG_ output : 39|16@0+ (1,0) [0|0] "ms" Vector__XXX
- SG_ down_delay : 23|16@0+ (1,0) [0|0] "ms" Vector__XXX
- SG_ up_delay : 7|16@0+ (1,0) [0|0] "ms" Vector__XXX
+BO_ 258 settings: 8 Vector__XXX
+ SG_ set_start_point : 59|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ set_friction_point : 57|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ set_end_point : 58|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ set_auto_shift : 56|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ auto_shift : 55|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ friction_point : 39|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
+ SG_ end_point : 23|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
+ SG_ start_point : 7|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
 
 
 

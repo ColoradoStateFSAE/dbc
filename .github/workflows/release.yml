@@ -26,7 +26,7 @@ jobs:
 
       - name: Run tests
         run: |
-          python run_tests.py
+          python test.py
 
   release:
     name: Generate and Release
@@ -53,6 +53,7 @@ jobs:
           mkdir -p src/
           python -m cantools generate_c_source haltech.dbc --output-directory src/
           python -m cantools generate_c_source tcs.dbc --output-directory src/
+          python -m cantools generate_c_source swc.dbc --output-directory src/
           python -m cantools generate_c_source display.dbc --output-directory src/
           echo "Generated C source files from DBC."
 
@@ -113,5 +114,9 @@ jobs:
             src/haltech.h
             src/tcs.c
             src/tcs.h
+            src/swc.c
+            src/swc.h
+            src/display.h
+            src/display.h
           tag_name: ${{ env.VERSION }}
           fail_on_unmatched_files: true
