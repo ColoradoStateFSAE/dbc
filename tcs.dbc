@@ -36,12 +36,15 @@ BS_:
 BU_:
 
 
-BO_ 257 status: 8 Vector__XXX
+BO_ 257 set_servo: 8 Vector__XXX
+ SG_ set_servo_position : 23|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ servo_position : 7|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
+
+BO_ 272 status: 8 Vector__XXX
  SG_ over_rev : 7|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ antistall : 6|1@0+ (1,0) [0|0] "boolean" Vector__XXX
 
 BO_ 256 servo: 8 Vector__XXX
- SG_ set_servo_position : 8|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ servo_percentage : 23|16@0+ (1,0) [0|0] "%" Vector__XXX
  SG_ servo_position : 7|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
 
