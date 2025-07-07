@@ -36,7 +36,7 @@ BS_:
 BU_:
 
 
-BO_ 513 neopixel: 64 Vector__XXX
+BO_ 2147487809 neopixel: 64 Vector__XXX
  SG_ led_00 : 7|24@0+ (1,0) [0|0] "" Vector__XXX
  SG_ led_01 : 31|24@0+ (1,0) [0|0] "" Vector__XXX
  SG_ led_02 : 55|24@0+ (1,0) [0|0] "" Vector__XXX
@@ -55,19 +55,19 @@ BO_ 513 neopixel: 64 Vector__XXX
  SG_ led_15 : 367|24@0+ (1,0) [0|0] "" Vector__XXX
  SG_ brightness : 384|8@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 512 encoder: 8 Vector__XXX
+BO_ 2147487808 encoder: 8 Vector__XXX
  SG_ button : 23|1@0+ (1,0) [0|0] "" Vector__XXX
  SG_ rotary_dial : 7|16@0- (1,0) [0|0] "" Vector__XXX
 
 
 
 BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
-BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
 BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
 BA_DEF_DEF_  "VFrameFormat" "ExtendedCAN_FD";
-BA_DEF_DEF_  "MultiplexExtEnabled" "No";
 BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
 BA_ "BusType" "CAN FD";
-BA_ "VFrameFormat" BO_ 513 14;
-BA_ "VFrameFormat" BO_ 512 0;
+BA_ "VFrameFormat" BO_ 2147487809 15;
+BA_ "VFrameFormat" BO_ 2147487808 1;
 

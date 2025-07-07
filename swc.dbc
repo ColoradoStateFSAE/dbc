@@ -36,18 +36,19 @@ BS_:
 BU_:
 
 
-BO_ 512 input: 8 Vector__XXX
- SG_ clutch_right_raw : 51|12@0+ (1,0) [0|0] "" Vector__XXX
- SG_ clutch_left_raw : 47|12@0+ (1,0) [0|0] "" Vector__XXX
- SG_ clutch_left : 15|16@0+ (0.01,0) [0|100] "%" Vector__XXX
- SG_ clutch_right : 31|16@0+ (0.01,0) [0|100] "%" Vector__XXX
- SG_ down : 6|1@0+ (1,0) [0|0] "boolean" Vector__XXX
- SG_ up : 7|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+BO_ 2147487744 input: 7 Vector__XXX
+ SG_ clutch_right_raw : 43|10@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ clutch_left_raw : 37|10@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ clutch_left : 7|16@0+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ clutch_right : 23|16@0+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ down : 38|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ up : 39|1@0+ (1,0) [0|0] "boolean" Vector__XXX
 
 
 
-BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
 BA_DEF_  "BusType" STRING ;
-BA_DEF_DEF_  "MultiplexExtEnabled" "No";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
 BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_ "GenMsgCycleTime" BO_ 2147487744 10;
 

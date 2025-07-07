@@ -36,6 +36,42 @@ BS_:
 BU_:
 
 
+BO_ 705 io12b_avi: 8 Vector__XXX
+ SG_ avi1_voltage : 3|12@0+ (0.00122100122100122,0) [0|0] "V" Vector__XXX
+ SG_ avi2_voltage : 19|12@0+ (0.00122100122100122,0) [0|0] "V" Vector__XXX
+ SG_ avi3_voltage : 35|12@0+ (0.00122100122100122,0) [0|0] "V" Vector__XXX
+ SG_ avi4_voltage : 51|12@0+ (0.00122100122100122,0) [0|0] "V" Vector__XXX
+
+BO_ 707 io12b_dpi_1_2: 8 Vector__XXX
+ SG_ dpi1_duty_cycle : 7|10@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ dpi1_period : 8|17@0+ (0.01,0) [0|0] "ms" Vector__XXX
+ SG_ dpi2_duty_cycle : 39|10@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ dpi2_period : 40|17@0+ (0.01,0) [0|0] "ms" Vector__XXX
+
+BO_ 709 io12b_dpi_3_4: 8 Vector__XXX
+ SG_ dpi3_duty_cycle : 7|10@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ dpi3_period : 8|17@0+ (0.01,0) [0|0] "ms" Vector__XXX
+ SG_ dpi4_duty_cycle : 39|10@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ dpi4_period : 40|17@0+ (0.01,0) [0|0] "ms" Vector__XXX
+
+BO_ 708 io12a_dpi_3_4: 8 Vector__XXX
+ SG_ dpi4_period : 40|17@0+ (0.01,0) [0|0] "ms" Vector__XXX
+ SG_ dpi4_duty_cycle : 39|10@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ dpi3_period : 8|17@0+ (0.01,0) [0|0] "ms" Vector__XXX
+ SG_ dpi3_duty_cycle : 7|10@0+ (0.1,0) [0|0] "%" Vector__XXX
+
+BO_ 706 io12a_dpi_1_2: 8 Vector__XXX
+ SG_ dpi2_period : 40|17@0+ (0.01,0) [0|0] "ms" Vector__XXX
+ SG_ dpi2_duty_cycle : 39|10@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ dpi1_period : 8|17@0+ (0.01,0) [0|0] "ms" Vector__XXX
+ SG_ dpi1_duty_cycle : 7|10@0+ (0.1,0) [0|0] "%" Vector__XXX
+
+BO_ 704 io12a_avi: 8 Vector__XXX
+ SG_ avi4_voltage : 51|12@0+ (0.00122100122100122,0) [0|0] "V" Vector__XXX
+ SG_ avi3_voltage : 35|12@0+ (0.00122100122100122,0) [0|0] "V" Vector__XXX
+ SG_ avi2_voltage : 19|12@0+ (0.00122100122100122,0) [0|0] "V" Vector__XXX
+ SG_ avi1_voltage : 3|12@0+ (0.00122100122100122,0) [0|0] "V" Vector__XXX
+
 BO_ 1784 group54: 8 Vector__XXX
  SG_ gen_open_loop_mtr_cntrl_3_state : 39|8@0- (1,0) [0|0] "enum" Vector__XXX
  SG_ gen_open_loop_mtr_cntrl_2_state : 31|8@0- (1,0) [0|0] "enum" Vector__XXX
@@ -527,8 +563,69 @@ CM_ SG_ 864 coolant_pressure "00-04";
 CM_ SG_ 864 throttle_position "00-03";
 CM_ SG_ 864 manifold_pressure "00-02";
 CM_ SG_ 864 rpm "00-01";
-BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
 BA_DEF_  "BusType" STRING ;
-BA_DEF_DEF_  "MultiplexExtEnabled" "No";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
 BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_ "GenMsgCycleTime" BO_ 705 20;
+BA_ "GenMsgCycleTime" BO_ 707 20;
+BA_ "GenMsgCycleTime" BO_ 709 20;
+BA_ "GenMsgCycleTime" BO_ 708 20;
+BA_ "GenMsgCycleTime" BO_ 706 20;
+BA_ "GenMsgCycleTime" BO_ 704 20;
+BA_ "GenMsgCycleTime" BO_ 1784 200;
+BA_ "GenMsgCycleTime" BO_ 1783 100;
+BA_ "GenMsgCycleTime" BO_ 1780 10;
+BA_ "GenMsgCycleTime" BO_ 1143 100;
+BA_ "GenMsgCycleTime" BO_ 1141 200;
+BA_ "GenMsgCycleTime" BO_ 1138 50;
+BA_ "GenMsgCycleTime" BO_ 1129 200;
+BA_ "GenMsgCycleTime" BO_ 1009 20;
+BA_ "GenMsgCycleTime" BO_ 1008 20;
+BA_ "GenMsgCycleTime" BO_ 1007 50;
+BA_ "GenMsgCycleTime" BO_ 1006 50;
+BA_ "GenMsgCycleTime" BO_ 1005 20;
+BA_ "GenMsgCycleTime" BO_ 1004 20;
+BA_ "GenMsgCycleTime" BO_ 1003 20;
+BA_ "GenMsgCycleTime" BO_ 868 20;
+BA_ "GenMsgCycleTime" BO_ 866 20;
+BA_ "GenMsgCycleTime" BO_ 1002 20;
+BA_ "GenMsgCycleTime" BO_ 1001 50;
+BA_ "GenMsgCycleTime" BO_ 1000 50;
+BA_ "GenMsgCycleTime" BO_ 999 50;
+BA_ "GenMsgCycleTime" BO_ 998 50;
+BA_ "GenMsgCycleTime" BO_ 997 20;
+BA_ "GenMsgCycleTime" BO_ 995 200;
+BA_ "GenMsgCycleTime" BO_ 994 200;
+BA_ "GenMsgCycleTime" BO_ 993 200;
+BA_ "GenMsgCycleTime" BO_ 886 100;
+BA_ "GenMsgCycleTime" BO_ 885 100;
+BA_ "GenMsgCycleTime" BO_ 884 100;
+BA_ "GenMsgCycleTime" BO_ 883 100;
+BA_ "GenMsgCycleTime" BO_ 881 100;
+BA_ "GenMsgCycleTime" BO_ 879 50;
+BA_ "GenMsgCycleTime" BO_ 878 50;
+BA_ "GenMsgCycleTime" BO_ 877 50;
+BA_ "GenMsgCycleTime" BO_ 876 50;
+BA_ "GenMsgCycleTime" BO_ 875 50;
+BA_ "GenMsgCycleTime" BO_ 873 50;
+BA_ "GenMsgCycleTime" BO_ 874 50;
+BA_ "GenMsgCycleTime" BO_ 867 50;
+BA_ "GenMsgCycleTime" BO_ 1142 50;
+BA_ "GenMsgCycleTime" BO_ 1782 200;
+BA_ "GenMsgCycleTime" BO_ 1779 200;
+BA_ "GenMsgCycleTime" BO_ 1140 50;
+BA_ "GenMsgCycleTime" BO_ 1139 100;
+BA_ "GenMsgCycleTime" BO_ 1778 200;
+BA_ "GenMsgCycleTime" BO_ 1777 200;
+BA_ "GenMsgCycleTime" BO_ 1776 200;
+BA_ "GenMsgCycleTime" BO_ 1137 20;
+BA_ "GenMsgCycleTime" BO_ 992 200;
+BA_ "GenMsgCycleTime" BO_ 996 200;
+BA_ "GenMsgCycleTime" BO_ 882 100;
+BA_ "GenMsgCycleTime" BO_ 1136 50;
+BA_ "GenMsgCycleTime" BO_ 880 50;
+BA_ "GenMsgCycleTime" BO_ 872 50;
+BA_ "GenMsgCycleTime" BO_ 865 20;
+BA_ "GenMsgCycleTime" BO_ 864 20;
 
