@@ -47,9 +47,8 @@ BO_ 2147487777 set_servo: 8 Vector__XXX
  SG_ adjustment_mode : 23|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ servo_position : 7|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
 
-BO_ 2147487779 status: 1 Vector__XXX
- SG_ over_rev : 7|1@0+ (1,0) [0|0] "boolean" Vector__XXX
- SG_ antistall : 6|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+BO_ 2147487779 status: 2 Vector__XXX
+ SG_ temperature : 7|16@0+ (0.01,0) [0|0] "°C" Vector__XXX
 
 BO_ 2147487776 servo: 4 Vector__XXX
  SG_ servo_percentage : 23|16@0+ (1,0) [0|0] "%" Vector__XXX
@@ -71,8 +70,7 @@ BA_DEF_  "BusType" STRING ;
 BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
 BA_DEF_DEF_  "BusType" "CAN";
 BA_DEF_DEF_  "GenMsgCycleTime" 0;
-BA_ "GenMsgCycleTime" BO_ 2147487780 5000;
-BA_ "GenMsgCycleTime" BO_ 2147487779 20;
+BA_ "GenMsgCycleTime" BO_ 2147487779 200;
 BA_ "GenMsgCycleTime" BO_ 2147487776 10;
 BA_ "GenMsgCycleTime" BO_ 2147487778 200;
 
