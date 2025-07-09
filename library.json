@@ -1,7 +1,7 @@
 {
-  "name": "Ram Racing CAN Protocol",
+  "name": "Ram Racing CAN",
   "version": "13",
-  "description": "Auto-generated C source files from DBC",
+  "description": "Ram Racing CAN protocol",
   "build": {
     "flags": "-I include"
   }
