@@ -1,5 +1,5 @@
-#ifndef DBC_MACROS_H
-#define DBC_MACROS_H
+#ifndef CAN_MACROS_H
+#define CAN_MACROS_H
 
 #define INIT_MESSAGE(name) \
     name##_t name; \
@@ -16,11 +16,5 @@
 
 #define DECODE_SIGNAL(name, signal) \
     name##_##signal##_decode(name.signal)
-
-#define SET_ID(name, dst) \
-    dst = name##_FRAME_ID
-
-#define SET_DLC(name, dst) \
-    dst = name##_LENGTH
 
 #endif
