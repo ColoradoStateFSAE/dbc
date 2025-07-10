@@ -17,4 +17,10 @@
 #define DECODE_SIGNAL(name, signal) \
     name##_##signal##_decode(name.signal)
 
+#define DECODE_SIGNAL(name, signal) \
+    name##_##signal##_decode(name.signal)
+
+#define IS_IN_RANGE(name, signal) \
+    name##_##signal##_is_in_range(name.signal)
+    
 #endif
