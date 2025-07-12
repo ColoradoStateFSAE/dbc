@@ -97,12 +97,15 @@
         break; \
     }
 
-#if defined(ARDUINO_RASPBERRY_PI_PICO) || defined(ARDUINO_RASPBERRY_PI_PICO_2)
+#if defined(ARDUINO_RASPBERRY_PI_PICO) || defined(ARDUINO_RASPBERRY_PI_PICO_2) || defined(TEST_PICO_2)
 
 #define INIT_FRAME(frame) \
     struct can_frame msg; \
     msg.can_id = frame##_FRAME_ID | (frame##_IS_EXTENDED * CAN_EFF_FLAG); \
     msg.can_dlc = frame##_LENGTH
+
+#define SEND_FRAME(interface) \
+    interface.sendMessage(&msg)
 
 #endif
 
