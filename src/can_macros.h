@@ -97,7 +97,7 @@
         read_##message(message); \
     }
 
-#if defined(ARDUINO_RASPBERRY_PI_PICO) || defined(ARDUINO_RASPBERRY_PI_PICO_2)
+#if defined(ARDUINO_RASPBERRY_PI_PICO) || defined(ARDUINO_RASPBERRY_PI_PICO_2) || defined(TEST_PICO_2)
 
 #define INIT_FRAME(frame) \
     struct can_frame msg; \
