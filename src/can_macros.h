@@ -90,11 +90,11 @@
  * @param src Object to unpack into the message.
  */
 #define READ_MESSAGE_CASE(frame, message, src) \
-    case (frame##_FRAME_ID | (frame##_IS_EXTENDED * CAN_EFF_FLAG)): { \
+    auto message##_id = frame##_FRAME_ID | (frame##_IS_EXTENDED * CAN_EFF_FLAG); \
+    if(msg.can_id == message##_id) { \
         INIT_MESSAGE(message); \
         UNPACK_MESSAGE(message, src); \
         read_##message(message); \
-        break; \
     }
 
 #if defined(ARDUINO_RASPBERRY_PI_PICO) || defined(ARDUINO_RASPBERRY_PI_PICO_2)
