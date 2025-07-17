@@ -1,5 +1,4 @@
-#ifndef CAN_MACROS_H
-#define CAN_MACROS_H
+#pragma once
 
 /**
  * @brief Creates a dbc_message_t struct initialized with zeros.
@@ -64,7 +63,7 @@
     message##_##signal##_is_in_range(message.signal)
 
 /**
- * @brief A method name to read a message.
+ * @brief A function name to read a message.
  *
  *
  * @param message The name of a message.
@@ -73,7 +72,7 @@
     read_##message(const message##_t &message)
 
 /**
- * @brief A method name to send a message.
+ * @brief A function name to send a message.
  *
  *
  * @param message The name of a message.
@@ -81,32 +80,32 @@
 #define SEND_MESSAGE(message) \
     send_##message()
 
+#ifdef _MCP2515_H_
+
 /**
- * @brief Creates a switch case and unpacks a message for a corresponding READ_MESSAGE method.
+ * @brief Creates a if statement to call an accompanying READ_MESSAGE() function.
  *
  *
  * @param frame The uppercase name of a message.
  * @param message The name of a message.
  * @param src Object to unpack into the message.
  */
+
+#define FRAME_MASK(is_extended) ((is_extended) ? CAN_EFF_MASK : CAN_SFF_MASK)
+
 #define READ_MESSAGE_CASE(frame, message, src) \
-    auto message##_id = frame##_FRAME_ID | (frame##_IS_EXTENDED * CAN_EFF_FLAG); \
-    if(msg.can_id == message##_id) { \
+    if (msg.can_id == (frame##_FRAME_ID | (frame##_IS_EXTENDED ? CAN_EFF_FLAG : 0))) { \
         INIT_MESSAGE(message); \
         UNPACK_MESSAGE(message, src); \
         read_##message(message); \
     }
 
-#if defined(ARDUINO_RASPBERRY_PI_PICO) || defined(ARDUINO_RASPBERRY_PI_PICO_2) || defined(TEST_PICO_2)
+#define INIT_FRAME(message, frame) \
+    struct can_frame message##_msg; \
+    message##_msg.can_id = frame##_FRAME_ID | (frame##_IS_EXTENDED ? CAN_EFF_FLAG : 0); \
+    message##_msg.can_dlc = frame##_LENGTH
 
-#define INIT_FRAME(frame) \
-    struct can_frame msg; \
-    msg.can_id = frame##_FRAME_ID | (frame##_IS_EXTENDED * CAN_EFF_FLAG); \
-    msg.can_dlc = frame##_LENGTH
-
-#define SEND_FRAME(interface) \
-    interface.sendMessage(&msg)
-
-#endif
+#define SEND_FRAME(message, interface) \
+    interface.sendMessage(&message##_msg);
 
 #endif
