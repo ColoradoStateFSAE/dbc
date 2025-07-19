@@ -71,16 +71,8 @@
 #define READ_MESSAGE(message) \
     read_##message(const message##_t &message)
 
-/**
- * @brief A function name to send a message.
- *
- *
- * @param message The name of a message.
- */
-#define SEND_MESSAGE(message) \
-    send_##message()
 
-#ifdef _MCP2515_H_
+#ifdef TEST_PICO_2
 
 /**
  * @brief Creates a if statement to call an accompanying READ_MESSAGE() function.
@@ -93,11 +85,12 @@
 
 #define FRAME_MASK(is_extended) ((is_extended) ? CAN_EFF_MASK : CAN_SFF_MASK)
 
-#define READ_MESSAGE_CASE(frame, message, src) \
-    if (msg.can_id == (frame##_FRAME_ID | (frame##_IS_EXTENDED ? CAN_EFF_FLAG : 0))) { \
+#define READ_MESSAGE_CASE(frame, message) \
+    case frame##_FRAME_ID | (frame##_IS_EXTENDED ? CAN_EFF_FLAG : 0): { \
         INIT_MESSAGE(message); \
-        UNPACK_MESSAGE(message, src); \
-        read_##message(message); \
+        UNPACK_MESSAGE(message, msg.data); \
+        decode_##message(message); \
+        break; \
     }
 
 #define INIT_FRAME(message, frame) \
@@ -105,7 +98,24 @@
     message##_msg.can_id = frame##_FRAME_ID | (frame##_IS_EXTENDED ? CAN_EFF_FLAG : 0); \
     message##_msg.can_dlc = frame##_LENGTH
 
-#define SEND_FRAME(message, interface) \
-    interface.sendMessage(&message##_msg);
+#define DECODE_METHOD(message) \
+    decode_##message(const message##_t &message)
+
+#define ENCODE_METHOD(message) \
+    encode_##message(message##_t &message)
+
+#define CYCLIC_TRANSMIT_METHOD(frame, message) \
+    void ENCODE_METHOD(message); \
+    AsyncTimer message##_timer = [&]() { \
+        AsyncTimer timer; \
+        timer.setInterval([&](){ \
+            /* CAN frame ID and DLC */ \
+            INIT_FRAME(message, frame); \
+            INIT_MESSAGE(message); \
+            encode_##message(message); \
+            PACK_MESSAGE(message, message##_msg.data); \
+        }, frame##_CYCLE_TIME_MS); \
+        return timer; \
+    }()
 
 #endif
