@@ -73,14 +73,14 @@ BO_ 704 io12a_avi: 8 Vector__XXX
  SG_ avi1_voltage : 3|12@0+ (0.00122100122100122,0) [0|0] "V" Vector__XXX
 
 BO_ 1784 group54: 8 Vector__XXX
- SG_ gen_open_loop_mtr_cntrl_3_state : 39|8@0- (1,0) [0|0] "enum" Vector__XXX
- SG_ gen_open_loop_mtr_cntrl_2_state : 31|8@0- (1,0) [0|0] "enum" Vector__XXX
- SG_ gen_open_loop_mtr_cntrl_1_state : 23|8@0- (1,0) [0|0] "enum" Vector__XXX
+ SG_ generic_open_loop_motor_control_ : 39|8@0- (1,0) [0|0] "enum" Vector__XXX
+ SG_ generic_open_loop_motor_con_0000 : 31|8@0- (1,0) [0|0] "enum" Vector__XXX
+ SG_ generic_open_loop_motor_con_0001 : 23|8@0- (1,0) [0|0] "enum" Vector__XXX
  SG_ nitrous_bottle_opener_state : 15|8@0- (1,0) [0|0] "enum" Vector__XXX
  SG_ exhaust_cutout_state : 7|8@0- (1,0) [0|0] "enum" Vector__XXX
 
 BO_ 1783 group53: 8 Vector__XXX
- SG_ water_inj_adv_solen_duty_cycle : 55|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ water_injection_advanced_solenoi : 55|16@0+ (0.1,0) [0|0] "%" Vector__XXX
  SG_ calculated_air_temperature : 39|16@0+ (0.1,0) [0|0] "K" Vector__XXX
  SG_ generic_output_1_20_states : 7|32@0+ (1,0) [0|0] "bit-field" Vector__XXX
 
@@ -141,13 +141,13 @@ BO_ 1006 group34: 8 Vector__XXX
  SG_ wideband_sensor_5 : 7|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
 
 BO_ 1005 group33: 8 Vector__XXX
- SG_ tq_mgmt_combined_ignition_corr : 7|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ torque_management_combined_ignit : 7|16@0- (0.1,0) [0|0] "°" Vector__XXX
 
 BO_ 1004 group32: 8 Vector__XXX
- SG_ tq_mgmt_drvshft_rpm_target : 7|16@0- (1,0) [0|0] "RPM" Vector__XXX
- SG_ tq_mgmt_drvshft_rpm_t_ign_corr : 55|16@0- (0.1,0) [0|0] "°" Vector__XXX
- SG_ tq_mgmt_drvshft_rpm_err_ign_corr : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
- SG_ tq_mgmt_drvshft_rpm_err : 23|16@0- (1,0) [0|0] "RPM" Vector__XXX
+ SG_ torque_management_driveshaft_rpm : 7|16@0- (1,0) [0|0] "RPM" Vector__XXX
+ SG_ torque_management_driveshaf_0000 : 55|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ torque_management_driveshaf_0001 : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ torque_management_driveshaf_0002 : 23|16@0- (1,0) [0|0] "RPM" Vector__XXX
 
 BO_ 1003 group31: 8 Vector__XXX
  SG_ ignition_angle_bank_2 : 55|16@0- (0.1,0) [0|0] "°" Vector__XXX
@@ -155,10 +155,10 @@ BO_ 1003 group31: 8 Vector__XXX
  SG_ race_timer : 7|32@0+ (1,0) [0|0] "ms" Vector__XXX
 
 BO_ 868 group04: 8 Vector__XXX
- SG_ injection_stage_4_average_time : 55|16@0+ (0.001,0) [0|0] "ms" Vector__XXX
- SG_ injection_stage_3_average_time : 39|16@0+ (0.001,0) [0|0] "ms" Vector__XXX
- SG_ injection_stage_2_average_time : 23|16@0+ (0.001,0) [0|0] "ms" Vector__XXX
- SG_ injection_stage_1_average_time : 7|16@0+ (0.001,0) [0|0] "ms" Vector__XXX
+ SG_ injection_stage_4_average_inject : 55|16@0+ (0.001,0) [0|0] "ms" Vector__XXX
+ SG_ injection_stage_3_average_inject : 39|16@0+ (0.001,0) [0|0] "ms" Vector__XXX
+ SG_ injection_stage_2_average_inject : 23|16@0+ (0.001,0) [0|0] "ms" Vector__XXX
+ SG_ injection_stage_1_average_inject : 7|16@0+ (0.001,0) [0|0] "ms" Vector__XXX
 
 BO_ 866 group02: 8 Vector__XXX
  SG_ ignition_angle_leading : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
@@ -173,7 +173,7 @@ BO_ 1002 group30: 8 Vector__XXX
 
 BO_ 1001 group29: 8 Vector__XXX
  SG_ torque_management_knob : 63|8@0- (1,0) [0|0] "raw" Vector__XXX
- SG_ water_injection_adv_output_state : 49|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ water_injection_advanced_overrid : 49|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ nitrous_stage_6_output_state : 50|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ nitrous_stage_5_output_state : 51|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ nitrous_stage_4_output_state : 52|1@0+ (1,0) [0|0] "boolean" Vector__XXX
@@ -208,11 +208,11 @@ BO_ 997 group25: 8 Vector__XXX
  SG_ abs_error : 26|1@0+ (1,0) [0|0] "enum" Vector__XXX
  SG_ abs_armed : 24|1@0+ (1,0) [0|0] "enum" Vector__XXX
  SG_ abs_active : 25|1@0+ (1,0) [0|0] "enum" Vector__XXX
- SG_ pit_lane_speed_limiter_switch : 28|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ pit_lane_speed_limiter_switch_st : 28|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ pit_lane_speed_limiter_error : 30|1@0+ (1,0) [0|0] "enum" Vector__XXX
  SG_ pit_lane_speed_limiter_active : 29|1@0+ (1,0) [0|0] "enum" Vector__XXX
  SG_ turbo_timer_time_remaining : 15|8@0+ (1,0) [0|0] "s" Vector__XXX
- SG_ turbo_timer_engine_time_remain : 23|8@0+ (1,0) [0|0] "s" Vector__XXX
+ SG_ turbo_timer_engine_time_remainin : 23|8@0+ (1,0) [0|0] "s" Vector__XXX
  SG_ ignition_switch : 7|8@0+ (1,0) [0|0] "boolean" Vector__XXX
 
 BO_ 995 group23: 8 Vector__XXX
@@ -305,15 +305,15 @@ BO_ 1142 group45: 8 Vector__XXX
 
 BO_ 1782 group52: 8 Vector__XXX
  SG_ trip_meter_1 : 39|32@0- (1,0) [0|0] "m" Vector__XXX
- SG_ total_fuel_used_since_trip_1 : 7|32@0- (1,0) [0|0] "cc" Vector__XXX
+ SG_ total_fuel_used_since_trip_1_res : 7|32@0- (1,0) [0|0] "cc" Vector__XXX
 
 BO_ 1779 group50: 8 Vector__XXX
  SG_ engine_protection_reason : 55|16@0+ (1,0) [0|0] "enum" Vector__XXX
  SG_ engine_protection_severity_level : 47|8@0+ (1,0) [0|0] "raw" Vector__XXX
- SG_ front_left_tyre_air_leak : 32|1@0+ (1,0) [0|0] "boolean" Vector__XXX
- SG_ front_right_tyre_air_leak : 33|1@0+ (1,0) [0|0] "boolean" Vector__XXX
- SG_ rear_left_tyre_air_leak : 34|1@0+ (1,0) [0|0] "boolean" Vector__XXX
- SG_ rear_right_tyre_air_leak : 35|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ front_right_tyre_air_leak_detect : 33|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ front_left_tyre_air_leak_detecte : 32|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ rear_left_tyre_air_leak_detected : 34|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ rear_right_tyre_air_leak_detecte : 35|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ rear_tyre_recommended_pressure : 23|16@0+ (0.1,-101.3) [0|0] "kPa" Vector__XXX
  SG_ front_tyre_recommended_pressure : 7|16@0+ (0.1,-101.3) [0|0] "kPa" Vector__XXX
 
@@ -325,10 +325,10 @@ BO_ 1140 group43: 8 Vector__XXX
 
 BO_ 1139 group42: 8 Vector__XXX
  SG_ cut_percentage_method : 59|4@0+ (1,0) [0|0] "enum" Vector__XXX
- SG_ water_inj_adv_ovr_switch_state : 61|1@0+ (1,0) [0|0] "boolean" Vector__XXX
- SG_ water_inj_adv_ovr_output_state : 60|1@0+ (1,0) [0|0] "boolean" Vector__XXX
- SG_ water_inj_adv_en_output_state : 62|1@0+ (1,0) [0|0] "boolean" Vector__XXX
- SG_ water_inj_adv_en_switch_state : 63|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ water_injection_advanced_ov_0000 : 61|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ water_injection_advanced_enable_ : 62|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ water_injection_advanced_ov_0001 : 60|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ water_injection_advanced_en_0000 : 63|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ nitrous_override_4_switch_state : 49|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ nitrous_override_4_output_state : 48|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ nitrous_override_3_switch_state : 51|1@0+ (1,0) [0|0] "boolean" Vector__XXX
@@ -358,8 +358,8 @@ BO_ 1139 group42: 8 Vector__XXX
 BO_ 1778 group49: 8 Vector__XXX
  SG_ rear_right_tyre_sensor_battery : 55|16@0+ (0.001,0) [0|0] "V" Vector__XXX
  SG_ rear_left_tyre_sensor_battery : 39|16@0+ (0.001,0) [0|0] "V" Vector__XXX
- SG_ front_right_tyre_sensor_battery : 23|16@0+ (0.001,0) [0|0] "V" Vector__XXX
- SG_ front_left_tyre_sensor_battery : 7|16@0+ (0.001,0) [0|0] "V" Vector__XXX
+ SG_ front_right_tyre_sensor_battery_ : 23|16@0+ (0.001,0) [0|0] "V" Vector__XXX
+ SG_ front_left_tyre_sensor_battery_v : 7|16@0+ (0.001,0) [0|0] "V" Vector__XXX
 
 BO_ 1777 group48: 8 Vector__XXX
  SG_ rear_right_tyre_temperature : 55|16@0+ (0.1,0) [0|0] "K" Vector__XXX
@@ -451,7 +451,7 @@ BO_ 864 group00: 8 Vector__XXX
 
 
 
-CM_ SG_ 1784 gen_open_loop_mtr_cntrl_3_state "-1: Input Error
+CM_ SG_ 1784 generic_open_loop_motor_control_ "-1: Input Error
 0: Disabled
 1: Closed
 2: Opening
@@ -459,7 +459,7 @@ CM_ SG_ 1784 gen_open_loop_mtr_cntrl_3_state "-1: Input Error
 4: Closing
 5: Paused Part Way
 ";
-CM_ SG_ 1784 gen_open_loop_mtr_cntrl_2_state "-1: Input Error
+CM_ SG_ 1784 generic_open_loop_motor_con_0000 "-1: Input Error
 0: Disabled
 1: Closed
 2: Opening
@@ -467,7 +467,7 @@ CM_ SG_ 1784 gen_open_loop_mtr_cntrl_2_state "-1: Input Error
 4: Closing
 5: Paused Part Way
 ";
-CM_ SG_ 1784 gen_open_loop_mtr_cntrl_1_state "-1: Input Error
+CM_ SG_ 1784 generic_open_loop_motor_con_0001 "-1: Input Error
 0: Disabled
 1: Closed
 2: Opening
@@ -511,14 +511,14 @@ The upper 2 bits determine which letter it is (0b00 = P, 0b01 = B, 0b10 = C, 0b1
 ";
 CM_ SG_ 1779 engine_protection_severity_level "0 - Idle, 1 - Level 1, 2 - Level 2, 3 - Level 3'
 ";
-CM_ SG_ 1779 front_left_tyre_air_leak "0=No Leak,1=Leak Detected";
-CM_ SG_ 1779 front_right_tyre_air_leak "0=No Leak,1=Leak Detected";
-CM_ SG_ 1779 rear_left_tyre_air_leak "0=No Leak,1=Leak Detected";
-CM_ SG_ 1779 rear_right_tyre_air_leak "0=No Leak,1=Leak Detected";
+CM_ SG_ 1779 front_right_tyre_air_leak_detect "0=No Leak,1=Leak Detected";
+CM_ SG_ 1779 front_left_tyre_air_leak_detecte "0=No Leak,1=Leak Detected";
+CM_ SG_ 1779 rear_left_tyre_air_leak_detected "0=No Leak,1=Leak Detected";
+CM_ SG_ 1779 rear_right_tyre_air_leak_detecte "0=No Leak,1=Leak Detected";
 CM_ SG_ 1778 rear_right_tyre_sensor_battery "0 = error (can be No Signal, Calibrating or Device Timeout)";
 CM_ SG_ 1778 rear_left_tyre_sensor_battery "0 = error (can be No Signal, Calibrating or Device Timeout)";
-CM_ SG_ 1778 front_right_tyre_sensor_battery "0 = error (can be No Signal, Calibrating or Device Timeout)";
-CM_ SG_ 1778 front_left_tyre_sensor_battery "0 = error (can be No Signal, Calibrating or Device Timeout)";
+CM_ SG_ 1778 front_right_tyre_sensor_battery_ "0 = error (can be No Signal, Calibrating or Device Timeout)";
+CM_ SG_ 1778 front_left_tyre_sensor_battery_v "0 = error (can be No Signal, Calibrating or Device Timeout)";
 CM_ SG_ 1777 rear_right_tyre_temperature "0 = error (can be No Signal, Calibrating or Device Timeout)";
 CM_ SG_ 1777 rear_left_tyre_temperature "0 = error (can be No Signal, Calibrating or Device Timeout)";
 CM_ SG_ 1777 front_right_tyre_temperature "0 = error (can be No Signal, Calibrating or Device Timeout)";
@@ -565,8 +565,10 @@ CM_ SG_ 864 manifold_pressure "00-02";
 CM_ SG_ 864 rpm "00-01";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ SG_  "SystemSignalLongSymbol" STRING ;
 BA_DEF_DEF_  "BusType" "CAN";
 BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "SystemSignalLongSymbol" "";
 BA_ "GenMsgCycleTime" BO_ 705 20;
 BA_ "GenMsgCycleTime" BO_ 707 20;
 BA_ "GenMsgCycleTime" BO_ 709 20;
@@ -628,4 +630,30 @@ BA_ "GenMsgCycleTime" BO_ 880 50;
 BA_ "GenMsgCycleTime" BO_ 872 50;
 BA_ "GenMsgCycleTime" BO_ 865 20;
 BA_ "GenMsgCycleTime" BO_ 864 20;
+BA_ "SystemSignalLongSymbol" SG_ 1784 generic_open_loop_motor_control_ "generic_open_loop_motor_control_3_state";
+BA_ "SystemSignalLongSymbol" SG_ 1784 generic_open_loop_motor_con_0000 "generic_open_loop_motor_control_2_state";
+BA_ "SystemSignalLongSymbol" SG_ 1784 generic_open_loop_motor_con_0001 "generic_open_loop_motor_control_1_state";
+BA_ "SystemSignalLongSymbol" SG_ 1783 water_injection_advanced_solenoi "water_injection_advanced_solenoid_duty_cycle";
+BA_ "SystemSignalLongSymbol" SG_ 1005 torque_management_combined_ignit "torque_management_combined_ignition_correction";
+BA_ "SystemSignalLongSymbol" SG_ 1004 torque_management_driveshaft_rpm "torque_management_driveshaft_rpm_target";
+BA_ "SystemSignalLongSymbol" SG_ 1004 torque_management_driveshaf_0000 "torque_management_driveshaft_rpm_timed_ignition_correction";
+BA_ "SystemSignalLongSymbol" SG_ 1004 torque_management_driveshaf_0001 "torque_management_driveshaft_rpm_target_error_ignition_correction";
+BA_ "SystemSignalLongSymbol" SG_ 1004 torque_management_driveshaf_0002 "torque_management_driveshaft_rpm_target_error";
+BA_ "SystemSignalLongSymbol" SG_ 868 injection_stage_4_average_inject "injection_stage_4_average_injection_time";
+BA_ "SystemSignalLongSymbol" SG_ 868 injection_stage_3_average_inject "injection_stage_3_average_injection_time";
+BA_ "SystemSignalLongSymbol" SG_ 868 injection_stage_2_average_inject "injection_stage_2_average_injection_time";
+BA_ "SystemSignalLongSymbol" SG_ 868 injection_stage_1_average_inject "injection_stage_1_average_injection_time";
+BA_ "SystemSignalLongSymbol" SG_ 1001 water_injection_advanced_overrid "water_injection_advanced_override_output_state";
+BA_ "SystemSignalLongSymbol" SG_ 997 pit_lane_speed_limiter_switch_st "pit_lane_speed_limiter_switch_state";
+BA_ "SystemSignalLongSymbol" SG_ 997 turbo_timer_engine_time_remainin "turbo_timer_engine_time_remaining";
+BA_ "SystemSignalLongSymbol" SG_ 1782 total_fuel_used_since_trip_1_res "total_fuel_used_since_trip_1_reset";
+BA_ "SystemSignalLongSymbol" SG_ 1779 front_right_tyre_air_leak_detect "front_right_tyre_air_leak_detected";
+BA_ "SystemSignalLongSymbol" SG_ 1779 front_left_tyre_air_leak_detecte "front_left_tyre_air_leak_detected";
+BA_ "SystemSignalLongSymbol" SG_ 1779 rear_right_tyre_air_leak_detecte "rear_right_tyre_air_leak_detected";
+BA_ "SystemSignalLongSymbol" SG_ 1139 water_injection_advanced_ov_0000 "water_injection_advanced_override_switch_state";
+BA_ "SystemSignalLongSymbol" SG_ 1139 water_injection_advanced_enable_ "water_injection_advanced_enable_output_state";
+BA_ "SystemSignalLongSymbol" SG_ 1139 water_injection_advanced_ov_0001 "water_injection_advanced_override_output_state";
+BA_ "SystemSignalLongSymbol" SG_ 1139 water_injection_advanced_en_0000 "water_injection_advanced_enable_switch_state";
+BA_ "SystemSignalLongSymbol" SG_ 1778 front_right_tyre_sensor_battery_ "front_right_tyre_sensor_battery_voltage";
+BA_ "SystemSignalLongSymbol" SG_ 1778 front_left_tyre_sensor_battery_v "front_left_tyre_sensor_battery_voltage";
 
