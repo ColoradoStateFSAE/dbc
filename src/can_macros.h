@@ -19,7 +19,7 @@
 #define IS_IN_RANGE(message, signal) \
     message##_##signal##_is_in_range(message.signal)
 
-#if defined(RASPBERRY_PI_PICO_2) || defined(TEST_PICO_2)
+#if defined(PICO_RP2350) || defined(TEST_PICO_2)
 
 #define DECODE_METHOD(message) \
     decode_##message(const message##_t &message)
@@ -34,7 +34,6 @@
 
 #define CYCLIC_TRANSMITTER(frame, message) \
     timers.setInterval([&](){ \
-        /* CAN frame ID and DLC */ \
         INIT_FRAME(frame, message); \
         INIT_MESSAGE(message); \
         encode_##message(message); \
