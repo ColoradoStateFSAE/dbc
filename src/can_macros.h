@@ -19,13 +19,14 @@
 #define IS_IN_RANGE(message, signal) \
     message##_##signal##_is_in_range(message.signal)
 
-#if defined(PICO_RP2350) || defined(TEST_PICO_2)
-
 #define DECODE_METHOD(message) \
     decode_##message(const message##_t &message)
 
 #define ENCODE_METHOD(message) \
     encode_##message(message##_t &message)
+
+// Macros specific to https://github.com/autowp/arduino-mcp2515
+#if defined(PICO_RP2350) || defined(TEST_PICO_2)
 
 #define INIT_FRAME(frame, message) \
     struct can_frame message##_msg; \
