@@ -26,20 +26,20 @@
     encode_##message(message##_t &message)
 
 // Macros specific to https://github.com/autowp/arduino-mcp2515
-#if defined(PICO_RP2350) || defined(TEST_PICO_2)
+#if __has_include(<mcp2515.h>) || defined(TEST_PICO_2)
 
 #define INIT_FRAME(frame, message) \
     struct can_frame message##_msg; \
     message##_msg.can_id = frame##_FRAME_ID | (frame##_IS_EXTENDED ? CAN_EFF_FLAG : 0); \
     message##_msg.can_dlc = frame##_LENGTH
 
-#define CYCLIC_TRANSMITTER(frame, message) \
+#define CYCLIC_TRANSMITTER(frame, message, interface) \
     timers.setInterval([&](){ \
         INIT_FRAME(frame, message); \
         INIT_MESSAGE(message); \
         encode_##message(message); \
         PACK_MESSAGE(message, message##_msg.data); \
-        mcp.sendMessage(&message##_msg); \
+        interface.sendMessage(&message##_msg); \
     }, frame##_CYCLE_TIME_MS)
 
 #define READ_MESSAGE_CASE(frame, message) \
