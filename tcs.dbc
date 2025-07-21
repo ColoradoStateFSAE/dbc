@@ -34,6 +34,7 @@ NS_ :
 BS_:
 
 BU_:
+VAL_TABLE_ shift_direction 2 "down" 1 "up" ;
 
 
 BO_ 2147487780 auto_shift_rpm: 8 Vector__XXX
@@ -55,6 +56,7 @@ BO_ 2147487776 servo: 4 Vector__XXX
  SG_ servo_position : 7|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
 
 BO_ 2147487778 settings: 8 Vector__XXX
+ SG_ reset_eeprom : 63|1@0+ (1,0) [0|0] "" Vector__XXX
  SG_ set_start_point : 54|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ set_friction_point : 52|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ set_end_point : 53|1@0+ (1,0) [0|0] "boolean" Vector__XXX
