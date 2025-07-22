@@ -34,7 +34,6 @@ NS_ :
 BS_:
 
 BU_:
-VAL_TABLE_ shift_direction 2 "down" 1 "up" ;
 
 
 BO_ 2147487780 auto_shift_rpm: 8 Vector__XXX
