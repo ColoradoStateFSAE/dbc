@@ -1,7 +1,7 @@
 {
-  "name": "Ram Racing CAN",
+  "name": "rrcan",
   "version": "13",
-  "description": "Ram Racing CAN protocol",
+  "description": "Ram Racing CAN",
   "build": {
     "flags": "-I include"
   }
