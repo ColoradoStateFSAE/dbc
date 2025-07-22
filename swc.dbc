@@ -34,7 +34,7 @@ NS_ :
 BS_:
 
 BU_:
-VAL_TABLE_ shift_direction 2 "down" 1 "up" ;
+VAL_TABLE_ shift_direction 0 "up" 1 "down" ;
 
 
 BO_ 2147487744 buttons: 1 Vector__XXX
