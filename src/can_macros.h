@@ -33,8 +33,8 @@
     message##_msg.can_id = frame##_FRAME_ID | (frame##_IS_EXTENDED ? CAN_EFF_FLAG : 0); \
     message##_msg.can_dlc = frame##_LENGTH
 
-#define CYCLIC_TRANSMITTER(frame, message, interface) \
-    timers.setInterval([&](){ \
+#define CYCLIC_TRANSMITTER(frame, message, interface, timer) \
+    timer.setInterval([&](){ \
         INIT_FRAME(frame, message); \
         INIT_MESSAGE(message); \
         encode_##message(message); \
