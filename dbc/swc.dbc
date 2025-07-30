@@ -38,7 +38,7 @@ VAL_TABLE_ shift_direction 0 "up" 1 "down" ;
 
 
 BO_ 2147487744 buttons: 1 Vector__XXX
- SG_ shift_direction : 7|1@0+ (1,0) [0|1] "boolean" Vector__XXX
+ SG_ shift_direction : 7|1@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147487745 clutch: 7 Vector__XXX
  SG_ clutch_right_raw : 45|10@0+ (1,0) [0|0] "" Vector__XXX

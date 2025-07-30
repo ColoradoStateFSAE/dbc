@@ -24,7 +24,7 @@ def print_throughput(name, bps):
     percentage = round((kbps / baud_rate) * 100, 3)
     print(f"{name:<22} {kbps:>8.2f} kbps {percentage:>8.2f} %")
 
-for file in ["haltech.dbc", "swc.dbc", "tcs.dbc"]:
+for file in ["../dbc/haltech.dbc", "../dbc/swc.dbc", "../dbc/swc.dbc"]:
     db = cantools.database.load_file(file)
     
     bps = round(sum(message_throughput(msg) for msg in db.messages))

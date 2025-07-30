@@ -1,8 +1,5 @@
 {
   "name": "rrcan",
   "version": "13",
-  "description": "Ram Racing CAN",
-  "build": {
-    "flags": "-I include"
-  }
+  "description": "Ram Racing CAN"
 }
