@@ -51,26 +51,3 @@
     }
 
 #endif
-
-#if __has_include(<QCanBus>)
-
-#define READ_MESSAGE_CASE(frame, message) \
-    case frame##_FRAME_ID: { \
-        INIT_MESSAGE(message); \
-        UNPACK_MESSAGE(message, data); \
-        decode_##message(message); \
-        break; \
-    }
-
-#define CAN_PROPERTY(type, name, defaultValue) \
-    Q_PROPERTY(type name MEMBER name WRITE set_##name NOTIFY name##_changed) \
-    public: \
-        type get_##name() { return name; } \
-    private: \
-        type name = defaultValue; \
-    public slots: \
-        void set_##name(type value) { name = value; } \
-
-#define CAN_SIGNAL(name) void name##_changed();
-
-#endif
