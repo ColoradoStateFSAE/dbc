@@ -64,18 +64,13 @@
 
 #define CAN_PROPERTY(type, name, defaultValue) \
     Q_PROPERTY(type name MEMBER name WRITE set_##name NOTIFY name##_changed) \
-    public slots: \
-        void set_##name(type value) { \
-            QMutexLocker locker(&name##_mutex); \
-            name = value; \
-            emit name##_changed(); \
-        }
     public: \
-        type get_##name() { QMutexLocker locker(&name##_mutex); return name; } \
+        type get_##name() { return name; } \
     private: \
         type name = defaultValue; \
-        mutable QMutex name##_mutex
+    public slots: \
+        void set_##name(type value) { name = value; } \
 
-#define CAN_SIGNAL(name) void name##_changed()
+#define CAN_SIGNAL(name) void name##_changed();
 
 #endif
