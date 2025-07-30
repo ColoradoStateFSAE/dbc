@@ -36,6 +36,9 @@ BS_:
 BU_:
 
 
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ adjustment_mode : 0|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+
 BO_ 2147487780 auto_shift_rpm: 8 Vector__XXX
  SG_ auto_shift_rpm_5 : 47|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
  SG_ auto_shift_rpm_4 : 25|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
@@ -43,16 +46,13 @@ BO_ 2147487780 auto_shift_rpm: 8 Vector__XXX
  SG_ auto_shift_rpm_2 : 13|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
  SG_ auto_shift_rpm_1 : 7|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
 
-BO_ 2147487777 set_servo: 8 Vector__XXX
- SG_ adjustment_mode : 23|1@0+ (1,0) [0|0] "boolean" Vector__XXX
- SG_ servo_position : 7|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
-
 BO_ 2147487779 status: 2 Vector__XXX
  SG_ temperature : 7|16@0+ (0.01,0) [0|0] "°C" Vector__XXX
 
 BO_ 2147487776 servo: 4 Vector__XXX
- SG_ servo_percentage : 23|16@0+ (1,0) [0|0] "%" Vector__XXX
- SG_ servo_position : 7|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
+ SG_ set_servo_position : 27|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ servo_percentage : 7|16@0+ (1,0) [0|0] "%" Vector__XXX
+ SG_ servo_position : 23|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
 
 BO_ 2147487778 settings: 8 Vector__XXX
  SG_ reset_eeprom : 63|1@0+ (1,0) [0|0] "" Vector__XXX
@@ -67,6 +67,7 @@ BO_ 2147487778 settings: 8 Vector__XXX
 
 
 
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
 BA_DEF_DEF_  "BusType" "CAN";
