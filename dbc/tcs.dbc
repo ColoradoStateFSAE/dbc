@@ -39,14 +39,14 @@ BU_:
 BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ adjustment_mode : 0|1@0+ (1,0) [0|0] "boolean" Vector__XXX
 
-BO_ 2147487780 auto_shift_rpm: 8 Vector__XXX
+BO_ 2147487779 auto_shift_rpm: 8 Vector__XXX
  SG_ auto_shift_rpm_5 : 47|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
  SG_ auto_shift_rpm_4 : 25|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
  SG_ auto_shift_rpm_3 : 19|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
  SG_ auto_shift_rpm_2 : 13|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
  SG_ auto_shift_rpm_1 : 7|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
 
-BO_ 2147487779 status: 2 Vector__XXX
+BO_ 2147487778 status: 2 Vector__XXX
  SG_ temperature : 7|16@0+ (0.01,0) [0|0] "°C" Vector__XXX
 
 BO_ 2147487776 servo: 4 Vector__XXX
@@ -54,7 +54,7 @@ BO_ 2147487776 servo: 4 Vector__XXX
  SG_ servo_percentage : 7|16@0+ (1,0) [0|0] "%" Vector__XXX
  SG_ servo_position : 23|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
 
-BO_ 2147487778 settings: 8 Vector__XXX
+BO_ 2147487777 settings: 8 Vector__XXX
  SG_ reset_eeprom : 63|1@0+ (1,0) [0|0] "" Vector__XXX
  SG_ set_start_point : 54|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ set_friction_point : 52|1@0+ (1,0) [0|0] "boolean" Vector__XXX
@@ -72,8 +72,8 @@ BA_DEF_  "BusType" STRING ;
 BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
 BA_DEF_DEF_  "BusType" "CAN";
 BA_DEF_DEF_  "GenMsgCycleTime" 0;
-BA_ "GenMsgCycleTime" BO_ 2147487780 1000;
-BA_ "GenMsgCycleTime" BO_ 2147487779 200;
-BA_ "GenMsgCycleTime" BO_ 2147487776 10;
+BA_ "GenMsgCycleTime" BO_ 2147487779 1000;
 BA_ "GenMsgCycleTime" BO_ 2147487778 200;
+BA_ "GenMsgCycleTime" BO_ 2147487776 10;
+BA_ "GenMsgCycleTime" BO_ 2147487777 200;
 
