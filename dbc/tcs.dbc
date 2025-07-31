@@ -39,7 +39,7 @@ BU_:
 BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ adjustment_mode : 0|1@0+ (1,0) [0|0] "boolean" Vector__XXX
 
-BO_ 2147487778 shift_status: 2 Vector__XXX
+BO_ 2147487778 status: 2 Vector__XXX
  SG_ over_rev : 7|1@0+ (1,0) [0|0] "boolean" Vector__XXX
 
 BO_ 2147487779 auto_shift_rpm: 8 Vector__XXX
