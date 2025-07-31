@@ -56,9 +56,13 @@
 
 #define CAN_PROPERTY(type, name, defaultValue) \
     Q_PROPERTY(type name MEMBER name WRITE set_##name NOTIFY update) \
-public: \
-    type name = defaultValue; \
-public slots: \
+
+    public: \
+        void set_##name(type value) { name = value; } \
+        type get_##name() { return name; } \
+    private: \
+        type name = defaultValue; \
+    public slots: \
     void set_##name(type value) { name = value; } \
 
 #define SEND_FRAME(frame, message, interface) \
