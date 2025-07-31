@@ -51,3 +51,32 @@
     }
 
 #endif
+
+#ifdef QT_VERSION
+
+#define CAN_PROPERTY(type, name, defaultValue) \
+    Q_PROPERTY(type name MEMBER name WRITE set_##name NOTIFY update) \
+public: \
+    type name = defaultValue; \
+public slots: \
+    void set_##name(type value) { name = value; } \
+
+#define SEND_FRAME(frame, message, interface) \
+    QCanBusFrame message##_msg; \
+    message##_msg.setFrameId(frame##_FRAME_ID); \
+    uint8_t message##_payload[frame##_LENGTH] = {0}; \
+    PACK_MESSAGE(message, message##_payload); \
+    message##_msg.setPayload( \
+        QByteArray(reinterpret_cast<char*>(message##_payload), sizeof(message##_payload)) \
+    ); \
+    interface->writeFrame(message##_msg)
+
+#define READ_MESSAGE_CASE(frame, message) \
+    case frame##_FRAME_ID: { \
+        INIT_MESSAGE(message); \
+        UNPACK_MESSAGE(message, data); \
+        decode_##message(message); \
+        break; \
+    }
+
+#endif
