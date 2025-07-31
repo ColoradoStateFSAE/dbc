@@ -38,6 +38,7 @@ BU_:
 
 BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ adjustment_mode : 0|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ servo_position : 0|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
 
 BO_ 2147487778 status: 2 Vector__XXX
  SG_ over_rev : 7|1@0+ (1,0) [0|0] "boolean" Vector__XXX
@@ -50,17 +51,17 @@ BO_ 2147487779 auto_shift_rpm: 8 Vector__XXX
  SG_ auto_shift_rpm_1 : 7|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
 
 BO_ 2147487776 servo: 4 Vector__XXX
+ SG_ set_servo_position : 27|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ servo_percentage : 7|16@0+ (1,0) [0|0] "%" Vector__XXX
  SG_ servo_position : 23|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
 
 BO_ 2147487777 settings: 8 Vector__XXX
- SG_ set_servo_position : 50|1@0+ (1,0) [0|0] "boolean" Vector__XXX
- SG_ servo_position : 34|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
- SG_ reset_eeprom : 49|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ set_start_point : 54|1@0+ (1,0) [0|0] "boolean" Vector__XXX
- SG_ set_friction_point : 52|1@0+ (1,0) [0|0] "boolean" Vector__XXX
- SG_ set_end_point : 53|1@0+ (1,0) [0|0] "boolean" Vector__XXX
- SG_ set_auto_shift : 51|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ set_servo_position : 46|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ reset_eeprom : 45|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ set_start_point : 34|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ set_friction_point : 32|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ set_end_point : 33|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ set_auto_shift : 47|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ auto_shift : 35|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ friction_point : 31|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
  SG_ end_point : 11|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
