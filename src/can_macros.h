@@ -19,11 +19,14 @@
 #define IS_IN_RANGE(message, signal) \
     message##_##signal##_is_in_range(message.signal)
 
-#define DECODE_METHOD(message) \
+#define DECODE_MESSAGE(message) \
     decode_##message(const message##_t &message)
 
-#define ENCODE_METHOD(message) \
-    encode_##message(message##_t &message)
+#define SEND_MESSAGE_H(message) \
+    send_##message(message##_t message = [](){ INIT_MESSAGE(message); return message; }())
+
+#define SEND_MESSAGE(message) \
+    send_##message(message##_t message)
 
 // Macros specific to https://github.com/autowp/arduino-mcp2515
 #if __has_include(<mcp2515.h>) || defined(TEST_PICO_2)
