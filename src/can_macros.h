@@ -33,19 +33,10 @@
     message##_msg.can_id = frame##_FRAME_ID | (frame##_IS_EXTENDED ? CAN_EFF_FLAG : 0); \
     message##_msg.can_dlc = frame##_LENGTH
 
-#define CYCLIC_TRANSMITTER(frame, message, interface, timer) \
-    timer.setInterval([&](){ \
-        INIT_FRAME(frame, message); \
-        INIT_MESSAGE(message); \
-        encode_##message(message); \
-        PACK_MESSAGE(message, message##_msg.data); \
-        interface.sendMessage(&message##_msg); \
-    }, frame##_CYCLE_TIME_MS)
-
 #define READ_MESSAGE_CASE(frame, message) \
     case frame##_FRAME_ID | (frame##_IS_EXTENDED ? CAN_EFF_FLAG : 0): { \
         INIT_MESSAGE(message); \
-        UNPACK_MESSAGE(message, msg.data); \
+        UNPACK_MESSAGE(message, data); \
         decode_##message(message); \
         break; \
     }
