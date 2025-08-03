@@ -31,13 +31,13 @@
 // Macros specific to https://github.com/autowp/arduino-mcp2515
 #if __has_include(<mcp2515.h>) || defined(TEST_PICO_2)
 
-#define INIT_FRAME(frame, message) \
+#define INIT_FRAME(message) \
     struct can_frame message##_msg; \
-    message##_msg.can_id = frame##_FRAME_ID | (frame##_IS_EXTENDED ? CAN_EFF_FLAG : 0); \
-    message##_msg.can_dlc = frame##_LENGTH
+    message##_msg.can_id = message##_frame_id | (message##_is_extended ? CAN_EFF_FLAG : 0); \
+    message##_msg.can_dlc = message##_length
 
-#define READ_MESSAGE_CASE(frame, message) \
-    case frame##_FRAME_ID | (frame##_IS_EXTENDED ? CAN_EFF_FLAG : 0): { \
+#define READ_MESSAGE_CASE(message) \
+    case message##_frame_id | (message##_is_extended ? CAN_EFF_FLAG : 0): { \
         INIT_MESSAGE(message); \
         UNPACK_MESSAGE(message, data); \
         decode_##message(message); \
@@ -57,18 +57,18 @@
     public slots: \
         void set_##name(type value) { name = value; } \
 
-#define SEND_FRAME(frame, message, interface) \
+#define SEND_FRAME(message, interface) \
     QCanBusFrame message##_msg; \
-    message##_msg.setFrameId(frame##_FRAME_ID); \
-    uint8_t message##_payload[frame##_LENGTH] = {0}; \
+    message##_msg.setFrameId(message##_frame_id); \
+    uint8_t message##_payload[message##_length] = {0}; \
     PACK_MESSAGE(message, message##_payload); \
     message##_msg.setPayload( \
         QByteArray(reinterpret_cast<char*>(message##_payload), sizeof(message##_payload)) \
     ); \
     interface->writeFrame(message##_msg)
 
-#define READ_MESSAGE_CASE(frame, message) \
-    case frame##_FRAME_ID: { \
+#define READ_MESSAGE_CASE(message) \
+    case message##_frame_id: { \
         INIT_MESSAGE(message); \
         UNPACK_MESSAGE(message, data); \
         decode_##message(message); \
