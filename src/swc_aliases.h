@@ -1,0 +1,19 @@
+#pragma once
+#include "swc.h"
+
+#define swc_buttons_frame_id SWC_BUTTONS_FRAME_ID
+#define swc_clutch_frame_id SWC_CLUTCH_FRAME_ID
+#define swc_buttons_length SWC_BUTTONS_LENGTH
+#define swc_clutch_length SWC_CLUTCH_LENGTH
+#define swc_buttons_is_extended SWC_BUTTONS_IS_EXTENDED
+#define swc_clutch_is_extended SWC_CLUTCH_IS_EXTENDED
+#define swc_clutch_cycle_time_ms SWC_CLUTCH_CYCLE_TIME_MS
+#define swc_buttons_shift_direction_up_choice SWC_BUTTONS_SHIFT_DIRECTION_UP_CHOICE
+#define swc_buttons_shift_direction_down_choice SWC_BUTTONS_SHIFT_DIRECTION_DOWN_CHOICE
+#define swc_buttons_name SWC_BUTTONS_NAME
+#define swc_clutch_name SWC_CLUTCH_NAME
+#define swc_buttons_shift_direction_name SWC_BUTTONS_SHIFT_DIRECTION_NAME
+#define swc_clutch_clutch_left_name SWC_CLUTCH_CLUTCH_LEFT_NAME
+#define swc_clutch_clutch_right_name SWC_CLUTCH_CLUTCH_RIGHT_NAME
+#define swc_clutch_clutch_left_raw_name SWC_CLUTCH_CLUTCH_LEFT_RAW_NAME
+#define swc_clutch_clutch_right_raw_name SWC_CLUTCH_CLUTCH_RIGHT_RAW_NAME

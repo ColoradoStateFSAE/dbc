@@ -57,6 +57,10 @@ jobs:
           python -m cantools generate_c_source dbc/display.dbc --output-directory src/
           echo "Generated C source files from DBC."
 
+      - name: Generate aliases
+        run: |
+          python generate_aliases.py
+
       - name: Determine new version
         id: version
         run: |
