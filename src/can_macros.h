@@ -29,7 +29,7 @@
     send_##message(message##_t message)
 
 // Macros specific to https://github.com/autowp/arduino-mcp2515
-#if __has_include(<mcp2515.h>) || defined(TEST_PICO_2)
+#if defined(PICO_RP2350) || defined(TEST_PICO_2)
 
 #define INIT_FRAME(message) \
     struct can_frame message##_msg; \
@@ -46,7 +46,7 @@
 
 #endif
 
-#if __has_include(<FlexCAN_T4.h>) || defined(TEST_TEENSY_41)
+#if defined(ARDUINO_TEENSY41) || defined(TEST_TEENSY_41)
 
 #define INIT_FRAME(message) \
     CAN_message_t message##_msg; \
