@@ -46,6 +46,24 @@
 
 #endif
 
+#if __has_include(<FlexCAN_T4.h>) || defined(TEST_TEENSY_41)
+
+#define INIT_FRAME(message) \
+    CAN_message_t message##_msg; \
+    message##_msg.id = message##_frame_id; \
+    message##_msg.flags.extended = message##_is_extended; \
+    message##_msg.len = message##_length
+
+#define READ_MESSAGE_CASE(message) \
+    case message##_frame_id: { \
+        INIT_MESSAGE(message); \
+        UNPACK_MESSAGE(message, data); \
+        decode_##message(message); \
+        break; \
+    }
+
+#endif
+
 #ifdef QT_VERSION
 
 #define CAN_PROPERTY(type, name, defaultValue) \
