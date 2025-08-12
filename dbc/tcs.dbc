@@ -41,6 +41,7 @@ BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ servo_position : 0|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
 
 BO_ 2147487778 status: 2 Vector__XXX
+ SG_ auto_shift_active : 6|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ over_rev : 7|1@0+ (1,0) [0|0] "boolean" Vector__XXX
 
 BO_ 2147487779 auto_shift_rpm: 8 Vector__XXX
