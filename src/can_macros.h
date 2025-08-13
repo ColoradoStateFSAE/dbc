@@ -19,6 +19,9 @@
 #define IS_IN_RANGE(message, signal) \
     message##_##signal##_is_in_range(message.signal)
 
+#define DECODE_MESSAGE_H(message) \
+    decode_##message(const message##_t &message, const unsigned int id = message##_frame_id)
+
 #define DECODE_MESSAGE(message) \
     decode_##message(const message##_t &message)
 
