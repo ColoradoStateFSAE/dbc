@@ -51,11 +51,13 @@ BO_ 2147487776 servo: 4 Vector__XXX
  SG_ servo_position : 23|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
 
 BO_ 2147487777 settings: 8 Vector__XXX
- SG_ reset_eeprom : 42|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ set_start_point : 46|1@0+ (1,0) [0|0] "boolean" Vector__XXX
- SG_ set_friction_point : 44|1@0+ (1,0) [0|0] "boolean" Vector__XXX
- SG_ set_end_point : 45|1@0+ (1,0) [0|0] "boolean" Vector__XXX
- SG_ set_auto_shift : 43|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ set_invert_solenoid : 59|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ invert_solenoid : 46|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ reset_eeprom : 45|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ set_start_point : 63|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ set_friction_point : 61|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ set_end_point : 62|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ set_auto_shift : 60|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ auto_shift : 47|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ friction_point : 31|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
  SG_ end_point : 11|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
