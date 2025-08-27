@@ -27,21 +27,3 @@
 
 #define SEND_MESSAGE(message) \
     send_##message(message##_t message)
-
-// Macros specific to https://github.com/autowp/arduino-mcp2515
-#if __has_include(<mcp2515.h>) || defined(TEST_PICO_2)
-
-#define INIT_FRAME(message) \
-    struct can_frame message##_msg; \
-    message##_msg.can_id = message##_frame_id | (message##_is_extended ? CAN_EFF_FLAG : 0); \
-    message##_msg.can_dlc = message##_length
-
-#define READ_MESSAGE_CASE(message) \
-    case message##_frame_id | (message##_is_extended ? CAN_EFF_FLAG : 0): { \
-        INIT_MESSAGE(message); \
-        UNPACK_MESSAGE(message, data); \
-        decode_##message(message); \
-        break; \
-    }
-
-#endif
