@@ -5,10 +5,10 @@
     message##_init(&message)
 
 #define PACK_MESSAGE(message, dst) \
-    message##_pack(dst, &message, message##_length)
+    message##_pack(dst, &message, sizeof(dst))
 
 #define UNPACK_MESSAGE(message, src) \
-    message##_unpack(&message, src, message##_length)
+    message##_unpack(&message, src, sizeof(src))
 
 #define ENCODE_SIGNAL(message, signal, value) \
     message.signal = message##_##signal##_encode(value)
