@@ -3,9 +3,10 @@ from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
 class Test_group26(BaseTest):
-    file = "haltech.dbc"
+    file = "dbc/haltech.dbc"
     id = 0x3E6
     signal_count = 4
+    cycle_time = 1000/20
 
     def test_nos_pressure_sensor_2(self):
         self.expected = Signal(

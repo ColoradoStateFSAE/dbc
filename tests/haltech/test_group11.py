@@ -3,9 +3,10 @@ from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
 class Test_group11(BaseTest):
-    file = "haltech.dbc"
+    file = "dbc/haltech.dbc"
     id = 0x36E
     signal_count = 4
+    cycle_time = 1000/20
 
     def test_engine_limiting_active(self):
         self.expected = Signal(

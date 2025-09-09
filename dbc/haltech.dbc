@@ -356,8 +356,8 @@ BO_ 1139 group42: 8 Vector__XXX
  SG_ total_fuel_used : 7|32@0+ (1,0) [0|0] "cc" Vector__XXX
 
 BO_ 1778 group49: 8 Vector__XXX
- SG_ rear_right_tyre_sensor_battery : 55|16@0+ (0.001,0) [0|0] "V" Vector__XXX
- SG_ rear_left_tyre_sensor_battery : 39|16@0+ (0.001,0) [0|0] "V" Vector__XXX
+ SG_ rear_right_tyre_sensor_battery_v : 55|16@0+ (0.001,0) [0|0] "V" Vector__XXX
+ SG_ rear_left_tyre_sensor_battery_vo : 39|16@0+ (0.001,0) [0|0] "V" Vector__XXX
  SG_ front_right_tyre_sensor_battery_ : 23|16@0+ (0.001,0) [0|0] "V" Vector__XXX
  SG_ front_left_tyre_sensor_battery_v : 7|16@0+ (0.001,0) [0|0] "V" Vector__XXX
 
@@ -515,8 +515,8 @@ CM_ SG_ 1779 front_right_tyre_air_leak_detect "0=No Leak,1=Leak Detected";
 CM_ SG_ 1779 front_left_tyre_air_leak_detecte "0=No Leak,1=Leak Detected";
 CM_ SG_ 1779 rear_left_tyre_air_leak_detected "0=No Leak,1=Leak Detected";
 CM_ SG_ 1779 rear_right_tyre_air_leak_detecte "0=No Leak,1=Leak Detected";
-CM_ SG_ 1778 rear_right_tyre_sensor_battery "0 = error (can be No Signal, Calibrating or Device Timeout)";
-CM_ SG_ 1778 rear_left_tyre_sensor_battery "0 = error (can be No Signal, Calibrating or Device Timeout)";
+CM_ SG_ 1778 rear_right_tyre_sensor_battery_v "0 = error (can be No Signal, Calibrating or Device Timeout)";
+CM_ SG_ 1778 rear_left_tyre_sensor_battery_vo "0 = error (can be No Signal, Calibrating or Device Timeout)";
 CM_ SG_ 1778 front_right_tyre_sensor_battery_ "0 = error (can be No Signal, Calibrating or Device Timeout)";
 CM_ SG_ 1778 front_left_tyre_sensor_battery_v "0 = error (can be No Signal, Calibrating or Device Timeout)";
 CM_ SG_ 1777 rear_right_tyre_temperature "0 = error (can be No Signal, Calibrating or Device Timeout)";
@@ -654,6 +654,8 @@ BA_ "SystemSignalLongSymbol" SG_ 1139 water_injection_advanced_ov_0000 "water_in
 BA_ "SystemSignalLongSymbol" SG_ 1139 water_injection_advanced_enable_ "water_injection_advanced_enable_output_state";
 BA_ "SystemSignalLongSymbol" SG_ 1139 water_injection_advanced_ov_0001 "water_injection_advanced_override_output_state";
 BA_ "SystemSignalLongSymbol" SG_ 1139 water_injection_advanced_en_0000 "water_injection_advanced_enable_switch_state";
+BA_ "SystemSignalLongSymbol" SG_ 1778 rear_right_tyre_sensor_battery_v "rear_right_tyre_sensor_battery_voltage";
+BA_ "SystemSignalLongSymbol" SG_ 1778 rear_left_tyre_sensor_battery_vo "rear_left_tyre_sensor_battery_voltage";
 BA_ "SystemSignalLongSymbol" SG_ 1778 front_right_tyre_sensor_battery_ "front_right_tyre_sensor_battery_voltage";
 BA_ "SystemSignalLongSymbol" SG_ 1778 front_left_tyre_sensor_battery_v "front_left_tyre_sensor_battery_voltage";
 

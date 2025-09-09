@@ -3,9 +3,10 @@ from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
 class Test_group29(BaseTest):
-    file = "haltech.dbc"
+    file = "dbc/haltech.dbc"
     id = 0x3E9
     signal_count = 11
+    cycle_time = 1000/20
 
     def test_generic_sensor_9(self):
         self.expected = Signal(
@@ -151,7 +152,7 @@ class Test_group29(BaseTest):
             unit="boolean"
         )
         
-    def test_water_injection_adv_output_state(self):
+    def test_water_injection_advanced_override_output_state(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=49,

@@ -51,10 +51,10 @@ jobs:
       - name: Generate C source from DBC
         run: |
           mkdir -p src/
-          python -m cantools generate_c_source dbc/haltech.dbc --output-directory src/
-          python -m cantools generate_c_source dbc/tcs.dbc --output-directory src/
-          python -m cantools generate_c_source dbc/swc.dbc --output-directory src/
-          python -m cantools generate_c_source dbc/display.dbc --output-directory src/
+          python -m cantools generate_c_source dbc/haltech/haltech.dbc --output-directory src/
+          python -m cantools generate_c_source dbc/tcs/tcs.dbc --output-directory src/
+          python -m cantools generate_c_source dbc/swc/swc.dbc --output-directory src/
+          python -m cantools generate_c_source dbc/display/display.dbc --output-directory src/
           echo "Generated C source files from DBC."
 
       - name: Generate aliases
@@ -110,17 +110,10 @@ jobs:
           prerelease: false
           generateReleaseNotes: true
 
-      - name: Upload generated C files to release
+      - name: Upload generated files to release
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            src/haltech.c
-            src/haltech.h
-            src/tcs.c
-            src/tcs.h
-            src/swc.c
-            src/swc.h
-            src/display.h
-            src/display.h
+            src/**
           tag_name: ${{ env.VERSION }}
           fail_on_unmatched_files: true

@@ -3,9 +3,10 @@ from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
 class Test_group16(BaseTest):
-    file = "haltech.dbc"
+    file = "dbc/haltech.dbc"
     id = 0x373
     signal_count = 4
+    cycle_time = 1000/10
 
     def test_egt_sensor_1(self):
         self.expected = Signal(

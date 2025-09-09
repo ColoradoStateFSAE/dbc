@@ -3,9 +3,10 @@ from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
 class Test_group13(BaseTest):
-    file = "haltech.dbc"
+    file = "dbc/haltech.dbc"
     id = 0x370
     signal_count = 3
+    cycle_time = 1000/20
 
     def test_vehicle_speed(self):
         self.expected = Signal(

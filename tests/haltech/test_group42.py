@@ -3,9 +3,10 @@ from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
 class Test_group42(BaseTest):
-    file = "haltech.dbc"
+    file = "dbc/haltech.dbc"
     id = 0x473
     signal_count = 30
+    cycle_time = 1000/10
 
     def test_total_fuel_used(self):
         self.expected = Signal(
@@ -407,7 +408,7 @@ class Test_group42(BaseTest):
             unit="boolean"
         )
         
-    def test_water_inj_adv_en_switch_state(self):
+    def test_water_injection_advanced_enable_switch_state(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=63,
@@ -423,7 +424,7 @@ class Test_group42(BaseTest):
             unit="boolean"
         )
         
-    def test_water_inj_adv_en_output_state(self):
+    def test_water_injection_advanced_enable_output_state(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=62,
@@ -439,7 +440,7 @@ class Test_group42(BaseTest):
             unit="boolean"
         )
         
-    def test_water_inj_adv_ovr_switch_state(self):
+    def test_water_injection_advanced_override_switch_state(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=61,
@@ -455,7 +456,7 @@ class Test_group42(BaseTest):
             unit="boolean"
         )
         
-    def test_water_inj_adv_ovr_output_state(self):
+    def test_water_injection_advanced_override_output_state(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=60,

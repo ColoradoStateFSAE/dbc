@@ -2,72 +2,72 @@ from cantools.database.can.signal import Signal
 from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
-class Test_group00(BaseTest):
+class Test_io12a_avi(BaseTest):
     file = "dbc/haltech.dbc"
-    id = 0x360
+    id = 0x2C0
     signal_count = 4
-    cycle_time = 1000/50
+    cycle_time = 20
 
-    def test_rpm(self):
+    def test_avi1_voltage(self):
         self.expected = Signal(
             name=self.signal_name(),
-            start=7,
-            length=16,
+            start=3,
+            length=12,
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1,
+                scale=0.00122100122100122,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="RPM"
+            unit="V"
         )
 
-    def test_manifold_pressure(self):
+    def test_avi2_voltage(self):
         self.expected = Signal(
             name=self.signal_name(),
-            start=23,
-            length=16,
+            start=19,
+            length=12,
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1/10,
+                scale=0.00122100122100122,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="kPa (Abs)"
+            unit="V"
         )
 
-    def test_throttle_position(self):
+    def test_avi3_voltage(self):
         self.expected = Signal(
             name=self.signal_name(),
-            start=39,
-            length=16,
+            start=35,
+            length=12,
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1/10,
+                scale=0.00122100122100122,
                 offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="%"
+            unit="V"
         )
 
-    def test_coolant_pressure(self):
+    def test_avi4_voltage(self):
         self.expected = Signal(
             name=self.signal_name(),
-            start=55,
-            length=16,
+            start=51,
+            length=12,
             byte_order="big_endian",
             is_signed=False,
             conversion=BaseConversion.factory(
-                scale=1/10,
-                offset=-101.3
+                scale=0.00122100122100122,
+                offset=0
             ),
             minimum=None,
             maximum=None,
-            unit="kPa"
+            unit="V"
         )

@@ -3,9 +3,10 @@ from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
 class Test_group23(BaseTest):
-    file = "haltech.dbc"
+    file = "dbc/haltech.dbc"
     id = 0x3E3
     signal_count = 4
+    cycle_time = 1000/5
 
     def test_fuel_trim_short_term_bank_1(self):
         self.expected = Signal(

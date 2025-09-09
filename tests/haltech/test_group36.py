@@ -3,9 +3,10 @@ from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
 class Test_group36(BaseTest):
-    file = "haltech.dbc"
+    file = "dbc/haltech.dbc"
     id = 0x3F0
     signal_count = 4
+    cycle_time = 1000/50
 
     def test_shk_trvl_sens_front_left_uncal(self):
         self.expected = Signal(

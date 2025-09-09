@@ -3,11 +3,12 @@ from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
 class Test_group49(BaseTest):
-    file = "haltech.dbc"
+    file = "dbc/haltech.dbc"
     id = 0x6F2
     signal_count = 4
+    cycle_time = 1000/5
 
-    def test_front_left_tyre_sensor_battery(self):
+    def test_front_left_tyre_sensor_battery_voltage(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=7,
@@ -23,7 +24,7 @@ class Test_group49(BaseTest):
             unit="V"
         )
 
-    def test_front_right_tyre_sensor_battery(self):
+    def test_front_right_tyre_sensor_battery_voltage(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=23,
@@ -39,7 +40,7 @@ class Test_group49(BaseTest):
             unit="V"
         )
 
-    def test_rear_left_tyre_sensor_battery(self):
+    def test_rear_left_tyre_sensor_battery_voltage(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=39,
@@ -55,7 +56,7 @@ class Test_group49(BaseTest):
             unit="V"
         )
 
-    def test_rear_right_tyre_sensor_battery(self):
+    def test_rear_right_tyre_sensor_battery_voltage(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=55,

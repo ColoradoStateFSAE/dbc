@@ -3,9 +3,10 @@ from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
 class Test_group07(BaseTest):
-    file = "haltech.dbc"
+    file = "dbc/haltech.dbc"
     id = 0x36A
     signal_count = 2
+    cycle_time = 1000/20
 
     def test_knock_level_1(self):
         self.expected = Signal(

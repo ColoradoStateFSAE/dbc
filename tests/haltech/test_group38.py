@@ -3,9 +3,10 @@ from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
 class Test_group38(BaseTest):
-    file = "haltech.dbc"
+    file = "dbc/haltech.dbc"
     id = 0x469
     signal_count = 1
+    cycle_time = 1000/5
 
     def test_ecu_temperature(self):
         self.expected = Signal(

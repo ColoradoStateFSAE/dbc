@@ -3,9 +3,10 @@ from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
 class Test_group25(BaseTest):
-    file = "haltech.dbc"
+    file = "dbc/haltech.dbc"
     id = 0x3E5
     signal_count = 11
+    cycle_time = 1000/50
 
     def test_ignition_switch(self):
         self.expected = Signal(
@@ -39,7 +40,7 @@ class Test_group25(BaseTest):
             unit="s"
         )
 
-    def test_turbo_timer_engine_time_remain(self):
+    def test_turbo_timer_engine_time_remaining(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=23,
@@ -87,7 +88,7 @@ class Test_group25(BaseTest):
             unit="enum"
         )
 
-    def test_pit_lane_speed_limiter_switch(self):
+    def test_pit_lane_speed_limiter_switch_state(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=28,

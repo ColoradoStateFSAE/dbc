@@ -3,9 +3,10 @@ from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
 class Test_group35(BaseTest):
-    file = "haltech.dbc"
+    file = "dbc/haltech.dbc"
     id = 0x3EF
     signal_count = 4
+    cycle_time = 1000/20
 
     def test_wideband_sensor_9(self):
         self.expected = Signal(

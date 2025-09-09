@@ -3,9 +3,10 @@ from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
 class Test_group50(BaseTest):
-    file = "haltech.dbc"
+    file = "dbc/haltech.dbc"
     id = 0x6F3
     signal_count = 8
+    cycle_time = 1000/5
 
     def test_front_tyre_recommended_pressure(self):
         self.expected = Signal(
@@ -39,7 +40,7 @@ class Test_group50(BaseTest):
             unit="kPa"
         )
 
-    def test_rear_right_tyre_air_leak(self):
+    def test_rear_right_tyre_air_leak_detected(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=35,
@@ -55,7 +56,7 @@ class Test_group50(BaseTest):
             unit="boolean"
         )
 
-    def test_rear_left_tyre_air_leak(self):
+    def test_rear_left_tyre_air_leak_detected(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=34,
@@ -71,7 +72,7 @@ class Test_group50(BaseTest):
             unit="boolean"
         )
 
-    def test_front_right_tyre_air_leak(self):
+    def test_front_right_tyre_air_leak_detected(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=33,
@@ -87,7 +88,7 @@ class Test_group50(BaseTest):
             unit="boolean"
         )
 
-    def test_front_left_tyre_air_leak(self):
+    def test_front_left_tyre_air_leak_detected(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=32,

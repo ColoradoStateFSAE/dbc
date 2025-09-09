@@ -3,9 +3,10 @@ from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
 class Test_group40(BaseTest):
-    file = "haltech.dbc"
+    file = "dbc/haltech.dbc"
     id = 0x471
     signal_count = 3
+    cycle_time = 1000/50
 
     def test_injector_pressure_differential(self):
         self.expected = Signal(

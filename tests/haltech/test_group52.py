@@ -3,11 +3,12 @@ from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
 class Test_group52(BaseTest):
-    file = "haltech.dbc"
+    file = "dbc/haltech.dbc"
     id = 0x6F6
     signal_count = 2
+    cycle_time = 1000/5
 
-    def test_total_fuel_used_since_trip_1(self):
+    def test_total_fuel_used_since_trip_1_reset(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=7,

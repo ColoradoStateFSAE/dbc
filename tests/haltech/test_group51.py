@@ -3,9 +3,10 @@ from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
 class Test_group51(BaseTest):
-    file = "haltech.dbc"
+    file = "dbc/haltech.dbc"
     id = 0x6F4
     signal_count = 5
+    cycle_time = 1000/100
 
     def test_park_light_state(self):
         self.expected = Signal(

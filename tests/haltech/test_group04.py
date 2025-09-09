@@ -3,11 +3,12 @@ from cantools.database.conversion import BaseConversion
 from tests.basetest import BaseTest
 
 class Test_group04(BaseTest):
-    file = "haltech.dbc"
+    file = "dbc/haltech.dbc"
     id = 0x364
     signal_count = 4
+    cycle_time = 1000/50
 
-    def test_injection_stage_1_average_time(self):
+    def injection_stage_1_average_injection_time(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=7,
@@ -23,7 +24,7 @@ class Test_group04(BaseTest):
             unit="ms"
         )
 
-    def test_injection_stage_2_average_time(self):
+    def injection_stage_2_average_injection_time(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=23,
@@ -39,7 +40,7 @@ class Test_group04(BaseTest):
             unit="ms"
         )
 
-    def test_injection_stage_3_average_time(self):
+    def injection_stage_3_average_injection_time(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=39,
@@ -55,7 +56,7 @@ class Test_group04(BaseTest):
             unit="ms"
         )
 
-    def test_injection_stage_4_average_time(self):
+    def injection_stage_4_average_injection_time(self):
         self.expected = Signal(
             name=self.signal_name(),
             start=55,
