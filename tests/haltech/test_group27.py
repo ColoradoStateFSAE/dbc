@@ -6,7 +6,7 @@ class Test_group27(BaseTest):
     file = "dbc/haltech.dbc"
     id = 0x3E7
     signal_count = 4
-    cycle_time = 50
+    cycle_time = 1000/20
 
     def test_generic_sensor_1(self):
         self.expected = Signal(
