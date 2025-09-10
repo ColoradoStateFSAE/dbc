@@ -51,10 +51,10 @@ jobs:
       - name: Generate C source from DBC
         run: |
           mkdir -p src/
-          python -m cantools generate_c_source dbc/haltech/haltech.dbc --output-directory src/
-          python -m cantools generate_c_source dbc/tcs/tcs.dbc --output-directory src/
-          python -m cantools generate_c_source dbc/swc/swc.dbc --output-directory src/
-          python -m cantools generate_c_source dbc/display/display.dbc --output-directory src/
+          python -m cantools generate_c_source dbc/haltech.dbc --output-directory src/haltech
+          python -m cantools generate_c_source dbc/tcs.dbc --output-directory src/tcs
+          python -m cantools generate_c_source dbc/swc.dbc --output-directory src/swc
+          python -m cantools generate_c_source dbc/display.dbc --output-directory src/display
           echo "Generated C source files from DBC."
 
       - name: Generate aliases
