@@ -36,19 +36,47 @@ BS_:
 BU_:
 
 
-BO_ 2147487841 rear_corner_strain: 8 Vector__XXX
- SG_ uca_rear_strain : 11|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
- SG_ uca_front_strain : 7|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+BO_ 2147487842 front_corner_strain_max: 8 Vector__XXX
+ SG_ uca_rear_strain_max : 35|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ uca_front_strain_max : 31|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ push_pull_rod_strain_max : 55|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ lca_rear_strain_max : 11|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ lca_front_strain_max : 7|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+
+BO_ 2147487841 front_corner_strain_min: 8 Vector__XXX
+ SG_ uca_rear_strain_min : 35|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ uca_front_strain_min : 31|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ push_pull_rod_strain_min : 55|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ lca_rear_strain_min : 11|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ lca_front_strain_min : 7|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+
+BO_ 2147487844 rear_corner_strain_min: 8 Vector__XXX
+ SG_ uca_rear_strain_min : 35|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ uca_front_strain_min : 31|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ push_pull_rod_strain_min : 55|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ lca_rear_strain_min : 11|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ lca_front_strain_min : 7|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+
+BO_ 2147487845 rear_corner_strain_max: 8 Vector__XXX
+ SG_ uca_rear_strain_max : 35|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ uca_front_strain_max : 31|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ push_pull_rod_strain_max : 55|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ lca_rear_strain_max : 11|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ lca_front_strain_max : 7|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+
+BO_ 2147487843 rear_corner_strain: 8 Vector__XXX
+ SG_ uca_rear_strain : 35|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ uca_front_strain : 31|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
  SG_ push_pull_rod_strain : 55|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
- SG_ lca_rear_strain : 35|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
- SG_ lca_front_strain : 31|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ lca_rear_strain : 11|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ lca_front_strain : 7|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
 
 BO_ 2147487840 front_corner_strain: 8 Vector__XXX
- SG_ uca_rear_strain : 11|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
- SG_ uca_front_strain : 7|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ uca_rear_strain : 35|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ uca_front_strain : 31|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
  SG_ push_pull_rod_strain : 55|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
- SG_ lca_rear_strain : 35|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
- SG_ lca_front_strain : 31|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ lca_rear_strain : 11|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
+ SG_ lca_front_strain : 7|12@0+ (0.00488758553274682,0) [0|0] "V" Vector__XXX
 
 
 
@@ -58,6 +86,10 @@ BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
 BA_DEF_DEF_  "MultiplexExtEnabled" "No";
 BA_DEF_DEF_  "BusType" "CAN";
 BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_ "GenMsgCycleTime" BO_ 2147487842 10;
 BA_ "GenMsgCycleTime" BO_ 2147487841 10;
+BA_ "GenMsgCycleTime" BO_ 2147487844 10;
+BA_ "GenMsgCycleTime" BO_ 2147487845 10;
+BA_ "GenMsgCycleTime" BO_ 2147487843 10;
 BA_ "GenMsgCycleTime" BO_ 2147487840 10;
 
