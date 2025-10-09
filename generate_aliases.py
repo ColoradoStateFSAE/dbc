@@ -6,12 +6,12 @@ files = [
 ]
 
 for filename in files:
-    output = open("src/" + filename + "_aliases.h", "w+")
+    output = open(f"src/{filename}/{filename}_aliases.h", "w+")
 
     print("#pragma once", file=output)
     print(f"#include \"{filename}.h\"\n", file=output)
 
-    for line in open("src/" + filename + ".h"):
+    for line in open(f"src/{filename}/{filename}.h"):
         if(line.startswith("#define")):
             line = line.split(" ")
             if(len(line) == 3):
