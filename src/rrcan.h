@@ -11,5 +11,8 @@
 #include "tcs/tcs.h"
 #include "tcs/tcs_aliases.h"
 
+#include "acc/acc.h"
+#include "acc/acc_aliases.h"
+
 #include "display/display.h"
 #include "display/display_aliases.h"
