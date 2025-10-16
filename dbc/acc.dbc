@@ -36,19 +36,29 @@ BS_:
 BU_:
 
 
-BO_ 2147487843 rear_corner_strain: 8 Vector__XXX
- SG_ uca_rear_strain : 35|12@0+ (1,0) [0|4095] "" Vector__XXX
- SG_ uca_front_strain : 31|12@0+ (1,0) [0|4095] "" Vector__XXX
- SG_ push_pull_rod_strain : 55|12@0+ (1,0) [0|4095] "" Vector__XXX
- SG_ lca_rear_strain : 11|12@0+ (1,0) [0|4095] "" Vector__XXX
- SG_ lca_front_strain : 7|12@0+ (1,0) [0|4095] "" Vector__XXX
+BO_ 2147487843 adc1_b: 6 Vector__XXX
+ SG_ channel_6 : 31|12@0+ (1,0) [0|4095] "" Vector__XXX
+ SG_ channel_4 : 7|12@0+ (1,0) [0|4095] "" Vector__XXX
+ SG_ channel_7 : 35|12@0+ (1,0) [0|4095] "" Vector__XXX
+ SG_ channel_5 : 11|12@0+ (1,0) [0|4095] "" Vector__XXX
 
-BO_ 2147487840 front_corner_strain: 8 Vector__XXX
- SG_ uca_rear_strain : 35|12@0+ (1,0) [0|4095] "" Vector__XXX
- SG_ uca_front_strain : 31|12@0+ (1,0) [0|4095] "" Vector__XXX
- SG_ push_pull_rod_strain : 55|12@0+ (1,0) [0|4095] "" Vector__XXX
- SG_ lca_rear_strain : 11|12@0+ (1,0) [0|4095] "" Vector__XXX
- SG_ lca_front_strain : 7|12@0+ (1,0) [0|4095] "" Vector__XXX
+BO_ 2147487841 adc0_b: 6 Vector__XXX
+ SG_ channel_7 : 35|12@0+ (1,0) [0|4095] "" Vector__XXX
+ SG_ channel_6 : 31|12@0+ (1,0) [0|4095] "" Vector__XXX
+ SG_ channel_5 : 11|12@0+ (1,0) [0|4095] "" Vector__XXX
+ SG_ channel_4 : 7|12@0+ (1,0) [0|4095] "" Vector__XXX
+
+BO_ 2147487842 adc1_a: 6 Vector__XXX
+ SG_ channel_0 : 7|12@0+ (1,0) [0|4095] "" Vector__XXX
+ SG_ channel_2 : 31|12@0+ (1,0) [0|4095] "" Vector__XXX
+ SG_ channel_3 : 35|12@0+ (1,0) [0|4095] "" Vector__XXX
+ SG_ channel_1 : 11|12@0+ (1,0) [0|4095] "" Vector__XXX
+
+BO_ 2147487840 adc0_a: 6 Vector__XXX
+ SG_ channel_3 : 35|12@0+ (1,0) [0|4095] "" Vector__XXX
+ SG_ channel_1 : 11|12@0+ (1,0) [0|4095] "" Vector__XXX
+ SG_ channel_2 : 31|12@0+ (1,0) [0|4095] "" Vector__XXX
+ SG_ channel_0 : 7|12@0+ (1,0) [0|4095] "" Vector__XXX
 
 
 
@@ -58,6 +68,8 @@ BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
 BA_DEF_DEF_  "MultiplexExtEnabled" "No";
 BA_DEF_DEF_  "BusType" "CAN";
 BA_DEF_DEF_  "GenMsgCycleTime" 0;
-BA_ "GenMsgCycleTime" BO_ 2147487843 10;
-BA_ "GenMsgCycleTime" BO_ 2147487840 10;
+BA_ "GenMsgCycleTime" BO_ 2147487843 2;
+BA_ "GenMsgCycleTime" BO_ 2147487841 2;
+BA_ "GenMsgCycleTime" BO_ 2147487842 2;
+BA_ "GenMsgCycleTime" BO_ 2147487840 2;
 

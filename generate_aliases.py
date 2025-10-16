@@ -2,6 +2,7 @@ files = [
     "haltech",
     "tcs",
     "swc",
+    "acc",
     "display"
 ]
 

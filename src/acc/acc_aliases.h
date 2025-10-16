@@ -1,0 +1,39 @@
+#pragma once
+#include "acc.h"
+
+#define acc_adc1_b_frame_id ACC_ADC1_B_FRAME_ID
+#define acc_adc0_b_frame_id ACC_ADC0_B_FRAME_ID
+#define acc_adc1_a_frame_id ACC_ADC1_A_FRAME_ID
+#define acc_adc0_a_frame_id ACC_ADC0_A_FRAME_ID
+#define acc_adc1_b_length ACC_ADC1_B_LENGTH
+#define acc_adc0_b_length ACC_ADC0_B_LENGTH
+#define acc_adc1_a_length ACC_ADC1_A_LENGTH
+#define acc_adc0_a_length ACC_ADC0_A_LENGTH
+#define acc_adc1_b_is_extended ACC_ADC1_B_IS_EXTENDED
+#define acc_adc0_b_is_extended ACC_ADC0_B_IS_EXTENDED
+#define acc_adc1_a_is_extended ACC_ADC1_A_IS_EXTENDED
+#define acc_adc0_a_is_extended ACC_ADC0_A_IS_EXTENDED
+#define acc_adc1_b_cycle_time_ms ACC_ADC1_B_CYCLE_TIME_MS
+#define acc_adc0_b_cycle_time_ms ACC_ADC0_B_CYCLE_TIME_MS
+#define acc_adc1_a_cycle_time_ms ACC_ADC1_A_CYCLE_TIME_MS
+#define acc_adc0_a_cycle_time_ms ACC_ADC0_A_CYCLE_TIME_MS
+#define acc_adc1_b_name ACC_ADC1_B_NAME
+#define acc_adc0_b_name ACC_ADC0_B_NAME
+#define acc_adc1_a_name ACC_ADC1_A_NAME
+#define acc_adc0_a_name ACC_ADC0_A_NAME
+#define acc_adc1_b_channel_4_name ACC_ADC1_B_CHANNEL_4_NAME
+#define acc_adc1_b_channel_5_name ACC_ADC1_B_CHANNEL_5_NAME
+#define acc_adc1_b_channel_6_name ACC_ADC1_B_CHANNEL_6_NAME
+#define acc_adc1_b_channel_7_name ACC_ADC1_B_CHANNEL_7_NAME
+#define acc_adc0_b_channel_4_name ACC_ADC0_B_CHANNEL_4_NAME
+#define acc_adc0_b_channel_5_name ACC_ADC0_B_CHANNEL_5_NAME
+#define acc_adc0_b_channel_6_name ACC_ADC0_B_CHANNEL_6_NAME
+#define acc_adc0_b_channel_7_name ACC_ADC0_B_CHANNEL_7_NAME
+#define acc_adc1_a_channel_0_name ACC_ADC1_A_CHANNEL_0_NAME
+#define acc_adc1_a_channel_1_name ACC_ADC1_A_CHANNEL_1_NAME
+#define acc_adc1_a_channel_2_name ACC_ADC1_A_CHANNEL_2_NAME
+#define acc_adc1_a_channel_3_name ACC_ADC1_A_CHANNEL_3_NAME
+#define acc_adc0_a_channel_0_name ACC_ADC0_A_CHANNEL_0_NAME
+#define acc_adc0_a_channel_1_name ACC_ADC0_A_CHANNEL_1_NAME
+#define acc_adc0_a_channel_2_name ACC_ADC0_A_CHANNEL_2_NAME
+#define acc_adc0_a_channel_3_name ACC_ADC0_A_CHANNEL_3_NAME
