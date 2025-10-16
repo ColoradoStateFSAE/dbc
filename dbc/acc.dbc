@@ -36,7 +36,7 @@ BS_:
 BU_:
 
 
-BO_ 2147487843 group4: 6 Vector__XXX
+BO_ 2147487843 group3: 6 Vector__XXX
  SG_ channel_15 : 31|12@0+ (1,0) [0|4095] "" Vector__XXX
  SG_ channel_13 : 7|12@0+ (1,0) [0|4095] "" Vector__XXX
  SG_ channel_16 : 35|12@0+ (1,0) [0|4095] "" Vector__XXX
@@ -48,7 +48,7 @@ BO_ 2147487841 group1: 6 Vector__XXX
  SG_ channel_6 : 11|12@0+ (1,0) [0|4095] "" Vector__XXX
  SG_ channel_5 : 7|12@0+ (1,0) [0|4095] "" Vector__XXX
 
-BO_ 2147487842 group3: 6 Vector__XXX
+BO_ 2147487842 group2: 6 Vector__XXX
  SG_ channel_9 : 7|12@0+ (1,0) [0|4095] "" Vector__XXX
  SG_ channel_11 : 31|12@0+ (1,0) [0|4095] "" Vector__XXX
  SG_ channel_12 : 35|12@0+ (1,0) [0|4095] "" Vector__XXX
