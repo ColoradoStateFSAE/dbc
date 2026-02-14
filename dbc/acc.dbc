@@ -68,8 +68,8 @@ BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
 BA_DEF_DEF_  "MultiplexExtEnabled" "No";
 BA_DEF_DEF_  "BusType" "CAN";
 BA_DEF_DEF_  "GenMsgCycleTime" 0;
-BA_ "GenMsgCycleTime" BO_ 2147487843 2;
-BA_ "GenMsgCycleTime" BO_ 2147487841 2;
-BA_ "GenMsgCycleTime" BO_ 2147487842 2;
-BA_ "GenMsgCycleTime" BO_ 2147487840 2;
+BA_ "GenMsgCycleTime" BO_ 2147487843 4;
+BA_ "GenMsgCycleTime" BO_ 2147487841 4;
+BA_ "GenMsgCycleTime" BO_ 2147487842 4;
+BA_ "GenMsgCycleTime" BO_ 2147487840 4;
 
