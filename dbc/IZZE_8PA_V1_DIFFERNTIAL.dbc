@@ -87,13 +87,7 @@ BO_ 1290 Aero_Static_Pressure_Array_1_1: 8 Vector__XXX
 
 
 BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
-BA_DEF_DEF_  "GenMsgCycleTime" 4;
-BA_ "GenMsgCycleTime" BO_ 1298 4;
-BA_ "GenMsgCycleTime" BO_ 1297 4;
-BA_ "GenMsgCycleTime" BO_ 1296 4;
-BA_ "GenMsgCycleTime" BO_ 1295 4;
-BA_ "GenMsgCycleTime" BO_ 1294 4;
-BA_ "GenMsgCycleTime" BO_ 1293 4;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
 BA_ "GenMsgCycleTime" BO_ 1292 4;
 BA_ "GenMsgCycleTime" BO_ 1291 4;
 BA_ "GenMsgCycleTime" BO_ 1290 4;
