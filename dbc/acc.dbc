@@ -1,4 +1,4 @@
-VERSION ""
+VERSION "V"
 
 
 NS_ : 
@@ -36,29 +36,29 @@ BS_:
 BU_:
 
 
-BO_ 2147487843 group3: 6 Vector__XXX
- SG_ channel_15 : 31|12@0+ (1,0) [0|4095] "" Vector__XXX
- SG_ channel_13 : 7|12@0+ (1,0) [0|4095] "" Vector__XXX
- SG_ channel_16 : 35|12@0+ (1,0) [0|4095] "" Vector__XXX
- SG_ channel_14 : 11|12@0+ (1,0) [0|4095] "" Vector__XXX
+BO_ 2147487843 group_3: 8 Vector__XXX
+ SG_ channel_15 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_13 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_16 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_14 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
 
-BO_ 2147487841 group1: 6 Vector__XXX
- SG_ channel_8 : 35|12@0+ (1,0) [0|4095] "" Vector__XXX
- SG_ channel_7 : 31|12@0+ (1,0) [0|4095] "" Vector__XXX
- SG_ channel_6 : 11|12@0+ (1,0) [0|4095] "" Vector__XXX
- SG_ channel_5 : 7|12@0+ (1,0) [0|4095] "" Vector__XXX
+BO_ 2147487841 group_1: 8 Vector__XXX
+ SG_ channel_8 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_7 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_6 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_5 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
 
-BO_ 2147487842 group2: 6 Vector__XXX
- SG_ channel_9 : 7|12@0+ (1,0) [0|4095] "" Vector__XXX
- SG_ channel_11 : 31|12@0+ (1,0) [0|4095] "" Vector__XXX
- SG_ channel_12 : 35|12@0+ (1,0) [0|4095] "" Vector__XXX
- SG_ channel_10 : 11|12@0+ (1,0) [0|4095] "" Vector__XXX
+BO_ 2147487842 group_2: 8 Vector__XXX
+ SG_ channel_9 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_11 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_12 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_10 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
 
-BO_ 2147487840 group0: 6 Vector__XXX
- SG_ channel_4 : 35|12@0+ (1,0) [0|4095] "" Vector__XXX
- SG_ channel_2 : 11|12@0+ (1,0) [0|4095] "" Vector__XXX
- SG_ channel_3 : 31|12@0+ (1,0) [0|4095] "" Vector__XXX
- SG_ channel_1 : 7|12@0+ (1,0) [0|4095] "" Vector__XXX
+BO_ 2147487840 group_0: 8 Vector__XXX
+ SG_ channel_4 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_2 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_3 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_1 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
 
 
 
