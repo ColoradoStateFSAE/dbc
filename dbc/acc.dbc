@@ -1,0 +1,75 @@
+VERSION "V"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 2147487843 group_3: 8 Vector__XXX
+ SG_ channel_15 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_13 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_16 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_14 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+
+BO_ 2147487841 group_1: 8 Vector__XXX
+ SG_ channel_8 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_7 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_6 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_5 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+
+BO_ 2147487842 group_2: 8 Vector__XXX
+ SG_ channel_9 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_11 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_12 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_10 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+
+BO_ 2147487840 group_0: 8 Vector__XXX
+ SG_ channel_4 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_2 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_3 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_1 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+
+
+
+BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_DEF_  "MultiplexExtEnabled" "No";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_ "GenMsgCycleTime" BO_ 2147487843 4;
+BA_ "GenMsgCycleTime" BO_ 2147487841 4;
+BA_ "GenMsgCycleTime" BO_ 2147487842 4;
+BA_ "GenMsgCycleTime" BO_ 2147487840 4;
+

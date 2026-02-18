@@ -22,6 +22,7 @@ class BaseTest(unittest.TestCase):
     signal_count = None
     expected = None
     test_count = 0
+    cycle_time = 0
 
     @classmethod
     def setUpClass(cls):
@@ -40,7 +41,9 @@ class BaseTest(unittest.TestCase):
         cls.message=db.get_message_by_name(cls.__name__[5:])
         assert cls.message.frame_id == cls.id
         assert len(cls.message.signals) == cls.signal_count
-
+        if(cls.cycle_time != 0):
+            assert cls.message.cycle_time == cls.cycle_time
+        
     @classmethod
     def tearDownClass(cls):
         if(cls.signal_count != cls.test_count):

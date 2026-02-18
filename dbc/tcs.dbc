@@ -1,0 +1,75 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 2147487778 status: 2 Vector__XXX
+ SG_ over_rev : 7|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+
+BO_ 2147487779 auto_shift_rpm: 8 Vector__XXX
+ SG_ auto_shift_rpm_5 : 47|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
+ SG_ auto_shift_rpm_4 : 25|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
+ SG_ auto_shift_rpm_3 : 19|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
+ SG_ auto_shift_rpm_2 : 13|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
+ SG_ auto_shift_rpm_1 : 7|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
+
+BO_ 2147487776 servo: 4 Vector__XXX
+ SG_ servo_percentage : 7|16@0+ (1,0) [0|0] "%" Vector__XXX
+ SG_ servo_position : 23|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
+
+BO_ 2147487777 settings: 8 Vector__XXX
+ SG_ set_invert_solenoid : 59|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ invert_solenoid : 46|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ reset_eeprom : 45|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ set_start_point : 63|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ set_friction_point : 61|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ set_end_point : 62|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ set_auto_shift : 60|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ auto_shift : 47|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ friction_point : 31|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
+ SG_ end_point : 11|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
+ SG_ start_point : 7|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
+
+
+
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_ "GenMsgCycleTime" BO_ 2147487779 1000;
+BA_ "GenMsgCycleTime" BO_ 2147487776 20;
+BA_ "GenMsgCycleTime" BO_ 2147487777 200;
+

@@ -1,8 +1,5 @@
 {
-  "name": "Vehicle DBC",
+  "name": "rrcan",
   "version": "13",
-  "description": "Auto-generated C source files from DBC",
-  "build": {
-    "flags": "-I include"
-  }
+  "description": "Ram Racing CAN"
 }
