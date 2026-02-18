@@ -44,6 +44,7 @@ BO_ 1262 Angular_Rate_Rear: 8 Vector__XXX
 BO_ 1263 Acceleration_Rear: 8 Vector__XXX
  SG_ IMU_Temp : 55|16@0- (0.1,0) [-32768|32767] "C" Vector__XXX
  SG_ Acceleration_Z_Axis : 39|16@0- (0.01,0) [-327.68|327.67] "g" Vector__XXX
+ SG_ Acceleration_Y_Axis : 23|16@0- (0.01,0) [-327.68|327.67] "g" Vector__XXX
  SG_ Acceleration_X_Axis : 7|16@0- (0.01,0) [-327.68|327.67] "g" Vector__XXX
 
 BO_ 1261 Acceleration_Front: 8 Vector__XXX
