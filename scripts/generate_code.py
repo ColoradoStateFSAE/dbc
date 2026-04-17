@@ -38,8 +38,6 @@ for dbc_file in dbc_files:
                     if len(parts) >= 2:
                         out.write(f"#define {parts[1].lower()} {parts[1]}\n")
 
-    print(f"{name} generated")
-
 # Generate rrcan.h
 rrcan_path = SRC_DIR / "rrcan.h"
 
