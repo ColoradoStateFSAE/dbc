@@ -37,9 +37,15 @@ BU_:
 
 
 BO_ 2147487809 neopixel_left: 64 Vector__XXX
+ SG_ led_02 : 63|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_01 : 39|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_00 : 15|24@0+ (1,0) [0|0] "" Vector__XXX
  SG_ brightness : 7|8@0+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 2147487810 neopixel_right: 64 Vector__XXX
+ SG_ led_02 : 63|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_01 : 39|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_00 : 15|24@0+ (1,0) [0|0] "" Vector__XXX
  SG_ brightness : 7|8@0+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 2147487808 neopixel: 64 Vector__XXX
