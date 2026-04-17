@@ -1,6 +1,7 @@
 #pragma once
 #include "display.h"
 
+#define display_h DISPLAY_H
 #define display_neopixel_frame_id DISPLAY_NEOPIXEL_FRAME_ID
 #define display_encoder_frame_id DISPLAY_ENCODER_FRAME_ID
 #define display_neopixel_length DISPLAY_NEOPIXEL_LENGTH
@@ -25,6 +26,9 @@
 #define display_neopixel_led_13_name DISPLAY_NEOPIXEL_LED_13_NAME
 #define display_neopixel_led_14_name DISPLAY_NEOPIXEL_LED_14_NAME
 #define display_neopixel_led_15_name DISPLAY_NEOPIXEL_LED_15_NAME
+#define display_neopixel_led_16_name DISPLAY_NEOPIXEL_LED_16_NAME
+#define display_neopixel_led_17_name DISPLAY_NEOPIXEL_LED_17_NAME
+#define display_neopixel_led_18_name DISPLAY_NEOPIXEL_LED_18_NAME
+#define display_neopixel_led_19_name DISPLAY_NEOPIXEL_LED_19_NAME
+#define display_neopixel_led_20_name DISPLAY_NEOPIXEL_LED_20_NAME
 #define display_neopixel_brightness_name DISPLAY_NEOPIXEL_BRIGHTNESS_NAME
-#define display_encoder_rotary_dial_name DISPLAY_ENCODER_ROTARY_DIAL_NAME
-#define display_encoder_button_name DISPLAY_ENCODER_BUTTON_NAME

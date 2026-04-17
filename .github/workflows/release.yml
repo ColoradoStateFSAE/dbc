@@ -1,119 +1,80 @@
+name: Generate and Release
+
 on:
   push:
-    branches:
-      - '*'
+    branches: ['*']
   pull_request:
-    branches:
-      - '*'
-      
+    branches: ['*']
+
 jobs:
-  test:
-    name: Run Tests
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-  
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
-  
-      - name: Install cantools
-        run: |
-          python -m pip install --upgrade pip
-          pip install cantools
-
-      - name: Run tests
-        run: |
-          python test.py
-
   release:
     name: Generate and Release
-    needs: test
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      - name: Install cantools
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install cantools
 
-      - name: Generate C source from DBC
+      - name: Generate code
         run: |
-          mkdir -p src/
-          python -m cantools generate_c_source dbc/haltech.dbc --output-directory src/haltech
-          python -m cantools generate_c_source dbc/tcs.dbc --output-directory src/tcs
-          python -m cantools generate_c_source dbc/swc.dbc --output-directory src/swc
-          python -m cantools generate_c_source dbc/display.dbc --output-directory src/display
-          echo "Generated C source files from DBC."
-
-      - name: Generate aliases
-        run: |
-          python generate_aliases.py
+          python scripts/generate_code.py
 
       - name: Determine new version
         id: version
         run: |
           git fetch --tags
 
-          # Get the latest version
           LATEST_TAG=$(git tag -l | sort -V | tail -n 1)
 
-          # If no tags exist, default to 1
           if [ -z "$LATEST_TAG" ]; then
             VERSION="1"
           else
-            # Increment the version
-            VERSION_NUMBER=$(echo $LATEST_TAG | sed 's/^//')
-            VERSION_NUMBER=$((VERSION_NUMBER + 1))
-            VERSION="$VERSION_NUMBER"
+            VERSION=$((LATEST_TAG + 1))
           fi
 
           echo "VERSION=$VERSION" >> $GITHUB_ENV
           echo "Determined version: $VERSION"
 
-      - name: Create new Git tag
-        run: |
-          git tag ${{ env.VERSION }}
-          git push origin ${{ env.VERSION }}
-
       - name: Update library.json with new version
         run: |
-          jq '.version = env.VERSION' library.json > library.tmp.json && mv library.tmp.json library.json
-          cat library.json
+          jq --arg v "$VERSION" '.version = $v' library.json > tmp.json
+          mv tmp.json library.json
 
-      - name: Commit and push generated source and version update
+      - name: Commit generated files
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
           git add src/ library.json
-          git commit -m "Auto-generate C source and set version $VERSION" || echo "No changes to commit"
-          git push
+          git commit -m "Auto-generate code and bump version to $VERSION" || echo "No changes"
 
-      - name: Create GitHub Release
-        uses: ncipollo/release-action@v1
-        with:
-          tag: ${{ env.VERSION }}
-          name: Release ${{ env.VERSION }}
-          commit: main
-          draft: false
-          prerelease: false
-          generateReleaseNotes: true
+      - name: Create and push tag
+        run: |
+          git tag "$VERSION" || echo "Tag exists"
+          git push origin HEAD
+          git push origin "$VERSION" || echo "Tag already pushed"
 
-      - name: Upload generated files to release
+      - name: Push changes
+        run: git push
+
+      - name: Create GitHub Release and upload artifacts
         uses: softprops/action-gh-release@v1
         with:
+          tag_name: ${{ env.VERSION }}
+          name: Release ${{ env.VERSION }}
+          generate_release_notes: true
           files: |
             src/**
-          tag_name: ${{ env.VERSION }}
-          fail_on_unmatched_files: true

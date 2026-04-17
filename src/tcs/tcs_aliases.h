@@ -1,6 +1,7 @@
 #pragma once
 #include "tcs.h"
 
+#define tcs_h TCS_H
 #define tcs_status_frame_id TCS_STATUS_FRAME_ID
 #define tcs_auto_shift_rpm_frame_id TCS_AUTO_SHIFT_RPM_FRAME_ID
 #define tcs_servo_frame_id TCS_SERVO_FRAME_ID
