@@ -36,38 +36,43 @@ BS_:
 BU_:
 
 
-BO_ 2147487809 neopixel_left: 64 Vector__XXX
- SG_ led_02 : 63|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_01 : 39|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_00 : 15|24@0+ (1,0) [0|0] "" Vector__XXX
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ brightness : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ brightness : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2147487811 brightness: 8 Vector__XXX
  SG_ brightness : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2147487809 neopixel_left: 64 Vector__XXX
+ SG_ led_02 : 55|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_01 : 31|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_00 : 7|24@0+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 2147487810 neopixel_right: 64 Vector__XXX
- SG_ led_02 : 63|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_01 : 39|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_00 : 15|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ brightness : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_02 : 55|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_01 : 31|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_00 : 7|24@0+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 2147487808 neopixel: 64 Vector__XXX
- SG_ led_00 : 15|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_01 : 39|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_02 : 63|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_03 : 87|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_04 : 111|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_05 : 135|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_06 : 159|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_07 : 183|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_08 : 207|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_09 : 231|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_10 : 255|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_11 : 279|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_12 : 303|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_13 : 327|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_14 : 351|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ brightness : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_00 : 7|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_01 : 31|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_02 : 55|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_03 : 79|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_04 : 103|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_05 : 127|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_06 : 151|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_07 : 175|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_08 : 199|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_09 : 223|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_10 : 247|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_11 : 271|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_12 : 295|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_13 : 319|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_14 : 343|24@0+ (1,0) [0|0] "" Vector__XXX
 
 
 
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
 BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
@@ -75,6 +80,7 @@ BA_DEF_DEF_  "VFrameFormat" "ExtendedCAN_FD";
 BA_DEF_DEF_  "BusType" "CAN";
 BA_DEF_DEF_  "GenMsgCycleTime" 0;
 BA_ "BusType" "CAN FD";
+BA_ "VFrameFormat" BO_ 2147487811 15;
 BA_ "VFrameFormat" BO_ 2147487809 15;
 BA_ "VFrameFormat" BO_ 2147487810 15;
 BA_ "VFrameFormat" BO_ 2147487808 15;
