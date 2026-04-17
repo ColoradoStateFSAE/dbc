@@ -1,9 +1,22 @@
 import subprocess
+import shutil
 from pathlib import Path
 
-ROOT = Path(".").resolve()
+ROOT = Path(__file__).resolve().parents[1]
+
 DBC_DIR = ROOT / "dbc"
 SRC_DIR = ROOT / "src"
+
+# Clean src
+if SRC_DIR.exists():
+    for item in SRC_DIR.iterdir():
+        if item.name != "can_macros.h":
+            if item.is_dir():
+                shutil.rmtree(item)
+            else:
+                item.unlink()
+
+SRC_DIR.mkdir(parents=True, exist_ok=True)
 
 SRC_DIR.mkdir(parents=True, exist_ok=True)
 
