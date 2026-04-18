@@ -39,6 +39,9 @@ BU_:
 BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ led_21 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
 
+BO_ 2147487809 diagnostics: 2 Vector__XXX
+ SG_ cpu_temperature : 7|16@0+ (0.01,0) [0|100] "°C" Vector__XXX
+
 BO_ 2147487808 neopixel: 64 Vector__XXX
  SG_ brightness : 511|8@0+ (1,0) [0|0] "" Vector__XXX
  SG_ led_20 : 487|24@0+ (1,0) [0|0] "" Vector__XXX
@@ -73,5 +76,6 @@ BA_DEF_DEF_  "VFrameFormat" "ExtendedCAN_FD";
 BA_DEF_DEF_  "BusType" "CAN";
 BA_DEF_DEF_  "GenMsgCycleTime" 0;
 BA_ "BusType" "CAN FD";
+BA_ "VFrameFormat" BO_ 2147487809 1;
 BA_ "VFrameFormat" BO_ 2147487808 15;
 
