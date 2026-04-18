@@ -37,8 +37,8 @@ BU_:
 
 
 BO_ 2147487744 buttons: 1 Vector__XXX
- SG_ encoder : 6|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ shift : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ encoder : 5|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ shift : 7|2@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147487745 clutch: 7 Vector__XXX
  SG_ clutch_right_raw : 45|10@0+ (1,0) [0|0] "" Vector__XXX
