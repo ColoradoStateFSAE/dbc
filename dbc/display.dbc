@@ -40,7 +40,7 @@ BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ led_21 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 2147487809 diagnostics: 2 Vector__XXX
- SG_ cpu_temperature : 7|16@0+ (0.01,0) [0|100] "°C" Vector__XXX
+ SG_ cpu_temperature : 7|16@0- (0.01,0) [0|100] "°C" Vector__XXX
 
 BO_ 2147487808 neopixel: 64 Vector__XXX
  SG_ brightness : 511|8@0+ (1,0) [0|0] "" Vector__XXX
