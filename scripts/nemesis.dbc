@@ -1,0 +1,1409 @@
+VERSION "created by canmatrix"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ brightness : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_20 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_19 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_18 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_17 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_16 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_15 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_00 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_01 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_02 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_03 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_04 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_05 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_06 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_07 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_08 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_09 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_10 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_11 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_12 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_13 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_14 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2147487843 group_3: 8 Vector__XXX
+ SG_ channel_15 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_13 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_16 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_14 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+
+BO_ 2147487841 group_1: 8 Vector__XXX
+ SG_ channel_8 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_7 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_6 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_5 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+
+BO_ 2147487842 group_2: 8 Vector__XXX
+ SG_ channel_9 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_11 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_12 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_10 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+
+BO_ 2147487840 group_0: 8 Vector__XXX
+ SG_ channel_4 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_2 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_3 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ channel_1 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+
+BO_ 2147483648 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ led_21 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2147487809 diagnostics: 2 Vector__XXX
+ SG_ cpu_temperature : 7|16@0- (0.01,0) [0|100] "°C" Vector__XXX
+
+BO_ 705 io12b_avi: 8 Vector__XXX
+ SG_ avi1_voltage : 3|12@0+ (0.00122100122100122,0) [0|0] "V" Vector__XXX
+ SG_ avi2_voltage : 19|12@0+ (0.00122100122100122,0) [0|0] "V" Vector__XXX
+ SG_ avi3_voltage : 35|12@0+ (0.00122100122100122,0) [0|0] "V" Vector__XXX
+ SG_ avi4_voltage : 51|12@0+ (0.00122100122100122,0) [0|0] "V" Vector__XXX
+
+BO_ 707 io12b_dpi_1_2: 8 Vector__XXX
+ SG_ dpi1_duty_cycle : 7|10@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ dpi1_period : 8|17@0+ (0.01,0) [0|0] "ms" Vector__XXX
+ SG_ dpi2_duty_cycle : 39|10@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ dpi2_period : 40|17@0+ (0.01,0) [0|0] "ms" Vector__XXX
+
+BO_ 709 io12b_dpi_3_4: 8 Vector__XXX
+ SG_ dpi3_duty_cycle : 7|10@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ dpi3_period : 8|17@0+ (0.01,0) [0|0] "ms" Vector__XXX
+ SG_ dpi4_duty_cycle : 39|10@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ dpi4_period : 40|17@0+ (0.01,0) [0|0] "ms" Vector__XXX
+
+BO_ 708 io12a_dpi_3_4: 8 Vector__XXX
+ SG_ dpi4_period : 40|17@0+ (0.01,0) [0|0] "ms" Vector__XXX
+ SG_ dpi4_duty_cycle : 39|10@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ dpi3_period : 8|17@0+ (0.01,0) [0|0] "ms" Vector__XXX
+ SG_ dpi3_duty_cycle : 7|10@0+ (0.1,0) [0|0] "%" Vector__XXX
+
+BO_ 706 io12a_dpi_1_2: 8 Vector__XXX
+ SG_ dpi2_period : 40|17@0+ (0.01,0) [0|0] "ms" Vector__XXX
+ SG_ dpi2_duty_cycle : 39|10@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ dpi1_period : 8|17@0+ (0.01,0) [0|0] "ms" Vector__XXX
+ SG_ dpi1_duty_cycle : 7|10@0+ (0.1,0) [0|0] "%" Vector__XXX
+
+BO_ 704 io12a_avi: 8 Vector__XXX
+ SG_ avi4_voltage : 51|12@0+ (0.00122100122100122,0) [0|0] "V" Vector__XXX
+ SG_ avi3_voltage : 35|12@0+ (0.00122100122100122,0) [0|0] "V" Vector__XXX
+ SG_ avi2_voltage : 19|12@0+ (0.00122100122100122,0) [0|0] "V" Vector__XXX
+ SG_ avi1_voltage : 3|12@0+ (0.00122100122100122,0) [0|0] "V" Vector__XXX
+
+BO_ 1784 group54: 8 Vector__XXX
+ SG_ generic_open_loop_motor_control_ : 39|8@0- (1,0) [0|0] "enum" Vector__XXX
+ SG_ generic_open_loop_motor_con_0000 : 31|8@0- (1,0) [0|0] "enum" Vector__XXX
+ SG_ generic_open_loop_motor_con_0001 : 23|8@0- (1,0) [0|0] "enum" Vector__XXX
+ SG_ nitrous_bottle_opener_state : 15|8@0- (1,0) [0|0] "enum" Vector__XXX
+ SG_ exhaust_cutout_state : 7|8@0- (1,0) [0|0] "enum" Vector__XXX
+
+BO_ 1783 group53: 8 Vector__XXX
+ SG_ water_injection_advanced_solenoi : 55|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ calculated_air_temperature : 39|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ generic_output_1_20_states : 7|32@0+ (1,0) [0|0] "bit-field" Vector__XXX
+
+BO_ 1780 group51: 8 Vector__XXX
+ SG_ right_indicator_state : 4|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ left_indicator_state : 3|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ high_beam_light_state : 2|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ head_light_state : 1|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ park_light_state : 0|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+
+BO_ 1143 group46: 8 Vector__XXX
+ SG_ rpm_limiter_method : 59|4@0+ (1,0) [0|0] "enum" Vector__XXX
+ SG_ engine_limiter_method : 63|4@0+ (1,0) [0|0] "enum" Vector__XXX
+ SG_ cut_percentage_function : 55|8@0+ (1,0) [0|0] "enum" Vector__XXX
+ SG_ rpm_limiter_function : 47|8@0+ (1,0) [0|0] "enum" Vector__XXX
+ SG_ engine_limiter_function : 39|8@0+ (1,0) [0|0] "enum" Vector__XXX
+ SG_ cut_percentage : 23|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ engine_limiter_max_rpm : 7|16@0+ (1,0) [0|0] "RPM" Vector__XXX
+
+BO_ 1141 group44: 8 Vector__XXX
+ SG_ aux_3_fuel_pump_duty_cycle : 55|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ aux_2_fuel_pump_duty_cycle : 39|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ aux_1_fuel_pump_duty_cycle : 23|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ primary_fuel_pump_duty_cycle : 7|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+
+BO_ 1138 group41: 8 Vector__XXX
+ SG_ cruise_control_input_state : 51|12@0+ (1,0) [0|0] "bit-field" Vector__XXX
+ SG_ cruise_control_controller_state : 55|4@0+ (1,0) [0|0] "enum" Vector__XXX
+ SG_ cruise_control_speed_error : 39|16@0- (0.1,0) [0|0] "km/h" Vector__XXX
+ SG_ cruise_control_last_target_speed : 23|16@0+ (0.1,0) [0|0] "km/h" Vector__XXX
+ SG_ cruise_control_target_speed : 7|16@0+ (0.1,0) [0|0] "km/h" Vector__XXX
+
+BO_ 1129 group38: 8 Vector__XXX
+ SG_ ecu_temperature : 7|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+
+BO_ 1009 group37: 8 Vector__XXX
+ SG_ shock_travel_sensor_rear_right : 55|16@0- (0.1,0) [0|0] "mm" Vector__XXX
+ SG_ shock_travel_sensor_rear_left : 39|16@0- (0.1,0) [0|0] "mm" Vector__XXX
+ SG_ shock_travel_sensor_front_right : 23|16@0- (0.1,0) [0|0] "mm" Vector__XXX
+ SG_ shock_travel_sensor_front_left : 7|16@0- (0.1,0) [0|0] "mm" Vector__XXX
+
+BO_ 1008 group36: 8 Vector__XXX
+ SG_ shk_trvl_sens_rear_right_uncal : 55|16@0+ (0.1,0) [0|0] "mm" Vector__XXX
+ SG_ shk_trvl_sens_rear_left_uncal : 39|16@0+ (0.1,0) [0|0] "mm" Vector__XXX
+ SG_ shk_trvl_sens_front_right_uncal : 23|16@0+ (0.1,0) [0|0] "mm" Vector__XXX
+ SG_ shk_trvl_sens_front_left_uncal : 7|16@0+ (0.1,0) [0|0] "mm" Vector__XXX
+
+BO_ 1007 group35: 8 Vector__XXX
+ SG_ wideband_sensor_9 : 7|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
+ SG_ wideband_sensor_12 : 55|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
+ SG_ wideband_sensor_11 : 39|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
+ SG_ wideband_sensor_10 : 23|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
+
+BO_ 1006 group34: 8 Vector__XXX
+ SG_ wideband_sensor_8 : 55|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
+ SG_ wideband_sensor_7 : 39|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
+ SG_ wideband_sensor_6 : 23|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
+ SG_ wideband_sensor_5 : 7|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
+
+BO_ 1005 group33: 8 Vector__XXX
+ SG_ torque_management_combined_ignit : 7|16@0- (0.1,0) [0|0] "°" Vector__XXX
+
+BO_ 1004 group32: 8 Vector__XXX
+ SG_ torque_management_driveshaft_rpm : 7|16@0- (1,0) [0|0] "RPM" Vector__XXX
+ SG_ torque_management_driveshaf_0000 : 55|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ torque_management_driveshaf_0001 : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ torque_management_driveshaf_0002 : 23|16@0- (1,0) [0|0] "RPM" Vector__XXX
+
+BO_ 1003 group31: 8 Vector__XXX
+ SG_ ignition_angle_bank_2 : 55|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ ignition_angle_bank_1 : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ race_timer : 7|32@0+ (1,0) [0|0] "ms" Vector__XXX
+
+BO_ 868 group04: 8 Vector__XXX
+ SG_ injection_stage_4_average_inject : 55|16@0+ (0.001,0) [0|0] "ms" Vector__XXX
+ SG_ injection_stage_3_average_inject : 39|16@0+ (0.001,0) [0|0] "ms" Vector__XXX
+ SG_ injection_stage_2_average_inject : 23|16@0+ (0.001,0) [0|0] "ms" Vector__XXX
+ SG_ injection_stage_1_average_inject : 7|16@0+ (0.001,0) [0|0] "ms" Vector__XXX
+
+BO_ 866 group02: 8 Vector__XXX
+ SG_ ignition_angle_leading : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ injection_stage_2_duty_cycle : 23|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ injection_stage_1_duty_cycle : 7|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+
+BO_ 1002 group30: 8 Vector__XXX
+ SG_ crank_case_pressure : 55|16@0+ (0.1,-101.3) [0|0] "kPa" Vector__XXX
+ SG_ injection_stage_4_duty_cycle : 39|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ injection_stage_3_duty_cycle : 23|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ gearbox_line_pressure : 7|16@0+ (0.1,-101.3) [0|0] "kPa" Vector__XXX
+
+BO_ 1001 group29: 8 Vector__XXX
+ SG_ torque_management_knob : 63|8@0- (1,0) [0|0] "raw" Vector__XXX
+ SG_ water_injection_advanced_overrid : 49|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_stage_6_output_state : 50|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_stage_5_output_state : 51|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_stage_4_output_state : 52|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_stage_3_output_state : 53|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_stage_2_output_state : 54|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_stage_1_output_state : 55|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ target_lambda : 39|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
+ SG_ generic_sensor_9 : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ generic_sensor_10 : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1000 group28: 8 Vector__XXX
+ SG_ generic_sensor_8 : 55|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ generic_sensor_7 : 39|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ generic_sensor_6 : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ generic_sensor_5 : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 999 group27: 8 Vector__XXX
+ SG_ generic_sensor_4 : 55|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ generic_sensor_3 : 39|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ generic_sensor_2 : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ generic_sensor_1 : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 998 group26: 8 Vector__XXX
+ SG_ turbo_speed_sensor_2 : 55|16@0+ (10,0) [0|0] "RPM" Vector__XXX
+ SG_ nos_pressure_sensor_4 : 39|16@0+ (0.22,-101.3) [0|0] "kPa" Vector__XXX
+ SG_ nos_pressure_sensor_3 : 23|16@0+ (0.22,-101.3) [0|0] "kPa" Vector__XXX
+ SG_ nos_pressure_sensor_2 : 7|16@0+ (0.22,-101.3) [0|0] "kPa" Vector__XXX
+
+BO_ 997 group25: 8 Vector__XXX
+ SG_ driveshaft_rpm : 55|16@0+ (1,0) [0|0] "RPM" Vector__XXX
+ SG_ steering_wheel_angle : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ abs_error : 26|1@0+ (1,0) [0|0] "enum" Vector__XXX
+ SG_ abs_armed : 24|1@0+ (1,0) [0|0] "enum" Vector__XXX
+ SG_ abs_active : 25|1@0+ (1,0) [0|0] "enum" Vector__XXX
+ SG_ pit_lane_speed_limiter_switch_st : 28|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ pit_lane_speed_limiter_error : 30|1@0+ (1,0) [0|0] "enum" Vector__XXX
+ SG_ pit_lane_speed_limiter_active : 29|1@0+ (1,0) [0|0] "enum" Vector__XXX
+ SG_ turbo_timer_time_remaining : 15|8@0+ (1,0) [0|0] "s" Vector__XXX
+ SG_ turbo_timer_engine_time_remainin : 23|8@0+ (1,0) [0|0] "s" Vector__XXX
+ SG_ ignition_switch : 7|8@0+ (1,0) [0|0] "boolean" Vector__XXX
+
+BO_ 995 group23: 8 Vector__XXX
+ SG_ fuel_trim_long_term_bank_2 : 55|16@0- (0.1,0) [0|0] "%" Vector__XXX
+ SG_ fuel_trim_long_term_bank_1 : 39|16@0- (0.1,0) [0|0] "%" Vector__XXX
+ SG_ fuel_trim_short_term_bank_2 : 23|16@0- (0.1,0) [0|0] "%" Vector__XXX
+ SG_ fuel_trim_short_term_bank_1 : 7|16@0- (0.1,0) [0|0] "%" Vector__XXX
+
+BO_ 994 group22: 8 Vector__XXX
+ SG_ fuel_level : 7|16@0+ (0.1,0) [0|0] "L" Vector__XXX
+
+BO_ 993 group21: 8 Vector__XXX
+ SG_ fuel_composition : 39|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ diff_oil_temperature : 23|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ gearbox_oil_temperature : 7|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+
+BO_ 886 group19: 8 Vector__XXX
+ SG_ absolute_humidity : 55|16@0+ (0.1,0) [0|0] "g/m3" Vector__XXX
+ SG_ specific_humidity : 39|16@0+ (100,0) [0|0] "ppm" Vector__XXX
+ SG_ relative_humidity : 23|16@0- (0.1,0) [0|0] "%" Vector__XXX
+ SG_ ambient_air_temperature : 7|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+
+BO_ 885 group18: 8 Vector__XXX
+ SG_ egt_sensor_9 : 7|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_12 : 55|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_11 : 39|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_10 : 23|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+
+BO_ 884 group17: 8 Vector__XXX
+ SG_ egt_sensor_8 : 55|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_7 : 39|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_6 : 23|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_5 : 7|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+
+BO_ 883 group16: 8 Vector__XXX
+ SG_ egt_sensor_4 : 55|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_3 : 39|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_2 : 23|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ egt_sensor_1 : 7|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+
+BO_ 881 group14: 8 Vector__XXX
+ SG_ fuel_flow_return : 23|16@0+ (1,0) [0|0] "cc/min" Vector__XXX
+ SG_ fuel_flow : 7|16@0+ (1,0) [0|0] "cc/min" Vector__XXX
+
+BO_ 879 group12: 8 Vector__XXX
+ SG_ boost_control_output : 23|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ generic_output_1_duty_cycle : 7|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+
+BO_ 878 group11: 8 Vector__XXX
+ SG_ longitudinal_g : 55|16@0- (0.1,0) [0|0] "m/s2" Vector__XXX
+ SG_ launch_control_fuel_enrich : 39|16@0- (0.1,0) [0|0] "%" Vector__XXX
+ SG_ launch_control_ignition_retard : 23|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ engine_limiting_active : 7|16@0+ (1,0) [0|0] "boolean" Vector__XXX
+
+BO_ 877 group10: 8 Vector__XXX
+ SG_ exhaust_cam_angle_2 : 55|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ exhaust_cam_angle_1 : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
+
+BO_ 876 group09: 8 Vector__XXX
+ SG_ wheel_speed_rear_right : 55|16@0+ (0.1,0) [0|0] "km/h" Vector__XXX
+ SG_ wheel_speed_rear_left : 39|16@0+ (0.1,0) [0|0] "km/h" Vector__XXX
+ SG_ wheel_speed_front_right : 23|16@0+ (0.1,0) [0|0] "km/h" Vector__XXX
+ SG_ wheel_speed_front_left : 7|16@0+ (0.1,0) [0|0] "km/h" Vector__XXX
+
+BO_ 875 group08: 8 Vector__XXX
+ SG_ lateral_g : 55|16@0- (0.1,0) [0|0] "m/s2" Vector__XXX
+ SG_ turbo_speed_sensor_1 : 39|16@0+ (10,0) [0|0] "RPM" Vector__XXX
+ SG_ nos_pressure_sensor_1 : 23|16@0+ (0.22,-101.3) [0|0] "kPa" Vector__XXX
+ SG_ brake_pressure_front : 7|16@0+ (1,-101.3) [0|0] "kPa" Vector__XXX
+
+BO_ 873 group06: 8 Vector__XXX
+ SG_ trigger_system_error_count : 7|16@0+ (1,0) [0|0] "raw" Vector__XXX
+ SG_ trigger_sync_level : 55|16@0+ (1,0) [0|0] "raw" Vector__XXX
+ SG_ trigger_counter : 23|16@0+ (1,0) [0|0] "raw" Vector__XXX
+
+BO_ 874 group07: 8 Vector__XXX
+ SG_ knock_level_2 : 23|16@0+ (0.01,0) [0|0] "dB" Vector__XXX
+ SG_ knock_level_1 : 7|16@0+ (0.01,0) [0|0] "dB" Vector__XXX
+
+BO_ 867 group03: 8 Vector__XXX
+ SG_ launch_control_end_rpm : 55|16@0+ (1,0) [0|0] "RPM" Vector__XXX
+ SG_ wheel_diff : 23|16@0- (0.1,0) [0|0] "km/h" Vector__XXX
+ SG_ wheel_slip : 7|16@0- (0.1,0) [0|0] "km/h" Vector__XXX
+
+BO_ 1142 group45: 8 Vector__XXX
+ SG_ brake_pressure_difference : 55|16@0- (1,0) [0|0] "kPa (Abs)" Vector__XXX
+ SG_ brake_pressure_rear_ratio : 39|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ brake_pressure_front_ratio : 23|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ brake_pressure_rear : 7|16@0+ (1,-101.3) [0|0] "kPa" Vector__XXX
+
+BO_ 1782 group52: 8 Vector__XXX
+ SG_ trip_meter_1 : 39|32@0- (1,0) [0|0] "m" Vector__XXX
+ SG_ total_fuel_used_since_trip_1_res : 7|32@0- (1,0) [0|0] "cc" Vector__XXX
+
+BO_ 1779 group50: 8 Vector__XXX
+ SG_ engine_protection_reason : 55|16@0+ (1,0) [0|0] "enum" Vector__XXX
+ SG_ engine_protection_severity_level : 47|8@0+ (1,0) [0|0] "raw" Vector__XXX
+ SG_ front_right_tyre_air_leak_detect : 33|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ front_left_tyre_air_leak_detecte : 32|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ rear_left_tyre_air_leak_detected : 34|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ rear_right_tyre_air_leak_detecte : 35|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ rear_tyre_recommended_pressure : 23|16@0+ (0.1,-101.3) [0|0] "kPa" Vector__XXX
+ SG_ front_tyre_recommended_pressure : 7|16@0+ (0.1,-101.3) [0|0] "kPa" Vector__XXX
+
+BO_ 1140 group43: 8 Vector__XXX
+ SG_ yaw_rate : 55|16@0- (0.1,0) [0|0] "deg/s" Vector__XXX
+ SG_ roll_rate : 39|16@0- (0.1,0) [0|0] "deg/s" Vector__XXX
+ SG_ pitch_rate : 23|16@0- (0.1,0) [0|0] "deg/s" Vector__XXX
+ SG_ vertical_g : 7|16@0- (0.1,0) [0|0] "m/s2" Vector__XXX
+
+BO_ 1139 group42: 8 Vector__XXX
+ SG_ cut_percentage_method : 59|4@0+ (1,0) [0|0] "enum" Vector__XXX
+ SG_ water_injection_advanced_ov_0000 : 61|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ water_injection_advanced_enable_ : 62|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ water_injection_advanced_ov_0001 : 60|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ water_injection_advanced_en_0000 : 63|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_override_4_switch_state : 49|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_override_4_output_state : 48|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_override_3_switch_state : 51|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_override_3_output_state : 50|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_override_2_switch_state : 53|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_override_2_output_state : 52|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_override_1_switch_state : 55|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_override_1_output_state : 54|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_enable_4_switch_state : 41|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_enable_4_output_state : 40|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_enable_3_switch_state : 43|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_enable_3_output_state : 42|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_enable_2_switch_state : 45|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_enable_2_output_state : 44|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_enable_1_switch_state : 47|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ nitrous_enable_1_output_state : 46|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ aux_3_fuel_pump_output_state : 32|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ aux_2_fuel_pump_output_state : 33|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ aux_1_fuel_pump_output_state : 34|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ primary_fuel_pump_output_state : 35|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ antilag_switch_state : 38|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ antilag_output_state : 37|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ rolling_antilag_switch_state : 39|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ traction_control_switch_state : 36|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ total_fuel_used : 7|32@0+ (1,0) [0|0] "cc" Vector__XXX
+
+BO_ 1778 group49: 8 Vector__XXX
+ SG_ rear_right_tyre_sensor_battery_v : 55|16@0+ (0.001,0) [0|0] "V" Vector__XXX
+ SG_ rear_left_tyre_sensor_battery_vo : 39|16@0+ (0.001,0) [0|0] "V" Vector__XXX
+ SG_ front_right_tyre_sensor_battery_ : 23|16@0+ (0.001,0) [0|0] "V" Vector__XXX
+ SG_ front_left_tyre_sensor_battery_v : 7|16@0+ (0.001,0) [0|0] "V" Vector__XXX
+
+BO_ 1777 group48: 8 Vector__XXX
+ SG_ rear_right_tyre_temperature : 55|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ rear_left_tyre_temperature : 39|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ front_right_tyre_temperature : 23|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ front_left_tyre_temperature : 7|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+
+BO_ 1776 group47: 8 Vector__XXX
+ SG_ rear_right_tyre_pressure : 55|16@0+ (0.1,-101.3) [0|0] "kPa" Vector__XXX
+ SG_ rear_left_tyre_pressure : 39|16@0+ (0.1,-101.3) [0|0] "kPa" Vector__XXX
+ SG_ front_right_tyre_pressure : 23|16@0+ (0.1,-101.3) [0|0] "kPa" Vector__XXX
+ SG_ front_left_tyre_pressure : 7|16@0+ (0.1,-101.3) [0|0] "kPa" Vector__XXX
+
+BO_ 1137 group40: 8 Vector__XXX
+ SG_ exhaust_manifold_pressure : 39|16@0+ (0.1,0) [0|0] "kPa" Vector__XXX
+ SG_ injector_pressure_differential : 7|16@0- (0.1,0) [0|0] "kPa" Vector__XXX
+ SG_ accelerator_pedal_position : 23|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+
+BO_ 992 group20: 8 Vector__XXX
+ SG_ oil_temperature : 55|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ fuel_temperature : 39|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ air_temperature : 23|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+ SG_ coolant_temperature : 7|16@0+ (0.1,0) [0|0] "K" Vector__XXX
+
+BO_ 996 group24: 8 Vector__XXX
+ SG_ traction_control_light : 56|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ hand_brake_state : 57|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ battery_light_active : 62|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ rotary_trim_pot_3 : 55|8@0- (1,0) [0|0] "raw" Vector__XXX
+ SG_ rotary_trim_pot_2 : 47|8@0- (1,0) [0|0] "raw" Vector__XXX
+ SG_ rotary_trim_pot_1 : 39|8@0- (1,0) [0|0] "raw" Vector__XXX
+ SG_ thermo_fan_4_on : 27|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ thermo_fan_3_on : 26|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ thermo_fan_2_on : 25|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ thermo_fan_1_on : 24|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ air_con_request : 29|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ air_con_output : 28|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ traction_control_enabled : 31|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ traction_control_active : 30|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ torque_reduction_active : 17|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ aux_rpm_limiter_active : 21|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ launch_control_switch : 22|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ launch_control_active : 23|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ brake_pedal_switch : 10|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ transient_throttle_active : 11|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ decel_cut_active : 12|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ reverse_switch : 14|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ clutch_switch : 9|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ check_engine_light : 63|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ flat_shift_switch : 19|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ oil_pressure_light : 8|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ gear_switch : 13|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ neutral_switch : 15|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+
+BO_ 882 group15: 8 Vector__XXX
+ SG_ barometric_pressure : 55|16@0+ (0.1,0) [0|0] "kPa (Abs)" Vector__XXX
+ SG_ target_boost_level : 39|16@0+ (0.1,0) [0|0] "kPa" Vector__XXX
+ SG_ battery_voltage : 7|16@0+ (0.1,0) [0|0] "Volts" Vector__XXX
+
+BO_ 1136 group39: 8 Vector__XXX
+ SG_ gear : 63|8@0- (1,0) [0|0] "enum" Vector__XXX
+ SG_ gear_selector_position : 55|8@0- (1,0) [0|0] "enum" Vector__XXX
+ SG_ wideband_bank_2 : 39|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
+ SG_ wideband_bank_1 : 23|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
+ SG_ wideband_overall : 7|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
+
+BO_ 880 group13: 8 Vector__XXX
+ SG_ intake_cam_angle_2 : 55|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ intake_cam_angle_1 : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ vehicle_speed : 7|16@0+ (0.1,0) [0|0] "km/h" Vector__XXX
+
+BO_ 872 group05: 8 Vector__XXX
+ SG_ wideband_sensor_4 : 55|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
+ SG_ wideband_sensor_3 : 39|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
+ SG_ wideband_sensor_2 : 23|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
+ SG_ wideband_sensor_1 : 7|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
+
+BO_ 865 group01: 8 Vector__XXX
+ SG_ wastegate_pressure : 55|16@0+ (0.1,-101.3) [0|0] "kPa" Vector__XXX
+ SG_ engine_demand : 39|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ oil_pressure : 23|16@0+ (0.1,-101.3) [0|0] "kPa" Vector__XXX
+ SG_ fuel_pressure : 7|16@0+ (0.1,-101.3) [0|0] "kPa" Vector__XXX
+
+BO_ 864 group00: 8 Vector__XXX
+ SG_ coolant_pressure : 55|16@0+ (0.1,-101.3) [0|0] "kPa" Vector__XXX
+ SG_ throttle_position : 39|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ manifold_pressure : 23|16@0+ (0.1,0) [0|0] "kPa (Abs)" Vector__XXX
+ SG_ rpm : 7|16@0+ (1,0) [0|0] "RPM" Vector__XXX
+
+BO_ 1298 Aero_Static_Pressure_Array_3_3: 4 Vector__XXX
+ SG_ P_Scanner_3_Temperature : 23|16@0- (0.1,0) [-327.68|327.67] "C" Vector__XXX
+ SG_ Aero_Static_3_P_REF : 7|16@0- (0.1,0) [-327.68|327.67] "mbar" Vector__XXX
+
+BO_ 1297 Aero_Static_Pressure_Array_3_2: 8 Vector__XXX
+ SG_ Aero_Static_3_P8 : 55|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+ SG_ Aero_Static_3_P7 : 39|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+ SG_ Aero_Static_3_P6 : 23|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+ SG_ Aero_Static_3_P5 : 7|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+
+BO_ 1296 Aero_Static_Pressure_Array_3_1: 8 Vector__XXX
+ SG_ Aero_Static_3_P4 : 55|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+ SG_ Aero_Static_3_P3 : 39|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+ SG_ Aero_Static_3_P2 : 23|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+ SG_ Aero_Static_3_P1 : 7|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+
+BO_ 1295 Aero_Static_Pressure_Array_2_3: 4 Vector__XXX
+ SG_ P_Scanner_2_Temperature : 23|16@0- (0.1,0) [-327.68|327.67] "C" Vector__XXX
+ SG_ Aero_Static_2_P_REF : 7|16@0- (0.1,0) [-327.68|327.67] "mbar" Vector__XXX
+
+BO_ 1294 Aero_Static_Pressure_Array_2_2: 8 Vector__XXX
+ SG_ Aero_Static_2_P8 : 55|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+ SG_ Aero_Static_2_P7 : 39|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+ SG_ Aero_Static_2_P6 : 23|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+ SG_ Aero_Static_2_P5 : 7|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+
+BO_ 1293 Aero_Static_Pressure_Array_2_1: 8 Vector__XXX
+ SG_ Aero_Static_2_P4 : 55|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+ SG_ Aero_Static_2_P3 : 39|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+ SG_ Aero_Static_2_P2 : 23|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+ SG_ Aero_Static_2_P1 : 7|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+
+BO_ 1292 Aero_Static_Pressure_Array_1_3: 4 Vector__XXX
+ SG_ P_Scanner_1_Temperature : 23|16@0- (0.1,0) [-327.68|327.67] "C" Vector__XXX
+ SG_ Aero_Static_1_P_REF : 7|16@0- (0.1,0) [-327.68|327.67] "mbar" Vector__XXX
+
+BO_ 1291 Aero_Static_Pressure_Array_1_2: 8 Vector__XXX
+ SG_ Aero_Static_1_P8 : 55|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+ SG_ Aero_Static_1_P7 : 39|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+ SG_ Aero_Static_1_P6 : 23|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+ SG_ Aero_Static_1_P5 : 7|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+
+BO_ 1290 Aero_Static_Pressure_Array_1_1: 8 Vector__XXX
+ SG_ Aero_Static_1_P4 : 55|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+ SG_ Aero_Static_1_P3 : 39|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+ SG_ Aero_Static_1_P2 : 23|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+ SG_ Aero_Static_1_P1 : 7|16@0- (0.01,0) [-327.68|327.67] "mbar" Vector__XXX
+
+BO_ 1262 Angular_Rate_Rear: 8 Vector__XXX
+ SG_ Angular_Rate_Z_Axis : 39|16@0- (0.1,0) [-3276.8|3276.7] "deg/sec" Vector__XXX
+ SG_ Angular_Rate_Y_Axis : 23|16@0- (0.1,0) [-3276.8|3276.7] "deg/sec" Vector__XXX
+ SG_ Angular_Rate_X_Axis : 7|16@0- (0.1,0) [-3276.8|3276.7] "deg/sec" Vector__XXX
+
+BO_ 1263 Acceleration_Rear: 8 Vector__XXX
+ SG_ IMU_Temp : 55|16@0- (0.1,0) [-32768|32767] "C" Vector__XXX
+ SG_ Acceleration_Z_Axis : 39|16@0- (0.01,0) [-327.68|327.67] "g" Vector__XXX
+ SG_ Acceleration_Y_Axis : 23|16@0- (0.01,0) [-327.68|327.67] "g" Vector__XXX
+ SG_ Acceleration_X_Axis : 7|16@0- (0.01,0) [-327.68|327.67] "g" Vector__XXX
+
+BO_ 1261 Acceleration_Front: 8 Vector__XXX
+ SG_ IMU_Temp : 55|16@0- (0.1,0) [-32768|32767] "C" Vector__XXX
+ SG_ Acceleration_Z_Axis : 39|16@0- (0.01,0) [-327.68|327.67] "g" Vector__XXX
+ SG_ Acceleration_Y_Axis : 23|16@0- (0.01,0) [-327.68|327.67] "g" Vector__XXX
+ SG_ Acceleration_X_Axis : 7|16@0- (0.01,0) [-327.68|327.67] "g" Vector__XXX
+
+BO_ 1260 Angular_Rate_Front: 8 Vector__XXX
+ SG_ Angular_Rate_Z_Axis : 39|16@0- (0.1,0) [-3276.8|3276.7] "deg/sec" Vector__XXX
+ SG_ Angular_Rate_Y_Axis : 23|16@0- (0.1,0) [-3276.8|3276.7] "deg/sec" Vector__XXX
+ SG_ Angular_Rate_X_Axis : 7|16@0- (0.1,0) [-3276.8|3276.7] "deg/sec" Vector__XXX
+
+BO_ 1200 LF_IRTS_Tire_1: 8 Vector__XXX
+ SG_ LF_Tire_Temp_04 : 55|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LF_Tire_Temp_03 : 39|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LF_Tire_Temp_02 : 23|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LF_Tire_Temp_01 : 7|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+
+BO_ 1201 LF_IRTS_Tire_2: 8 Vector__XXX
+ SG_ LF_Tire_Temp_08 : 55|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LF_Tire_Temp_07 : 39|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LF_Tire_Temp_06 : 23|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LF_Tire_Temp_05 : 7|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+
+BO_ 1202 LF_IRTS_Tire_3: 8 Vector__XXX
+ SG_ LF_Tire_Temp_12 : 55|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LF_Tire_Temp_11 : 39|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LF_Tire_Temp_10 : 23|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LF_Tire_Temp_09 : 7|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+
+BO_ 1203 LF_IRTS_Tire_4: 8 Vector__XXX
+ SG_ LF_Tire_Temp_16 : 55|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LF_Tire_Temp_15 : 39|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LF_Tire_Temp_14 : 23|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LF_Tire_Temp_13 : 7|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+
+BO_ 1204 RF_IRTS_Tire_1: 8 Vector__XXX
+ SG_ RF_Tire_Temp_04 : 55|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RF_Tire_Temp_03 : 39|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RF_Tire_Temp_02 : 23|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RF_Tire_Temp_01 : 7|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+
+BO_ 1205 RF_IRTS_Tire_2: 8 Vector__XXX
+ SG_ RF_Tire_Temp_08 : 55|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RF_Tire_Temp_07 : 39|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RF_Tire_Temp_06 : 23|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RF_Tire_Temp_05 : 7|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+
+BO_ 1206 RF_IRTS_Tire_3: 8 Vector__XXX
+ SG_ RF_Tire_Temp_12 : 55|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RF_Tire_Temp_11 : 39|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RF_Tire_Temp_10 : 23|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RF_Tire_Temp_09 : 7|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+
+BO_ 1207 RF_IRTS_Tire_4: 8 Vector__XXX
+ SG_ RF_Tire_Temp_16 : 55|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RF_Tire_Temp_15 : 39|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RF_Tire_Temp_14 : 23|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RF_Tire_Temp_13 : 7|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+
+BO_ 1208 LR_IRTS_Tire_1: 8 Vector__XXX
+ SG_ LR_Tire_Temp_04 : 55|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LR_Tire_Temp_03 : 39|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LR_Tire_Temp_02 : 23|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LR_Tire_Temp_01 : 7|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+
+BO_ 1209 LR_IRTS_Tire_2: 8 Vector__XXX
+ SG_ LR_Tire_Temp_08 : 55|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LR_Tire_Temp_07 : 39|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LR_Tire_Temp_06 : 23|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LR_Tire_Temp_05 : 7|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+
+BO_ 1210 LR_IRTS_Tire_3: 8 Vector__XXX
+ SG_ LR_Tire_Temp_12 : 55|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LR_Tire_Temp_11 : 39|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LR_Tire_Temp_10 : 23|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LR_Tire_Temp_09 : 7|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+
+BO_ 1211 LR_IRTS_Tire_4: 8 Vector__XXX
+ SG_ LR_Tire_Temp_16 : 55|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LR_Tire_Temp_15 : 39|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LR_Tire_Temp_14 : 23|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ LR_Tire_Temp_13 : 7|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+
+BO_ 1212 RR_IRTS_Tire_1: 8 Vector__XXX
+ SG_ RR_Tire_Temp_04 : 55|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RR_Tire_Temp_03 : 39|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RR_Tire_Temp_02 : 23|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RR_Tire_Temp_01 : 7|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+
+BO_ 1213 RR_IRTS_Tire_2: 8 Vector__XXX
+ SG_ RR_Tire_Temp_08 : 55|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RR_Tire_Temp_07 : 39|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RR_Tire_Temp_06 : 23|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RR_Tire_Temp_05 : 7|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+
+BO_ 1214 RR_IRTS_Tire_3: 8 Vector__XXX
+ SG_ RR_Tire_Temp_12 : 55|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RR_Tire_Temp_11 : 39|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RR_Tire_Temp_10 : 23|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RR_Tire_Temp_09 : 7|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+
+BO_ 1215 RR_IRTS_Tire_4: 8 Vector__XXX
+ SG_ RR_Tire_Temp_16 : 55|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RR_Tire_Temp_15 : 39|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RR_Tire_Temp_14 : 23|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+ SG_ RR_Tire_Temp_13 : 7|16@0+ (0.1,-100) [-100|6453.5] "°C" Vector__XXX
+
+BO_ 1053 RR_TTPMS_6: 8 Vector__XXX
+ SG_ RR_TTPMS_NODE_ID : 55|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ RR_TTPMS_TC : 7|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ RR_TTPMS_T : 39|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RR_TTPMS_RSSI : 23|16@0- (1,0) [-32768|32767] "dBm" Vector__XXX
+
+BO_ 1052 RR_TTPMS_5: 8 Vector__XXX
+ SG_ RR_TTPMS_T16 : 55|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RR_TTPMS_T15 : 39|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RR_TTPMS_T14 : 23|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RR_TTPMS_T13 : 7|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+
+BO_ 1051 RR_TTPMS_4: 8 Vector__XXX
+ SG_ RR_TTPMS_T12 : 55|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RR_TTPMS_T11 : 39|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RR_TTPMS_T10 : 23|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RR_TTPMS_T9 : 7|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+
+BO_ 1050 RR_TTPMS_3: 8 Vector__XXX
+ SG_ RR_TTPMS_T8 : 55|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RR_TTPMS_T7 : 39|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RR_TTPMS_T6 : 23|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RR_TTPMS_T5 : 7|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+
+BO_ 1049 RR_TTPMS_2: 8 Vector__XXX
+ SG_ RR_TTPMS_T4 : 55|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RR_TTPMS_T3 : 39|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RR_TTPMS_T2 : 23|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RR_TTPMS_T1 : 7|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+
+BO_ 1048 RR_TTPMS_1: 8 Vector__XXX
+ SG_ RR_TTPMS_P_GAUGE : 55|16@0+ (1,0) [0|65535] "mbar" Vector__XXX
+ SG_ RR_TTPMS_P : 39|16@0+ (1,0) [0|65535] "mbar" Vector__XXX
+ SG_ RR_TTPMS_BAT_V : 23|16@0+ (1,0) [0|65535] "mV" Vector__XXX
+ SG_ RR_TTPMS_SN : 7|16@0+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 1047 LR_TTPMS_6: 8 Vector__XXX
+ SG_ LR_TTPMS_NODE_ID : 55|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ LR_TTPMS_T : 39|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LR_TTPMS_RSSI : 23|16@0- (1,0) [-32768|32767] "dBm" Vector__XXX
+ SG_ LR_TTPMS_TC : 7|16@0+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 1046 LR_TTPMS_5: 8 Vector__XXX
+ SG_ LR_TTPMS_T16 : 55|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LR_TTPMS_T15 : 39|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LR_TTPMS_T14 : 23|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LR_TTPMS_T13 : 7|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+
+BO_ 1045 LR_TTPMS_4: 8 Vector__XXX
+ SG_ LR_TTPMS_T12 : 55|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LR_TTPMS_T11 : 39|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LR_TTPMS_T10 : 23|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LR_TTPMS_T9 : 7|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+
+BO_ 1044 LR_TTPMS_3: 8 Vector__XXX
+ SG_ LR_TTPMS_T8 : 55|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LR_TTPMS_T7 : 39|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LR_TTPMS_T6 : 23|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LR_TTPMS_T5 : 7|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+
+BO_ 1043 LR_TTPMS_2: 8 Vector__XXX
+ SG_ LR_TTPMS_T4 : 55|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LR_TTPMS_T3 : 39|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LR_TTPMS_T2 : 23|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LR_TTPMS_T1 : 7|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+
+BO_ 1042 LR_TTPMS_1: 8 Vector__XXX
+ SG_ LR_TTPMS_P_GAUGE : 55|16@0+ (1,0) [0|65535] "mbar" Vector__XXX
+ SG_ LR_TTPMS_P : 39|16@0+ (1,0) [0|65535] "mbar" Vector__XXX
+ SG_ LR_TTPMS_BAT_V : 23|16@0+ (1,0) [0|65535] "mV" Vector__XXX
+ SG_ LR_TTPMS_SN : 7|16@0+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 1041 RF_TTPMS_6: 8 Vector__XXX
+ SG_ RF_TTPMS_NODE_ID : 55|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ RF_TTPMS_T : 39|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RF_TTPMS_RSSI : 23|16@0- (1,0) [-32768|32767] "dBm" Vector__XXX
+ SG_ RF_TTPMS_TC : 7|16@0+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 1040 RF_TTPMS_5: 8 Vector__XXX
+ SG_ RF_TTPMS_T16 : 55|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RF_TTPMS_T15 : 39|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RF_TTPMS_T14 : 23|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RF_TTPMS_T13 : 7|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+
+BO_ 1039 RF_TTPMS_4: 8 Vector__XXX
+ SG_ RF_TTPMS_T12 : 55|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RF_TTPMS_T11 : 39|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RF_TTPMS_T10 : 23|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RF_TTPMS_T9 : 7|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+
+BO_ 1038 RF_TTPMS_3: 8 Vector__XXX
+ SG_ RF_TTPMS_T8 : 55|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RF_TTPMS_T7 : 39|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RF_TTPMS_T6 : 23|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RF_TTPMS_T5 : 7|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+
+BO_ 1037 RF_TTPMS_2: 8 Vector__XXX
+ SG_ RF_TTPMS_T4 : 55|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RF_TTPMS_T3 : 39|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RF_TTPMS_T2 : 23|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ RF_TTPMS_T1 : 7|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+
+BO_ 1036 RF_TTPMS_1: 8 Vector__XXX
+ SG_ RF_TTPMS_P_GAUGE : 55|16@0+ (1,0) [0|65535] "mbar" Vector__XXX
+ SG_ RF_TTPMS_P : 39|16@0+ (1,0) [0|65535] "mbar" Vector__XXX
+ SG_ RF_TTPMS_BAT_V : 23|16@0+ (1,0) [0|65535] "mV" Vector__XXX
+ SG_ RF_TTPMS_SN : 7|16@0+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 1035 LF_TTPMS_6: 8 Vector__XXX
+ SG_ LF_TTPMS_NODE_ID : 55|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ LF_TTPMS_T : 39|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LF_TTPMS_RSSI : 23|16@0- (1,0) [-32768|32767] "dBm" Vector__XXX
+ SG_ LF_TTPMS_TC : 7|16@0+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 1034 LF_TTPMS_5: 8 Vector__XXX
+ SG_ LF_TTPMS_T16 : 55|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LF_TTPMS_T15 : 39|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LF_TTPMS_T14 : 23|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LF_TTPMS_T13 : 7|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+
+BO_ 1033 LF_TTPMS_4: 8 Vector__XXX
+ SG_ LF_TTPMS_T12 : 55|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LF_TTPMS_T11 : 39|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LF_TTPMS_T10 : 23|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LF_TTPMS_T9 : 7|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+
+BO_ 1032 LF_TTPMS_3: 8 Vector__XXX
+ SG_ LF_TTPMS_T8 : 55|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LF_TTPMS_T7 : 39|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LF_TTPMS_T6 : 23|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LF_TTPMS_T5 : 7|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+
+BO_ 1031 LF_TTPMS_2: 8 Vector__XXX
+ SG_ LF_TTPMS_T4 : 55|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LF_TTPMS_T3 : 39|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LF_TTPMS_T2 : 23|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+ SG_ LF_TTPMS_T1 : 7|16@0+ (0.1,-100) [-100|6453.5] "ï¿½C" Vector__XXX
+
+BO_ 1030 LF_TTPMS_1: 8 Vector__XXX
+ SG_ LF_TTPMS_P_GAUGE : 55|16@0+ (1,0) [0|65535] "mbar" Vector__XXX
+ SG_ LF_TTPMS_P : 39|16@0+ (1,0) [0|65535] "mbar" Vector__XXX
+ SG_ LF_TTPMS_BAT_V : 23|16@0+ (1,0) [0|65535] "mV" Vector__XXX
+ SG_ LF_TTPMS_SN : 7|16@0+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 2147487744 buttons: 1 Vector__XXX
+ SG_ encoder : 5|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ shift : 7|2@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147487745 clutch: 7 Vector__XXX
+ SG_ clutch_right_raw : 45|10@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ clutch_left_raw : 39|10@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ clutch_left : 7|16@0+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ clutch_right : 23|16@0+ (0.01,0) [0|100] "%" Vector__XXX
+
+BO_ 2147487778 status: 2 Vector__XXX
+ SG_ over_rev : 7|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+
+BO_ 2147487779 auto_shift_rpm: 8 Vector__XXX
+ SG_ auto_shift_rpm_5 : 47|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
+ SG_ auto_shift_rpm_4 : 25|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
+ SG_ auto_shift_rpm_3 : 19|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
+ SG_ auto_shift_rpm_2 : 13|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
+ SG_ auto_shift_rpm_1 : 7|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
+
+BO_ 2147487776 servo: 5 Vector__XXX
+ SG_ servo_potentiometer : 27|12@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ servo_percentage : 7|16@0+ (1,0) [0|0] "%" Vector__XXX
+ SG_ servo_position : 23|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
+
+BO_ 2147487777 settings: 8 Vector__XXX
+ SG_ set_invert_solenoid : 59|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ invert_solenoid : 46|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ reset_eeprom : 45|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ set_start_point : 63|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ set_friction_point : 61|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ set_end_point : 62|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ set_auto_shift : 60|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ auto_shift : 47|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ friction_point : 31|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
+ SG_ end_point : 11|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
+ SG_ start_point : 7|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ BO_ 2147483648 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 1784 generic_open_loop_motor_control_ "-1: Input Error
+0: Disabled
+1: Closed
+2: Opening
+3: Open
+4: Closing
+5: Paused Part Way
+";
+CM_ SG_ 1784 generic_open_loop_motor_con_0000 "-1: Input Error
+0: Disabled
+1: Closed
+2: Opening
+3: Open
+4: Closing
+5: Paused Part Way
+";
+CM_ SG_ 1784 generic_open_loop_motor_con_0001 "-1: Input Error
+0: Disabled
+1: Closed
+2: Opening
+3: Open
+4: Closing
+5: Paused Part Way
+";
+CM_ SG_ 1784 nitrous_bottle_opener_state "-1: Input Error
+0: Disabled
+1: Closed
+2: Opening
+3: Open
+4: Closing
+5: Paused Part Way
+";
+CM_ SG_ 1784 exhaust_cutout_state "-1: Input Error
+0: Disabled
+1: Closed
+2: Opening
+3: Open
+4: Closing
+5: Paused Part Way
+";
+CM_ SG_ 1783 generic_output_1_20_states "0 = Off, 1 = On (at least 0.1% duty cycle if in Duty Cycle mode, or at least 1 Hz if in Frequency mode)
+Bit X = Generic output X+1";
+CM_ SG_ 1143 rpm_limiter_method "0 = No Cut
+1 = Fuel
+2 = Ignition
+3 = Fuel and Ignition";
+CM_ SG_ 1143 engine_limiter_method "0 = No Cut
+1 = Fuel
+2 = Ignition
+3 = Fuel and Ignition";
+CM_ SG_ 1143 cut_percentage_function "Engine Limiting Functions table";
+CM_ SG_ 1143 rpm_limiter_function "Engine Limiting Functions table";
+CM_ SG_ 1143 engine_limiter_function "Engine Limiting Functions table";
+CM_ SG_ 1142 brake_pressure_difference "Front-Rear";
+CM_ SG_ 1779 engine_protection_reason "This value is hexadecimal, and represents the OBDII DTC. 
+The upper 2 bits determine which letter it is (0b00 = P, 0b01 = B, 0b10 = C, 0b11 = U). The remaining 14 bits, when viewed as hexadecimal are the number part of the code. 
+";
+CM_ SG_ 1779 engine_protection_severity_level "0 - Idle, 1 - Level 1, 2 - Level 2, 3 - Level 3'
+";
+CM_ SG_ 1779 front_right_tyre_air_leak_detect "0=No Leak,1=Leak Detected";
+CM_ SG_ 1779 front_left_tyre_air_leak_detecte "0=No Leak,1=Leak Detected";
+CM_ SG_ 1779 rear_left_tyre_air_leak_detected "0=No Leak,1=Leak Detected";
+CM_ SG_ 1779 rear_right_tyre_air_leak_detecte "0=No Leak,1=Leak Detected";
+CM_ SG_ 1778 rear_right_tyre_sensor_battery_v "0 = error (can be No Signal, Calibrating or Device Timeout)";
+CM_ SG_ 1778 rear_left_tyre_sensor_battery_vo "0 = error (can be No Signal, Calibrating or Device Timeout)";
+CM_ SG_ 1778 front_right_tyre_sensor_battery_ "0 = error (can be No Signal, Calibrating or Device Timeout)";
+CM_ SG_ 1778 front_left_tyre_sensor_battery_v "0 = error (can be No Signal, Calibrating or Device Timeout)";
+CM_ SG_ 1777 rear_right_tyre_temperature "0 = error (can be No Signal, Calibrating or Device Timeout)";
+CM_ SG_ 1777 rear_left_tyre_temperature "0 = error (can be No Signal, Calibrating or Device Timeout)";
+CM_ SG_ 1777 front_right_tyre_temperature "0 = error (can be No Signal, Calibrating or Device Timeout)";
+CM_ SG_ 1777 front_left_tyre_temperature "0 = error (can be No Signal, Calibrating or Device Timeout)";
+CM_ SG_ 1776 rear_right_tyre_pressure "0 = error (can be No Signal, Calibrating or Device Timeout)";
+CM_ SG_ 1776 rear_left_tyre_pressure "0 = error (can be No Signal, Calibrating or Device Timeout)";
+CM_ SG_ 1776 front_right_tyre_pressure "0 = error (can be No Signal, Calibrating or Device Timeout)";
+CM_ SG_ 1776 front_left_tyre_pressure "0 = error (can be No Signal, Calibrating or Device Timeout)";
+CM_ SG_ 992 oil_temperature "20-04";
+CM_ SG_ 992 fuel_temperature "20-03";
+CM_ SG_ 992 air_temperature "20-02";
+CM_ SG_ 992 coolant_temperature "20-01";
+CM_ SG_ 996 brake_pedal_switch "24-01";
+CM_ SG_ 996 transient_throttle_active "24-01";
+CM_ SG_ 996 decel_cut_active "24-01";
+CM_ SG_ 996 clutch_switch "24-07";
+CM_ SG_ 996 check_engine_light "24-25";
+CM_ SG_ 996 flat_shift_switch "24-12";
+CM_ SG_ 996 oil_pressure_light "24-08";
+CM_ SG_ 996 gear_switch "24-03";
+CM_ SG_ 996 neutral_switch "24-01";
+CM_ SG_ 882 barometric_pressure "15-03";
+CM_ SG_ 882 target_boost_level "15-02";
+CM_ SG_ 882 battery_voltage "15-01";
+CM_ SG_ 1136 gear "39-05";
+CM_ SG_ 1136 gear_selector_position "39-04";
+CM_ SG_ 1136 wideband_bank_2 "39-03";
+CM_ SG_ 1136 wideband_bank_1 "39-02";
+CM_ SG_ 1136 wideband_overall "39-01";
+CM_ SG_ 880 intake_cam_angle_2 "13-03";
+CM_ SG_ 880 intake_cam_angle_1 "13-02";
+CM_ SG_ 880 vehicle_speed "13-01";
+CM_ SG_ 872 wideband_sensor_4 "05-04";
+CM_ SG_ 872 wideband_sensor_3 "05-03";
+CM_ SG_ 872 wideband_sensor_2 "05-02";
+CM_ SG_ 872 wideband_sensor_1 "05-01";
+CM_ SG_ 865 wastegate_pressure "01-04";
+CM_ SG_ 865 engine_demand "01-03";
+CM_ SG_ 865 oil_pressure "01-02";
+CM_ SG_ 865 fuel_pressure "01-01";
+CM_ SG_ 864 coolant_pressure "00-04";
+CM_ SG_ 864 throttle_position "00-03";
+CM_ SG_ 864 manifold_pressure "00-02";
+CM_ SG_ 864 rpm "00-01";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 100000000000;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
+BA_DEF_ SG_  "SystemSignalLongSymbol" STRING ;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "VFrameFormat" "ExtendedCAN_FD";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "MultiplexExtEnabled" "No";
+BA_DEF_DEF_  "SystemSignalLongSymbol" "";
+BA_ "BusType" "CAN FD";
+BA_ "VFrameFormat" BO_ 2147487843 1;
+BA_ "GenMsgCycleTime" BO_ 2147487843 4;
+BA_ "VFrameFormat" BO_ 2147487841 1;
+BA_ "GenMsgCycleTime" BO_ 2147487841 4;
+BA_ "VFrameFormat" BO_ 2147487842 1;
+BA_ "GenMsgCycleTime" BO_ 2147487842 4;
+BA_ "VFrameFormat" BO_ 2147487840 1;
+BA_ "GenMsgCycleTime" BO_ 2147487840 4;
+BA_ "VFrameFormat" BO_ 2147483648 1;
+BA_ "VFrameFormat" BO_ 2147487809 1;
+BA_ "VFrameFormat" BO_ 705 0;
+BA_ "GenMsgCycleTime" BO_ 705 20;
+BA_ "VFrameFormat" BO_ 707 0;
+BA_ "GenMsgCycleTime" BO_ 707 20;
+BA_ "VFrameFormat" BO_ 709 0;
+BA_ "GenMsgCycleTime" BO_ 709 20;
+BA_ "VFrameFormat" BO_ 708 0;
+BA_ "GenMsgCycleTime" BO_ 708 20;
+BA_ "VFrameFormat" BO_ 706 0;
+BA_ "GenMsgCycleTime" BO_ 706 20;
+BA_ "VFrameFormat" BO_ 704 0;
+BA_ "GenMsgCycleTime" BO_ 704 20;
+BA_ "VFrameFormat" BO_ 1784 0;
+BA_ "GenMsgCycleTime" BO_ 1784 200;
+BA_ "VFrameFormat" BO_ 1783 0;
+BA_ "GenMsgCycleTime" BO_ 1783 100;
+BA_ "VFrameFormat" BO_ 1780 0;
+BA_ "GenMsgCycleTime" BO_ 1780 10;
+BA_ "VFrameFormat" BO_ 1143 0;
+BA_ "GenMsgCycleTime" BO_ 1143 100;
+BA_ "VFrameFormat" BO_ 1141 0;
+BA_ "GenMsgCycleTime" BO_ 1141 200;
+BA_ "VFrameFormat" BO_ 1138 0;
+BA_ "GenMsgCycleTime" BO_ 1138 50;
+BA_ "VFrameFormat" BO_ 1129 0;
+BA_ "GenMsgCycleTime" BO_ 1129 200;
+BA_ "VFrameFormat" BO_ 1009 0;
+BA_ "GenMsgCycleTime" BO_ 1009 20;
+BA_ "VFrameFormat" BO_ 1008 0;
+BA_ "GenMsgCycleTime" BO_ 1008 20;
+BA_ "VFrameFormat" BO_ 1007 0;
+BA_ "GenMsgCycleTime" BO_ 1007 50;
+BA_ "VFrameFormat" BO_ 1006 0;
+BA_ "GenMsgCycleTime" BO_ 1006 50;
+BA_ "VFrameFormat" BO_ 1005 0;
+BA_ "GenMsgCycleTime" BO_ 1005 20;
+BA_ "VFrameFormat" BO_ 1004 0;
+BA_ "GenMsgCycleTime" BO_ 1004 20;
+BA_ "VFrameFormat" BO_ 1003 0;
+BA_ "GenMsgCycleTime" BO_ 1003 20;
+BA_ "VFrameFormat" BO_ 868 0;
+BA_ "GenMsgCycleTime" BO_ 868 20;
+BA_ "VFrameFormat" BO_ 866 0;
+BA_ "GenMsgCycleTime" BO_ 866 20;
+BA_ "VFrameFormat" BO_ 1002 0;
+BA_ "GenMsgCycleTime" BO_ 1002 20;
+BA_ "VFrameFormat" BO_ 1001 0;
+BA_ "GenMsgCycleTime" BO_ 1001 50;
+BA_ "VFrameFormat" BO_ 1000 0;
+BA_ "GenMsgCycleTime" BO_ 1000 50;
+BA_ "VFrameFormat" BO_ 999 0;
+BA_ "GenMsgCycleTime" BO_ 999 50;
+BA_ "VFrameFormat" BO_ 998 0;
+BA_ "GenMsgCycleTime" BO_ 998 50;
+BA_ "VFrameFormat" BO_ 997 0;
+BA_ "GenMsgCycleTime" BO_ 997 20;
+BA_ "VFrameFormat" BO_ 995 0;
+BA_ "GenMsgCycleTime" BO_ 995 200;
+BA_ "VFrameFormat" BO_ 994 0;
+BA_ "GenMsgCycleTime" BO_ 994 200;
+BA_ "VFrameFormat" BO_ 993 0;
+BA_ "GenMsgCycleTime" BO_ 993 200;
+BA_ "VFrameFormat" BO_ 886 0;
+BA_ "GenMsgCycleTime" BO_ 886 100;
+BA_ "VFrameFormat" BO_ 885 0;
+BA_ "GenMsgCycleTime" BO_ 885 100;
+BA_ "VFrameFormat" BO_ 884 0;
+BA_ "GenMsgCycleTime" BO_ 884 100;
+BA_ "VFrameFormat" BO_ 883 0;
+BA_ "GenMsgCycleTime" BO_ 883 100;
+BA_ "VFrameFormat" BO_ 881 0;
+BA_ "GenMsgCycleTime" BO_ 881 100;
+BA_ "VFrameFormat" BO_ 879 0;
+BA_ "GenMsgCycleTime" BO_ 879 50;
+BA_ "VFrameFormat" BO_ 878 0;
+BA_ "GenMsgCycleTime" BO_ 878 50;
+BA_ "VFrameFormat" BO_ 877 0;
+BA_ "GenMsgCycleTime" BO_ 877 50;
+BA_ "VFrameFormat" BO_ 876 0;
+BA_ "GenMsgCycleTime" BO_ 876 50;
+BA_ "VFrameFormat" BO_ 875 0;
+BA_ "GenMsgCycleTime" BO_ 875 50;
+BA_ "VFrameFormat" BO_ 873 0;
+BA_ "GenMsgCycleTime" BO_ 873 50;
+BA_ "VFrameFormat" BO_ 874 0;
+BA_ "GenMsgCycleTime" BO_ 874 50;
+BA_ "VFrameFormat" BO_ 867 0;
+BA_ "GenMsgCycleTime" BO_ 867 50;
+BA_ "VFrameFormat" BO_ 1142 0;
+BA_ "GenMsgCycleTime" BO_ 1142 50;
+BA_ "VFrameFormat" BO_ 1782 0;
+BA_ "GenMsgCycleTime" BO_ 1782 200;
+BA_ "VFrameFormat" BO_ 1779 0;
+BA_ "GenMsgCycleTime" BO_ 1779 200;
+BA_ "VFrameFormat" BO_ 1140 0;
+BA_ "GenMsgCycleTime" BO_ 1140 50;
+BA_ "VFrameFormat" BO_ 1139 0;
+BA_ "GenMsgCycleTime" BO_ 1139 100;
+BA_ "VFrameFormat" BO_ 1778 0;
+BA_ "GenMsgCycleTime" BO_ 1778 200;
+BA_ "VFrameFormat" BO_ 1777 0;
+BA_ "GenMsgCycleTime" BO_ 1777 200;
+BA_ "VFrameFormat" BO_ 1776 0;
+BA_ "GenMsgCycleTime" BO_ 1776 200;
+BA_ "VFrameFormat" BO_ 1137 0;
+BA_ "GenMsgCycleTime" BO_ 1137 20;
+BA_ "VFrameFormat" BO_ 992 0;
+BA_ "GenMsgCycleTime" BO_ 992 200;
+BA_ "VFrameFormat" BO_ 996 0;
+BA_ "GenMsgCycleTime" BO_ 996 200;
+BA_ "VFrameFormat" BO_ 882 0;
+BA_ "GenMsgCycleTime" BO_ 882 100;
+BA_ "VFrameFormat" BO_ 1136 0;
+BA_ "GenMsgCycleTime" BO_ 1136 50;
+BA_ "VFrameFormat" BO_ 880 0;
+BA_ "GenMsgCycleTime" BO_ 880 50;
+BA_ "VFrameFormat" BO_ 872 0;
+BA_ "GenMsgCycleTime" BO_ 872 50;
+BA_ "VFrameFormat" BO_ 865 0;
+BA_ "GenMsgCycleTime" BO_ 865 20;
+BA_ "VFrameFormat" BO_ 864 0;
+BA_ "GenMsgCycleTime" BO_ 864 20;
+BA_ "VFrameFormat" BO_ 1298 0;
+BA_ "VFrameFormat" BO_ 1297 0;
+BA_ "VFrameFormat" BO_ 1296 0;
+BA_ "VFrameFormat" BO_ 1295 0;
+BA_ "VFrameFormat" BO_ 1294 0;
+BA_ "VFrameFormat" BO_ 1293 0;
+BA_ "VFrameFormat" BO_ 1292 0;
+BA_ "GenMsgCycleTime" BO_ 1292 4;
+BA_ "VFrameFormat" BO_ 1291 0;
+BA_ "GenMsgCycleTime" BO_ 1291 4;
+BA_ "VFrameFormat" BO_ 1290 0;
+BA_ "GenMsgCycleTime" BO_ 1290 4;
+BA_ "VFrameFormat" BO_ 1262 0;
+BA_ "GenMsgCycleTime" BO_ 1262 20;
+BA_ "VFrameFormat" BO_ 1263 0;
+BA_ "GenMsgCycleTime" BO_ 1263 20;
+BA_ "VFrameFormat" BO_ 1261 0;
+BA_ "GenMsgCycleTime" BO_ 1261 20;
+BA_ "VFrameFormat" BO_ 1260 0;
+BA_ "GenMsgCycleTime" BO_ 1260 20;
+BA_ "VFrameFormat" BO_ 1200 0;
+BA_ "GenMsgCycleTime" BO_ 1200 32;
+BA_ "VFrameFormat" BO_ 1201 0;
+BA_ "GenMsgCycleTime" BO_ 1201 32;
+BA_ "VFrameFormat" BO_ 1202 0;
+BA_ "GenMsgCycleTime" BO_ 1202 32;
+BA_ "VFrameFormat" BO_ 1203 0;
+BA_ "GenMsgCycleTime" BO_ 1203 32;
+BA_ "VFrameFormat" BO_ 1204 0;
+BA_ "GenMsgCycleTime" BO_ 1204 32;
+BA_ "VFrameFormat" BO_ 1205 0;
+BA_ "GenMsgCycleTime" BO_ 1205 32;
+BA_ "VFrameFormat" BO_ 1206 0;
+BA_ "GenMsgCycleTime" BO_ 1206 32;
+BA_ "VFrameFormat" BO_ 1207 0;
+BA_ "GenMsgCycleTime" BO_ 1207 32;
+BA_ "VFrameFormat" BO_ 1208 0;
+BA_ "GenMsgCycleTime" BO_ 1208 32;
+BA_ "VFrameFormat" BO_ 1209 0;
+BA_ "GenMsgCycleTime" BO_ 1209 32;
+BA_ "VFrameFormat" BO_ 1210 0;
+BA_ "GenMsgCycleTime" BO_ 1210 32;
+BA_ "VFrameFormat" BO_ 1211 0;
+BA_ "GenMsgCycleTime" BO_ 1211 32;
+BA_ "VFrameFormat" BO_ 1212 0;
+BA_ "GenMsgCycleTime" BO_ 1212 32;
+BA_ "VFrameFormat" BO_ 1213 0;
+BA_ "GenMsgCycleTime" BO_ 1213 32;
+BA_ "VFrameFormat" BO_ 1214 0;
+BA_ "GenMsgCycleTime" BO_ 1214 32;
+BA_ "VFrameFormat" BO_ 1215 0;
+BA_ "GenMsgCycleTime" BO_ 1215 32;
+BA_ "VFrameFormat" BO_ 1053 0;
+BA_ "GenMsgCycleTime" BO_ 1053 1250;
+BA_ "VFrameFormat" BO_ 1052 0;
+BA_ "GenMsgCycleTime" BO_ 1052 1250;
+BA_ "VFrameFormat" BO_ 1051 0;
+BA_ "GenMsgCycleTime" BO_ 1051 1250;
+BA_ "VFrameFormat" BO_ 1050 0;
+BA_ "GenMsgCycleTime" BO_ 1050 1250;
+BA_ "VFrameFormat" BO_ 1049 0;
+BA_ "GenMsgCycleTime" BO_ 1049 1250;
+BA_ "VFrameFormat" BO_ 1048 0;
+BA_ "GenMsgCycleTime" BO_ 1048 1250;
+BA_ "VFrameFormat" BO_ 1047 0;
+BA_ "GenMsgCycleTime" BO_ 1047 1250;
+BA_ "VFrameFormat" BO_ 1046 0;
+BA_ "GenMsgCycleTime" BO_ 1046 1250;
+BA_ "VFrameFormat" BO_ 1045 0;
+BA_ "GenMsgCycleTime" BO_ 1045 1250;
+BA_ "VFrameFormat" BO_ 1044 0;
+BA_ "GenMsgCycleTime" BO_ 1044 1250;
+BA_ "VFrameFormat" BO_ 1043 0;
+BA_ "GenMsgCycleTime" BO_ 1043 1250;
+BA_ "VFrameFormat" BO_ 1042 0;
+BA_ "GenMsgCycleTime" BO_ 1042 1250;
+BA_ "VFrameFormat" BO_ 1041 0;
+BA_ "GenMsgCycleTime" BO_ 1041 1250;
+BA_ "VFrameFormat" BO_ 1040 0;
+BA_ "GenMsgCycleTime" BO_ 1040 1250;
+BA_ "VFrameFormat" BO_ 1039 0;
+BA_ "GenMsgCycleTime" BO_ 1039 1250;
+BA_ "VFrameFormat" BO_ 1038 0;
+BA_ "GenMsgCycleTime" BO_ 1038 1250;
+BA_ "VFrameFormat" BO_ 1037 0;
+BA_ "GenMsgCycleTime" BO_ 1037 1250;
+BA_ "VFrameFormat" BO_ 1036 0;
+BA_ "GenMsgCycleTime" BO_ 1036 1250;
+BA_ "VFrameFormat" BO_ 1035 0;
+BA_ "GenMsgCycleTime" BO_ 1035 1250;
+BA_ "VFrameFormat" BO_ 1034 0;
+BA_ "GenMsgCycleTime" BO_ 1034 1250;
+BA_ "VFrameFormat" BO_ 1033 0;
+BA_ "GenMsgCycleTime" BO_ 1033 1250;
+BA_ "VFrameFormat" BO_ 1032 0;
+BA_ "GenMsgCycleTime" BO_ 1032 1250;
+BA_ "VFrameFormat" BO_ 1031 0;
+BA_ "GenMsgCycleTime" BO_ 1031 1250;
+BA_ "VFrameFormat" BO_ 1030 0;
+BA_ "GenMsgCycleTime" BO_ 1030 1250;
+BA_ "VFrameFormat" BO_ 2147487744 1;
+BA_ "VFrameFormat" BO_ 2147487745 1;
+BA_ "GenMsgCycleTime" BO_ 2147487745 10;
+BA_ "VFrameFormat" BO_ 2147487778 1;
+BA_ "VFrameFormat" BO_ 2147487779 1;
+BA_ "GenMsgCycleTime" BO_ 2147487779 1000;
+BA_ "VFrameFormat" BO_ 2147487776 1;
+BA_ "GenMsgCycleTime" BO_ 2147487776 20;
+BA_ "VFrameFormat" BO_ 2147487777 1;
+BA_ "GenMsgCycleTime" BO_ 2147487777 200;
+BA_ "SystemSignalLongSymbol" SG_ 1784 generic_open_loop_motor_control_ "generic_open_loop_motor_control_3_state";
+BA_ "SystemSignalLongSymbol" SG_ 1784 generic_open_loop_motor_con_0000 "generic_open_loop_motor_control_2_state";
+BA_ "SystemSignalLongSymbol" SG_ 1784 generic_open_loop_motor_con_0001 "generic_open_loop_motor_control_1_state";
+BA_ "SystemSignalLongSymbol" SG_ 1783 water_injection_advanced_solenoi "water_injection_advanced_solenoid_duty_cycle";
+BA_ "SystemSignalLongSymbol" SG_ 1005 torque_management_combined_ignit "torque_management_combined_ignition_correction";
+BA_ "SystemSignalLongSymbol" SG_ 1004 torque_management_driveshaft_rpm "torque_management_driveshaft_rpm_target";
+BA_ "SystemSignalLongSymbol" SG_ 1004 torque_management_driveshaf_0000 "torque_management_driveshaft_rpm_timed_ignition_correction";
+BA_ "SystemSignalLongSymbol" SG_ 1004 torque_management_driveshaf_0001 "torque_management_driveshaft_rpm_target_error_ignition_correction";
+BA_ "SystemSignalLongSymbol" SG_ 1004 torque_management_driveshaf_0002 "torque_management_driveshaft_rpm_target_error";
+BA_ "SystemSignalLongSymbol" SG_ 868 injection_stage_4_average_inject "injection_stage_4_average_injection_time";
+BA_ "SystemSignalLongSymbol" SG_ 868 injection_stage_3_average_inject "injection_stage_3_average_injection_time";
+BA_ "SystemSignalLongSymbol" SG_ 868 injection_stage_2_average_inject "injection_stage_2_average_injection_time";
+BA_ "SystemSignalLongSymbol" SG_ 868 injection_stage_1_average_inject "injection_stage_1_average_injection_time";
+BA_ "GenSigStartValue" SG_ 1002 crank_case_pressure 1013;
+BA_ "GenSigStartValue" SG_ 1002 gearbox_line_pressure 1013;
+BA_ "SystemSignalLongSymbol" SG_ 1001 water_injection_advanced_overrid "water_injection_advanced_override_output_state";
+BA_ "GenSigStartValue" SG_ 998 nos_pressure_sensor_4 460;
+BA_ "GenSigStartValue" SG_ 998 nos_pressure_sensor_3 460;
+BA_ "GenSigStartValue" SG_ 998 nos_pressure_sensor_2 460;
+BA_ "SystemSignalLongSymbol" SG_ 997 pit_lane_speed_limiter_switch_st "pit_lane_speed_limiter_switch_state";
+BA_ "SystemSignalLongSymbol" SG_ 997 turbo_timer_engine_time_remainin "turbo_timer_engine_time_remaining";
+BA_ "GenSigStartValue" SG_ 875 nos_pressure_sensor_1 460;
+BA_ "GenSigStartValue" SG_ 875 brake_pressure_front 101;
+BA_ "GenSigStartValue" SG_ 1142 brake_pressure_rear 101;
+BA_ "SystemSignalLongSymbol" SG_ 1782 total_fuel_used_since_trip_1_res "total_fuel_used_since_trip_1_reset";
+BA_ "SystemSignalLongSymbol" SG_ 1779 front_right_tyre_air_leak_detect "front_right_tyre_air_leak_detected";
+BA_ "SystemSignalLongSymbol" SG_ 1779 front_left_tyre_air_leak_detecte "front_left_tyre_air_leak_detected";
+BA_ "SystemSignalLongSymbol" SG_ 1779 rear_right_tyre_air_leak_detecte "rear_right_tyre_air_leak_detected";
+BA_ "GenSigStartValue" SG_ 1779 rear_tyre_recommended_pressure 1013;
+BA_ "GenSigStartValue" SG_ 1779 front_tyre_recommended_pressure 1013;
+BA_ "SystemSignalLongSymbol" SG_ 1139 water_injection_advanced_ov_0000 "water_injection_advanced_override_switch_state";
+BA_ "SystemSignalLongSymbol" SG_ 1139 water_injection_advanced_enable_ "water_injection_advanced_enable_output_state";
+BA_ "SystemSignalLongSymbol" SG_ 1139 water_injection_advanced_ov_0001 "water_injection_advanced_override_output_state";
+BA_ "SystemSignalLongSymbol" SG_ 1139 water_injection_advanced_en_0000 "water_injection_advanced_enable_switch_state";
+BA_ "SystemSignalLongSymbol" SG_ 1778 rear_right_tyre_sensor_battery_v "rear_right_tyre_sensor_battery_voltage";
+BA_ "SystemSignalLongSymbol" SG_ 1778 rear_left_tyre_sensor_battery_vo "rear_left_tyre_sensor_battery_voltage";
+BA_ "SystemSignalLongSymbol" SG_ 1778 front_right_tyre_sensor_battery_ "front_right_tyre_sensor_battery_voltage";
+BA_ "SystemSignalLongSymbol" SG_ 1778 front_left_tyre_sensor_battery_v "front_left_tyre_sensor_battery_voltage";
+BA_ "GenSigStartValue" SG_ 1776 rear_right_tyre_pressure 1013;
+BA_ "GenSigStartValue" SG_ 1776 rear_left_tyre_pressure 1013;
+BA_ "GenSigStartValue" SG_ 1776 front_right_tyre_pressure 1013;
+BA_ "GenSigStartValue" SG_ 1776 front_left_tyre_pressure 1013;
+BA_ "GenSigStartValue" SG_ 865 wastegate_pressure 1013;
+BA_ "GenSigStartValue" SG_ 865 oil_pressure 1013;
+BA_ "GenSigStartValue" SG_ 865 fuel_pressure 1013;
+BA_ "GenSigStartValue" SG_ 864 coolant_pressure 1013;
+BA_ "GenSigStartValue" SG_ 1200 LF_Tire_Temp_04 1000;
+BA_ "GenSigStartValue" SG_ 1200 LF_Tire_Temp_03 1000;
+BA_ "GenSigStartValue" SG_ 1200 LF_Tire_Temp_02 1000;
+BA_ "GenSigStartValue" SG_ 1200 LF_Tire_Temp_01 1000;
+BA_ "GenSigStartValue" SG_ 1201 LF_Tire_Temp_08 1000;
+BA_ "GenSigStartValue" SG_ 1201 LF_Tire_Temp_07 1000;
+BA_ "GenSigStartValue" SG_ 1201 LF_Tire_Temp_06 1000;
+BA_ "GenSigStartValue" SG_ 1201 LF_Tire_Temp_05 1000;
+BA_ "GenSigStartValue" SG_ 1202 LF_Tire_Temp_12 1000;
+BA_ "GenSigStartValue" SG_ 1202 LF_Tire_Temp_11 1000;
+BA_ "GenSigStartValue" SG_ 1202 LF_Tire_Temp_10 1000;
+BA_ "GenSigStartValue" SG_ 1202 LF_Tire_Temp_09 1000;
+BA_ "GenSigStartValue" SG_ 1203 LF_Tire_Temp_16 1000;
+BA_ "GenSigStartValue" SG_ 1203 LF_Tire_Temp_15 1000;
+BA_ "GenSigStartValue" SG_ 1203 LF_Tire_Temp_14 1000;
+BA_ "GenSigStartValue" SG_ 1203 LF_Tire_Temp_13 1000;
+BA_ "GenSigStartValue" SG_ 1204 RF_Tire_Temp_04 1000;
+BA_ "GenSigStartValue" SG_ 1204 RF_Tire_Temp_03 1000;
+BA_ "GenSigStartValue" SG_ 1204 RF_Tire_Temp_02 1000;
+BA_ "GenSigStartValue" SG_ 1204 RF_Tire_Temp_01 1000;
+BA_ "GenSigStartValue" SG_ 1205 RF_Tire_Temp_08 1000;
+BA_ "GenSigStartValue" SG_ 1205 RF_Tire_Temp_07 1000;
+BA_ "GenSigStartValue" SG_ 1205 RF_Tire_Temp_06 1000;
+BA_ "GenSigStartValue" SG_ 1205 RF_Tire_Temp_05 1000;
+BA_ "GenSigStartValue" SG_ 1206 RF_Tire_Temp_12 1000;
+BA_ "GenSigStartValue" SG_ 1206 RF_Tire_Temp_11 1000;
+BA_ "GenSigStartValue" SG_ 1206 RF_Tire_Temp_10 1000;
+BA_ "GenSigStartValue" SG_ 1206 RF_Tire_Temp_09 1000;
+BA_ "GenSigStartValue" SG_ 1207 RF_Tire_Temp_16 1000;
+BA_ "GenSigStartValue" SG_ 1207 RF_Tire_Temp_15 1000;
+BA_ "GenSigStartValue" SG_ 1207 RF_Tire_Temp_14 1000;
+BA_ "GenSigStartValue" SG_ 1207 RF_Tire_Temp_13 1000;
+BA_ "GenSigStartValue" SG_ 1208 LR_Tire_Temp_04 1000;
+BA_ "GenSigStartValue" SG_ 1208 LR_Tire_Temp_03 1000;
+BA_ "GenSigStartValue" SG_ 1208 LR_Tire_Temp_02 1000;
+BA_ "GenSigStartValue" SG_ 1208 LR_Tire_Temp_01 1000;
+BA_ "GenSigStartValue" SG_ 1209 LR_Tire_Temp_08 1000;
+BA_ "GenSigStartValue" SG_ 1209 LR_Tire_Temp_07 1000;
+BA_ "GenSigStartValue" SG_ 1209 LR_Tire_Temp_06 1000;
+BA_ "GenSigStartValue" SG_ 1209 LR_Tire_Temp_05 1000;
+BA_ "GenSigStartValue" SG_ 1210 LR_Tire_Temp_12 1000;
+BA_ "GenSigStartValue" SG_ 1210 LR_Tire_Temp_11 1000;
+BA_ "GenSigStartValue" SG_ 1210 LR_Tire_Temp_10 1000;
+BA_ "GenSigStartValue" SG_ 1210 LR_Tire_Temp_09 1000;
+BA_ "GenSigStartValue" SG_ 1211 LR_Tire_Temp_16 1000;
+BA_ "GenSigStartValue" SG_ 1211 LR_Tire_Temp_15 1000;
+BA_ "GenSigStartValue" SG_ 1211 LR_Tire_Temp_14 1000;
+BA_ "GenSigStartValue" SG_ 1211 LR_Tire_Temp_13 1000;
+BA_ "GenSigStartValue" SG_ 1212 RR_Tire_Temp_04 1000;
+BA_ "GenSigStartValue" SG_ 1212 RR_Tire_Temp_03 1000;
+BA_ "GenSigStartValue" SG_ 1212 RR_Tire_Temp_02 1000;
+BA_ "GenSigStartValue" SG_ 1212 RR_Tire_Temp_01 1000;
+BA_ "GenSigStartValue" SG_ 1213 RR_Tire_Temp_08 1000;
+BA_ "GenSigStartValue" SG_ 1213 RR_Tire_Temp_07 1000;
+BA_ "GenSigStartValue" SG_ 1213 RR_Tire_Temp_06 1000;
+BA_ "GenSigStartValue" SG_ 1213 RR_Tire_Temp_05 1000;
+BA_ "GenSigStartValue" SG_ 1214 RR_Tire_Temp_12 1000;
+BA_ "GenSigStartValue" SG_ 1214 RR_Tire_Temp_11 1000;
+BA_ "GenSigStartValue" SG_ 1214 RR_Tire_Temp_10 1000;
+BA_ "GenSigStartValue" SG_ 1214 RR_Tire_Temp_09 1000;
+BA_ "GenSigStartValue" SG_ 1215 RR_Tire_Temp_16 1000;
+BA_ "GenSigStartValue" SG_ 1215 RR_Tire_Temp_15 1000;
+BA_ "GenSigStartValue" SG_ 1215 RR_Tire_Temp_14 1000;
+BA_ "GenSigStartValue" SG_ 1215 RR_Tire_Temp_13 1000;
+BA_ "GenSigStartValue" SG_ 1053 RR_TTPMS_T 1000;
+BA_ "GenSigStartValue" SG_ 1052 RR_TTPMS_T16 1000;
+BA_ "GenSigStartValue" SG_ 1052 RR_TTPMS_T15 1000;
+BA_ "GenSigStartValue" SG_ 1052 RR_TTPMS_T14 1000;
+BA_ "GenSigStartValue" SG_ 1052 RR_TTPMS_T13 1000;
+BA_ "GenSigStartValue" SG_ 1051 RR_TTPMS_T12 1000;
+BA_ "GenSigStartValue" SG_ 1051 RR_TTPMS_T11 1000;
+BA_ "GenSigStartValue" SG_ 1051 RR_TTPMS_T10 1000;
+BA_ "GenSigStartValue" SG_ 1051 RR_TTPMS_T9 1000;
+BA_ "GenSigStartValue" SG_ 1050 RR_TTPMS_T8 1000;
+BA_ "GenSigStartValue" SG_ 1050 RR_TTPMS_T7 1000;
+BA_ "GenSigStartValue" SG_ 1050 RR_TTPMS_T6 1000;
+BA_ "GenSigStartValue" SG_ 1050 RR_TTPMS_T5 1000;
+BA_ "GenSigStartValue" SG_ 1049 RR_TTPMS_T4 1000;
+BA_ "GenSigStartValue" SG_ 1049 RR_TTPMS_T3 1000;
+BA_ "GenSigStartValue" SG_ 1049 RR_TTPMS_T2 1000;
+BA_ "GenSigStartValue" SG_ 1049 RR_TTPMS_T1 1000;
+BA_ "GenSigStartValue" SG_ 1047 LR_TTPMS_T 1000;
+BA_ "GenSigStartValue" SG_ 1046 LR_TTPMS_T16 1000;
+BA_ "GenSigStartValue" SG_ 1046 LR_TTPMS_T15 1000;
+BA_ "GenSigStartValue" SG_ 1046 LR_TTPMS_T14 1000;
+BA_ "GenSigStartValue" SG_ 1046 LR_TTPMS_T13 1000;
+BA_ "GenSigStartValue" SG_ 1045 LR_TTPMS_T12 1000;
+BA_ "GenSigStartValue" SG_ 1045 LR_TTPMS_T11 1000;
+BA_ "GenSigStartValue" SG_ 1045 LR_TTPMS_T10 1000;
+BA_ "GenSigStartValue" SG_ 1045 LR_TTPMS_T9 1000;
+BA_ "GenSigStartValue" SG_ 1044 LR_TTPMS_T8 1000;
+BA_ "GenSigStartValue" SG_ 1044 LR_TTPMS_T7 1000;
+BA_ "GenSigStartValue" SG_ 1044 LR_TTPMS_T6 1000;
+BA_ "GenSigStartValue" SG_ 1044 LR_TTPMS_T5 1000;
+BA_ "GenSigStartValue" SG_ 1043 LR_TTPMS_T4 1000;
+BA_ "GenSigStartValue" SG_ 1043 LR_TTPMS_T3 1000;
+BA_ "GenSigStartValue" SG_ 1043 LR_TTPMS_T2 1000;
+BA_ "GenSigStartValue" SG_ 1043 LR_TTPMS_T1 1000;
+BA_ "GenSigStartValue" SG_ 1041 RF_TTPMS_T 1000;
+BA_ "GenSigStartValue" SG_ 1040 RF_TTPMS_T16 1000;
+BA_ "GenSigStartValue" SG_ 1040 RF_TTPMS_T15 1000;
+BA_ "GenSigStartValue" SG_ 1040 RF_TTPMS_T14 1000;
+BA_ "GenSigStartValue" SG_ 1040 RF_TTPMS_T13 1000;
+BA_ "GenSigStartValue" SG_ 1039 RF_TTPMS_T12 1000;
+BA_ "GenSigStartValue" SG_ 1039 RF_TTPMS_T11 1000;
+BA_ "GenSigStartValue" SG_ 1039 RF_TTPMS_T10 1000;
+BA_ "GenSigStartValue" SG_ 1039 RF_TTPMS_T9 1000;
+BA_ "GenSigStartValue" SG_ 1038 RF_TTPMS_T8 1000;
+BA_ "GenSigStartValue" SG_ 1038 RF_TTPMS_T7 1000;
+BA_ "GenSigStartValue" SG_ 1038 RF_TTPMS_T6 1000;
+BA_ "GenSigStartValue" SG_ 1038 RF_TTPMS_T5 1000;
+BA_ "GenSigStartValue" SG_ 1037 RF_TTPMS_T4 1000;
+BA_ "GenSigStartValue" SG_ 1037 RF_TTPMS_T3 1000;
+BA_ "GenSigStartValue" SG_ 1037 RF_TTPMS_T2 1000;
+BA_ "GenSigStartValue" SG_ 1037 RF_TTPMS_T1 1000;
+BA_ "GenSigStartValue" SG_ 1035 LF_TTPMS_T 1000;
+BA_ "GenSigStartValue" SG_ 1034 LF_TTPMS_T16 1000;
+BA_ "GenSigStartValue" SG_ 1034 LF_TTPMS_T15 1000;
+BA_ "GenSigStartValue" SG_ 1034 LF_TTPMS_T14 1000;
+BA_ "GenSigStartValue" SG_ 1034 LF_TTPMS_T13 1000;
+BA_ "GenSigStartValue" SG_ 1033 LF_TTPMS_T12 1000;
+BA_ "GenSigStartValue" SG_ 1033 LF_TTPMS_T11 1000;
+BA_ "GenSigStartValue" SG_ 1033 LF_TTPMS_T10 1000;
+BA_ "GenSigStartValue" SG_ 1033 LF_TTPMS_T9 1000;
+BA_ "GenSigStartValue" SG_ 1032 LF_TTPMS_T8 1000;
+BA_ "GenSigStartValue" SG_ 1032 LF_TTPMS_T7 1000;
+BA_ "GenSigStartValue" SG_ 1032 LF_TTPMS_T6 1000;
+BA_ "GenSigStartValue" SG_ 1032 LF_TTPMS_T5 1000;
+BA_ "GenSigStartValue" SG_ 1031 LF_TTPMS_T4 1000;
+BA_ "GenSigStartValue" SG_ 1031 LF_TTPMS_T3 1000;
+BA_ "GenSigStartValue" SG_ 1031 LF_TTPMS_T2 1000;
+BA_ "GenSigStartValue" SG_ 1031 LF_TTPMS_T1 1000;
+BA_ "GenSigStartValue" SG_ 2147487779 auto_shift_rpm_5 -1000;
+BA_ "GenSigStartValue" SG_ 2147487779 auto_shift_rpm_4 -1000;
+BA_ "GenSigStartValue" SG_ 2147487779 auto_shift_rpm_3 -1000;
+BA_ "GenSigStartValue" SG_ 2147487779 auto_shift_rpm_2 -1000;
+BA_ "GenSigStartValue" SG_ 2147487779 auto_shift_rpm_1 -1000;
+VAL_ 2147487744 encoder 1 "PRESSED" 2 "CLOCKWISE" 3 "COUNTER_CLOCKWISE" ;
+VAL_ 2147487744 shift 1 "UP" 2 "DOWN" ;
+
