@@ -1,94 +1,66 @@
 VERSION "created by canmatrix"
 
 
-NS_ : 
-	NS_DESC_
-	CM_
-	BA_DEF_
-	BA_
-	VAL_
-	CAT_DEF_
-	CAT_
-	FILTER
-	BA_DEF_DEF_
-	EV_DATA_
-	ENVVAR_DATA_
-	SGTYPE_
-	SGTYPE_VAL_
-	BA_DEF_SGTYPE_
-	BA_SGTYPE_
-	SIG_TYPE_REF_
-	VAL_TABLE_
-	SIG_GROUP_
-	SIG_VALTYPE_
-	SIGTYPE_VALTYPE_
-	BO_TX_BU_
-	BA_DEF_REL_
-	BA_REL_
-	BA_DEF_DEF_REL_
-	BU_SG_REL_
-	BU_EV_REL_
-	BU_BO_REL_
-	SG_MUL_VAL_
+NS_ :
 
 BS_:
 
-BU_:
+BU_: 
 
 
-BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
- SG_ brightness : 0|8@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_20 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_19 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_18 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_17 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_16 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_15 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_00 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_01 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_02 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_03 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_04 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_05 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_06 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_07 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_08 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_09 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_10 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_11 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_12 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_13 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_14 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+BO_ 2147487843 acc_group_3: 8 Vector__XXX
+ SG_ analog_15 : 39|16@0+ (0.0000762951,0) [0|5] "V" Vector__XXX
+ SG_ analog_13 : 7|16@0+ (0.0000762951,0) [0|5] "V" Vector__XXX
+ SG_ analog_16 : 55|16@0+ (0.0000762951,0) [0|5] "V" Vector__XXX
+ SG_ analog_14 : 23|16@0+ (0.0000762951,0) [0|5] "V" Vector__XXX
 
-BO_ 2147487843 group_3: 8 Vector__XXX
- SG_ channel_15 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_13 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_16 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_14 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+BO_ 2147487841 acc_group_1: 8 Vector__XXX
+ SG_ analog_8 : 55|16@0+ (0.0000762951,0) [0|5] "V" Vector__XXX
+ SG_ analog_7 : 39|16@0+ (0.0000762951,0) [0|5] "V" Vector__XXX
+ SG_ analog_6 : 23|16@0+ (0.0000762951,0) [0|5] "V" Vector__XXX
+ SG_ analog_5 : 7|16@0+ (0.0000762951,0) [0|5] "V" Vector__XXX
 
-BO_ 2147487841 group_1: 8 Vector__XXX
- SG_ channel_8 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_7 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_6 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_5 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+BO_ 2147487842 acc_group_2: 8 Vector__XXX
+ SG_ analog_9 : 7|16@0+ (0.0000762951,0) [0|5] "V" Vector__XXX
+ SG_ analog_11 : 39|16@0+ (0.0000762951,0) [0|5] "V" Vector__XXX
+ SG_ analog_12 : 55|16@0+ (0.0000762951,0) [0|5] "V" Vector__XXX
+ SG_ analog_10 : 23|16@0+ (0.0000762951,0) [0|5] "V" Vector__XXX
 
-BO_ 2147487842 group_2: 8 Vector__XXX
- SG_ channel_9 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_11 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_12 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_10 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
-
-BO_ 2147487840 group_0: 8 Vector__XXX
- SG_ channel_4 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_2 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_3 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_1 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+BO_ 2147487840 acc_group_0: 8 Vector__XXX
+ SG_ analog_4 : 55|16@0+ (0.0000762951,0) [0|5] "V" Vector__XXX
+ SG_ analog_2 : 23|16@0+ (0.0000762951,0) [0|5] "V" Vector__XXX
+ SG_ analog_3 : 39|16@0+ (0.0000762951,0) [0|5] "V" Vector__XXX
+ SG_ analog_1 : 7|16@0+ (0.0000762951,0) [0|5] "V" Vector__XXX
 
 BO_ 2147483648 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ led_21 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 2147487809 diagnostics: 2 Vector__XXX
  SG_ cpu_temperature : 7|16@0- (0.01,0) [0|100] "°C" Vector__XXX
+
+BO_ 2147487808 neopixel: 64 Vector__XXX
+ SG_ brightness : 511|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_20 : 487|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_19 : 463|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_18 : 439|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_17 : 415|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_16 : 391|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_15 : 367|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_00 : 7|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_01 : 31|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_02 : 55|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_03 : 79|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_04 : 103|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_05 : 127|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_06 : 151|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_07 : 175|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_08 : 199|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_09 : 223|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_10 : 247|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_11 : 271|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_12 : 295|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_13 : 319|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_14 : 343|24@0+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 705 io12b_avi: 8 Vector__XXX
  SG_ avi1_voltage : 3|12@0+ (0.00122100122100122,0) [0|0] "V" Vector__XXX
@@ -127,9 +99,9 @@ BO_ 704 io12a_avi: 8 Vector__XXX
  SG_ avi1_voltage : 3|12@0+ (0.00122100122100122,0) [0|0] "V" Vector__XXX
 
 BO_ 1784 group54: 8 Vector__XXX
- SG_ generic_open_loop_motor_control_ : 39|8@0- (1,0) [0|0] "enum" Vector__XXX
- SG_ generic_open_loop_motor_con_0000 : 31|8@0- (1,0) [0|0] "enum" Vector__XXX
- SG_ generic_open_loop_motor_con_0001 : 23|8@0- (1,0) [0|0] "enum" Vector__XXX
+ SG_ generic_open_loop_motor_control_0 : 39|8@0- (1,0) [0|0] "enum" Vector__XXX
+ SG_ generic_open_loop_motor_control_1 : 31|8@0- (1,0) [0|0] "enum" Vector__XXX
+ SG_ generic_open_loop_motor_control_2 : 23|8@0- (1,0) [0|0] "enum" Vector__XXX
  SG_ nitrous_bottle_opener_state : 15|8@0- (1,0) [0|0] "enum" Vector__XXX
  SG_ exhaust_cutout_state : 7|8@0- (1,0) [0|0] "enum" Vector__XXX
 
@@ -198,10 +170,10 @@ BO_ 1005 group33: 8 Vector__XXX
  SG_ torque_management_combined_ignit : 7|16@0- (0.1,0) [0|0] "°" Vector__XXX
 
 BO_ 1004 group32: 8 Vector__XXX
- SG_ torque_management_driveshaft_rpm : 7|16@0- (1,0) [0|0] "RPM" Vector__XXX
- SG_ torque_management_driveshaf_0000 : 55|16@0- (0.1,0) [0|0] "°" Vector__XXX
- SG_ torque_management_driveshaf_0001 : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
- SG_ torque_management_driveshaf_0002 : 23|16@0- (1,0) [0|0] "RPM" Vector__XXX
+ SG_ torque_management_driveshaft_rpm0 : 7|16@0- (1,0) [0|0] "RPM" Vector__XXX
+ SG_ torque_management_driveshaft_rpm1 : 55|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ torque_management_driveshaft_rpm2 : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ torque_management_driveshaft_rpm3 : 23|16@0- (1,0) [0|0] "RPM" Vector__XXX
 
 BO_ 1003 group31: 8 Vector__XXX
  SG_ ignition_angle_bank_2 : 55|16@0- (0.1,0) [0|0] "°" Vector__XXX
@@ -379,10 +351,10 @@ BO_ 1140 group43: 8 Vector__XXX
 
 BO_ 1139 group42: 8 Vector__XXX
  SG_ cut_percentage_method : 59|4@0+ (1,0) [0|0] "enum" Vector__XXX
- SG_ water_injection_advanced_ov_0000 : 61|1@0+ (1,0) [0|0] "boolean" Vector__XXX
- SG_ water_injection_advanced_enable_ : 62|1@0+ (1,0) [0|0] "boolean" Vector__XXX
- SG_ water_injection_advanced_ov_0001 : 60|1@0+ (1,0) [0|0] "boolean" Vector__XXX
- SG_ water_injection_advanced_en_0000 : 63|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ water_injection_advanced_overrid0 : 61|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ water_injection_advanced_enable_0 : 62|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ water_injection_advanced_overrid1 : 60|1@0+ (1,0) [0|0] "boolean" Vector__XXX
+ SG_ water_injection_advanced_enable_1 : 63|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ nitrous_override_4_switch_state : 49|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ nitrous_override_4_output_state : 48|1@0+ (1,0) [0|0] "boolean" Vector__XXX
  SG_ nitrous_override_3_switch_state : 51|1@0+ (1,0) [0|0] "boolean" Vector__XXX
@@ -852,10 +824,9 @@ BO_ 2147487777 settings: 8 Vector__XXX
  SG_ start_point : 7|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
 
 
+CM_ BO_ 2147483648  "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
 
-CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
-CM_ BO_ 2147483648 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
-CM_ SG_ 1784 generic_open_loop_motor_control_ "-1: Input Error
+CM_ SG_ 1784 generic_open_loop_motor_control_0 "-1: Input Error
 0: Disabled
 1: Closed
 2: Opening
@@ -863,7 +834,7 @@ CM_ SG_ 1784 generic_open_loop_motor_control_ "-1: Input Error
 4: Closing
 5: Paused Part Way
 ";
-CM_ SG_ 1784 generic_open_loop_motor_con_0000 "-1: Input Error
+CM_ SG_ 1784 generic_open_loop_motor_control_1 "-1: Input Error
 0: Disabled
 1: Closed
 2: Opening
@@ -871,7 +842,7 @@ CM_ SG_ 1784 generic_open_loop_motor_con_0000 "-1: Input Error
 4: Closing
 5: Paused Part Way
 ";
-CM_ SG_ 1784 generic_open_loop_motor_con_0001 "-1: Input Error
+CM_ SG_ 1784 generic_open_loop_motor_control_2 "-1: Input Error
 0: Disabled
 1: Closed
 2: Opening
@@ -966,270 +937,275 @@ CM_ SG_ 864 coolant_pressure "00-04";
 CM_ SG_ 864 throttle_position "00-03";
 CM_ SG_ 864 manifold_pressure "00-02";
 CM_ SG_ 864 rpm "00-01";
-BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
-BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
-BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 100000000000;
-BA_DEF_  "BusType" STRING ;
+
+
+BA_DEF_ BO_ "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_ "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_ SG_ "GenSigStartValue" FLOAT 0 100000000000;
+BA_DEF_ SG_ "SystemSignalLongSymbol" STRING;
+BA_DEF_  "BusType" STRING;
 BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
-BA_DEF_ SG_  "SystemSignalLongSymbol" STRING ;
-BA_DEF_DEF_  "GenMsgCycleTime" 0;
-BA_DEF_DEF_  "VFrameFormat" "ExtendedCAN_FD";
-BA_DEF_DEF_  "GenSigStartValue" 0;
-BA_DEF_DEF_  "BusType" "CAN";
-BA_DEF_DEF_  "MultiplexExtEnabled" "No";
-BA_DEF_DEF_  "SystemSignalLongSymbol" "";
-BA_ "BusType" "CAN FD";
-BA_ "VFrameFormat" BO_ 2147487843 1;
+BA_DEF_DEF_ "BusType" "CAN";
+BA_DEF_DEF_ "GenMsgCycleTime" 0;
+BA_DEF_DEF_ "MultiplexExtEnabled" "No";
+BA_DEF_DEF_ "SystemSignalLongSymbol" "";
+BA_DEF_DEF_ "VFrameFormat" "ExtendedCAN_FD";
+
+BA_ "BusType"   "CAN FD";
+
 BA_ "GenMsgCycleTime" BO_ 2147487843 4;
-BA_ "VFrameFormat" BO_ 2147487841 1;
+BA_ "VFrameFormat" BO_ 2147487843 1;
 BA_ "GenMsgCycleTime" BO_ 2147487841 4;
-BA_ "VFrameFormat" BO_ 2147487842 1;
+BA_ "VFrameFormat" BO_ 2147487841 1;
 BA_ "GenMsgCycleTime" BO_ 2147487842 4;
-BA_ "VFrameFormat" BO_ 2147487840 1;
+BA_ "VFrameFormat" BO_ 2147487842 1;
 BA_ "GenMsgCycleTime" BO_ 2147487840 4;
+BA_ "VFrameFormat" BO_ 2147487840 1;
 BA_ "VFrameFormat" BO_ 2147483648 1;
 BA_ "VFrameFormat" BO_ 2147487809 1;
-BA_ "VFrameFormat" BO_ 705 0;
+BA_ "VFrameFormat" BO_ 2147487808 15;
 BA_ "GenMsgCycleTime" BO_ 705 20;
-BA_ "VFrameFormat" BO_ 707 0;
+BA_ "VFrameFormat" BO_ 705 0;
 BA_ "GenMsgCycleTime" BO_ 707 20;
-BA_ "VFrameFormat" BO_ 709 0;
+BA_ "VFrameFormat" BO_ 707 0;
 BA_ "GenMsgCycleTime" BO_ 709 20;
-BA_ "VFrameFormat" BO_ 708 0;
+BA_ "VFrameFormat" BO_ 709 0;
 BA_ "GenMsgCycleTime" BO_ 708 20;
-BA_ "VFrameFormat" BO_ 706 0;
+BA_ "VFrameFormat" BO_ 708 0;
 BA_ "GenMsgCycleTime" BO_ 706 20;
-BA_ "VFrameFormat" BO_ 704 0;
+BA_ "VFrameFormat" BO_ 706 0;
 BA_ "GenMsgCycleTime" BO_ 704 20;
-BA_ "VFrameFormat" BO_ 1784 0;
+BA_ "VFrameFormat" BO_ 704 0;
 BA_ "GenMsgCycleTime" BO_ 1784 200;
-BA_ "VFrameFormat" BO_ 1783 0;
+BA_ "VFrameFormat" BO_ 1784 0;
 BA_ "GenMsgCycleTime" BO_ 1783 100;
-BA_ "VFrameFormat" BO_ 1780 0;
+BA_ "VFrameFormat" BO_ 1783 0;
 BA_ "GenMsgCycleTime" BO_ 1780 10;
-BA_ "VFrameFormat" BO_ 1143 0;
+BA_ "VFrameFormat" BO_ 1780 0;
 BA_ "GenMsgCycleTime" BO_ 1143 100;
-BA_ "VFrameFormat" BO_ 1141 0;
+BA_ "VFrameFormat" BO_ 1143 0;
 BA_ "GenMsgCycleTime" BO_ 1141 200;
-BA_ "VFrameFormat" BO_ 1138 0;
+BA_ "VFrameFormat" BO_ 1141 0;
 BA_ "GenMsgCycleTime" BO_ 1138 50;
-BA_ "VFrameFormat" BO_ 1129 0;
+BA_ "VFrameFormat" BO_ 1138 0;
 BA_ "GenMsgCycleTime" BO_ 1129 200;
-BA_ "VFrameFormat" BO_ 1009 0;
+BA_ "VFrameFormat" BO_ 1129 0;
 BA_ "GenMsgCycleTime" BO_ 1009 20;
-BA_ "VFrameFormat" BO_ 1008 0;
+BA_ "VFrameFormat" BO_ 1009 0;
 BA_ "GenMsgCycleTime" BO_ 1008 20;
-BA_ "VFrameFormat" BO_ 1007 0;
+BA_ "VFrameFormat" BO_ 1008 0;
 BA_ "GenMsgCycleTime" BO_ 1007 50;
-BA_ "VFrameFormat" BO_ 1006 0;
+BA_ "VFrameFormat" BO_ 1007 0;
 BA_ "GenMsgCycleTime" BO_ 1006 50;
-BA_ "VFrameFormat" BO_ 1005 0;
+BA_ "VFrameFormat" BO_ 1006 0;
 BA_ "GenMsgCycleTime" BO_ 1005 20;
-BA_ "VFrameFormat" BO_ 1004 0;
+BA_ "VFrameFormat" BO_ 1005 0;
 BA_ "GenMsgCycleTime" BO_ 1004 20;
-BA_ "VFrameFormat" BO_ 1003 0;
+BA_ "VFrameFormat" BO_ 1004 0;
 BA_ "GenMsgCycleTime" BO_ 1003 20;
-BA_ "VFrameFormat" BO_ 868 0;
+BA_ "VFrameFormat" BO_ 1003 0;
 BA_ "GenMsgCycleTime" BO_ 868 20;
-BA_ "VFrameFormat" BO_ 866 0;
+BA_ "VFrameFormat" BO_ 868 0;
 BA_ "GenMsgCycleTime" BO_ 866 20;
-BA_ "VFrameFormat" BO_ 1002 0;
+BA_ "VFrameFormat" BO_ 866 0;
 BA_ "GenMsgCycleTime" BO_ 1002 20;
-BA_ "VFrameFormat" BO_ 1001 0;
+BA_ "VFrameFormat" BO_ 1002 0;
 BA_ "GenMsgCycleTime" BO_ 1001 50;
-BA_ "VFrameFormat" BO_ 1000 0;
+BA_ "VFrameFormat" BO_ 1001 0;
 BA_ "GenMsgCycleTime" BO_ 1000 50;
-BA_ "VFrameFormat" BO_ 999 0;
+BA_ "VFrameFormat" BO_ 1000 0;
 BA_ "GenMsgCycleTime" BO_ 999 50;
-BA_ "VFrameFormat" BO_ 998 0;
+BA_ "VFrameFormat" BO_ 999 0;
 BA_ "GenMsgCycleTime" BO_ 998 50;
-BA_ "VFrameFormat" BO_ 997 0;
+BA_ "VFrameFormat" BO_ 998 0;
 BA_ "GenMsgCycleTime" BO_ 997 20;
-BA_ "VFrameFormat" BO_ 995 0;
+BA_ "VFrameFormat" BO_ 997 0;
 BA_ "GenMsgCycleTime" BO_ 995 200;
-BA_ "VFrameFormat" BO_ 994 0;
+BA_ "VFrameFormat" BO_ 995 0;
 BA_ "GenMsgCycleTime" BO_ 994 200;
-BA_ "VFrameFormat" BO_ 993 0;
+BA_ "VFrameFormat" BO_ 994 0;
 BA_ "GenMsgCycleTime" BO_ 993 200;
-BA_ "VFrameFormat" BO_ 886 0;
+BA_ "VFrameFormat" BO_ 993 0;
 BA_ "GenMsgCycleTime" BO_ 886 100;
-BA_ "VFrameFormat" BO_ 885 0;
+BA_ "VFrameFormat" BO_ 886 0;
 BA_ "GenMsgCycleTime" BO_ 885 100;
-BA_ "VFrameFormat" BO_ 884 0;
+BA_ "VFrameFormat" BO_ 885 0;
 BA_ "GenMsgCycleTime" BO_ 884 100;
-BA_ "VFrameFormat" BO_ 883 0;
+BA_ "VFrameFormat" BO_ 884 0;
 BA_ "GenMsgCycleTime" BO_ 883 100;
-BA_ "VFrameFormat" BO_ 881 0;
+BA_ "VFrameFormat" BO_ 883 0;
 BA_ "GenMsgCycleTime" BO_ 881 100;
-BA_ "VFrameFormat" BO_ 879 0;
+BA_ "VFrameFormat" BO_ 881 0;
 BA_ "GenMsgCycleTime" BO_ 879 50;
-BA_ "VFrameFormat" BO_ 878 0;
+BA_ "VFrameFormat" BO_ 879 0;
 BA_ "GenMsgCycleTime" BO_ 878 50;
-BA_ "VFrameFormat" BO_ 877 0;
+BA_ "VFrameFormat" BO_ 878 0;
 BA_ "GenMsgCycleTime" BO_ 877 50;
-BA_ "VFrameFormat" BO_ 876 0;
+BA_ "VFrameFormat" BO_ 877 0;
 BA_ "GenMsgCycleTime" BO_ 876 50;
-BA_ "VFrameFormat" BO_ 875 0;
+BA_ "VFrameFormat" BO_ 876 0;
 BA_ "GenMsgCycleTime" BO_ 875 50;
-BA_ "VFrameFormat" BO_ 873 0;
+BA_ "VFrameFormat" BO_ 875 0;
 BA_ "GenMsgCycleTime" BO_ 873 50;
-BA_ "VFrameFormat" BO_ 874 0;
+BA_ "VFrameFormat" BO_ 873 0;
 BA_ "GenMsgCycleTime" BO_ 874 50;
-BA_ "VFrameFormat" BO_ 867 0;
+BA_ "VFrameFormat" BO_ 874 0;
 BA_ "GenMsgCycleTime" BO_ 867 50;
-BA_ "VFrameFormat" BO_ 1142 0;
+BA_ "VFrameFormat" BO_ 867 0;
 BA_ "GenMsgCycleTime" BO_ 1142 50;
-BA_ "VFrameFormat" BO_ 1782 0;
+BA_ "VFrameFormat" BO_ 1142 0;
 BA_ "GenMsgCycleTime" BO_ 1782 200;
-BA_ "VFrameFormat" BO_ 1779 0;
+BA_ "VFrameFormat" BO_ 1782 0;
 BA_ "GenMsgCycleTime" BO_ 1779 200;
-BA_ "VFrameFormat" BO_ 1140 0;
+BA_ "VFrameFormat" BO_ 1779 0;
 BA_ "GenMsgCycleTime" BO_ 1140 50;
-BA_ "VFrameFormat" BO_ 1139 0;
+BA_ "VFrameFormat" BO_ 1140 0;
 BA_ "GenMsgCycleTime" BO_ 1139 100;
-BA_ "VFrameFormat" BO_ 1778 0;
+BA_ "VFrameFormat" BO_ 1139 0;
 BA_ "GenMsgCycleTime" BO_ 1778 200;
-BA_ "VFrameFormat" BO_ 1777 0;
+BA_ "VFrameFormat" BO_ 1778 0;
 BA_ "GenMsgCycleTime" BO_ 1777 200;
-BA_ "VFrameFormat" BO_ 1776 0;
+BA_ "VFrameFormat" BO_ 1777 0;
 BA_ "GenMsgCycleTime" BO_ 1776 200;
-BA_ "VFrameFormat" BO_ 1137 0;
+BA_ "VFrameFormat" BO_ 1776 0;
 BA_ "GenMsgCycleTime" BO_ 1137 20;
-BA_ "VFrameFormat" BO_ 992 0;
+BA_ "VFrameFormat" BO_ 1137 0;
 BA_ "GenMsgCycleTime" BO_ 992 200;
-BA_ "VFrameFormat" BO_ 996 0;
+BA_ "VFrameFormat" BO_ 992 0;
 BA_ "GenMsgCycleTime" BO_ 996 200;
-BA_ "VFrameFormat" BO_ 882 0;
+BA_ "VFrameFormat" BO_ 996 0;
 BA_ "GenMsgCycleTime" BO_ 882 100;
-BA_ "VFrameFormat" BO_ 1136 0;
+BA_ "VFrameFormat" BO_ 882 0;
 BA_ "GenMsgCycleTime" BO_ 1136 50;
-BA_ "VFrameFormat" BO_ 880 0;
+BA_ "VFrameFormat" BO_ 1136 0;
 BA_ "GenMsgCycleTime" BO_ 880 50;
-BA_ "VFrameFormat" BO_ 872 0;
+BA_ "VFrameFormat" BO_ 880 0;
 BA_ "GenMsgCycleTime" BO_ 872 50;
-BA_ "VFrameFormat" BO_ 865 0;
+BA_ "VFrameFormat" BO_ 872 0;
 BA_ "GenMsgCycleTime" BO_ 865 20;
-BA_ "VFrameFormat" BO_ 864 0;
+BA_ "VFrameFormat" BO_ 865 0;
 BA_ "GenMsgCycleTime" BO_ 864 20;
+BA_ "VFrameFormat" BO_ 864 0;
 BA_ "VFrameFormat" BO_ 1298 0;
 BA_ "VFrameFormat" BO_ 1297 0;
 BA_ "VFrameFormat" BO_ 1296 0;
 BA_ "VFrameFormat" BO_ 1295 0;
 BA_ "VFrameFormat" BO_ 1294 0;
 BA_ "VFrameFormat" BO_ 1293 0;
-BA_ "VFrameFormat" BO_ 1292 0;
 BA_ "GenMsgCycleTime" BO_ 1292 4;
-BA_ "VFrameFormat" BO_ 1291 0;
+BA_ "VFrameFormat" BO_ 1292 0;
 BA_ "GenMsgCycleTime" BO_ 1291 4;
-BA_ "VFrameFormat" BO_ 1290 0;
+BA_ "VFrameFormat" BO_ 1291 0;
 BA_ "GenMsgCycleTime" BO_ 1290 4;
-BA_ "VFrameFormat" BO_ 1262 0;
+BA_ "VFrameFormat" BO_ 1290 0;
 BA_ "GenMsgCycleTime" BO_ 1262 20;
-BA_ "VFrameFormat" BO_ 1263 0;
+BA_ "VFrameFormat" BO_ 1262 0;
 BA_ "GenMsgCycleTime" BO_ 1263 20;
-BA_ "VFrameFormat" BO_ 1261 0;
+BA_ "VFrameFormat" BO_ 1263 0;
 BA_ "GenMsgCycleTime" BO_ 1261 20;
-BA_ "VFrameFormat" BO_ 1260 0;
+BA_ "VFrameFormat" BO_ 1261 0;
 BA_ "GenMsgCycleTime" BO_ 1260 20;
-BA_ "VFrameFormat" BO_ 1200 0;
+BA_ "VFrameFormat" BO_ 1260 0;
 BA_ "GenMsgCycleTime" BO_ 1200 32;
-BA_ "VFrameFormat" BO_ 1201 0;
+BA_ "VFrameFormat" BO_ 1200 0;
 BA_ "GenMsgCycleTime" BO_ 1201 32;
-BA_ "VFrameFormat" BO_ 1202 0;
+BA_ "VFrameFormat" BO_ 1201 0;
 BA_ "GenMsgCycleTime" BO_ 1202 32;
-BA_ "VFrameFormat" BO_ 1203 0;
+BA_ "VFrameFormat" BO_ 1202 0;
 BA_ "GenMsgCycleTime" BO_ 1203 32;
-BA_ "VFrameFormat" BO_ 1204 0;
+BA_ "VFrameFormat" BO_ 1203 0;
 BA_ "GenMsgCycleTime" BO_ 1204 32;
-BA_ "VFrameFormat" BO_ 1205 0;
+BA_ "VFrameFormat" BO_ 1204 0;
 BA_ "GenMsgCycleTime" BO_ 1205 32;
-BA_ "VFrameFormat" BO_ 1206 0;
+BA_ "VFrameFormat" BO_ 1205 0;
 BA_ "GenMsgCycleTime" BO_ 1206 32;
-BA_ "VFrameFormat" BO_ 1207 0;
+BA_ "VFrameFormat" BO_ 1206 0;
 BA_ "GenMsgCycleTime" BO_ 1207 32;
-BA_ "VFrameFormat" BO_ 1208 0;
+BA_ "VFrameFormat" BO_ 1207 0;
 BA_ "GenMsgCycleTime" BO_ 1208 32;
-BA_ "VFrameFormat" BO_ 1209 0;
+BA_ "VFrameFormat" BO_ 1208 0;
 BA_ "GenMsgCycleTime" BO_ 1209 32;
-BA_ "VFrameFormat" BO_ 1210 0;
+BA_ "VFrameFormat" BO_ 1209 0;
 BA_ "GenMsgCycleTime" BO_ 1210 32;
-BA_ "VFrameFormat" BO_ 1211 0;
+BA_ "VFrameFormat" BO_ 1210 0;
 BA_ "GenMsgCycleTime" BO_ 1211 32;
-BA_ "VFrameFormat" BO_ 1212 0;
+BA_ "VFrameFormat" BO_ 1211 0;
 BA_ "GenMsgCycleTime" BO_ 1212 32;
-BA_ "VFrameFormat" BO_ 1213 0;
+BA_ "VFrameFormat" BO_ 1212 0;
 BA_ "GenMsgCycleTime" BO_ 1213 32;
-BA_ "VFrameFormat" BO_ 1214 0;
+BA_ "VFrameFormat" BO_ 1213 0;
 BA_ "GenMsgCycleTime" BO_ 1214 32;
-BA_ "VFrameFormat" BO_ 1215 0;
+BA_ "VFrameFormat" BO_ 1214 0;
 BA_ "GenMsgCycleTime" BO_ 1215 32;
-BA_ "VFrameFormat" BO_ 1053 0;
+BA_ "VFrameFormat" BO_ 1215 0;
 BA_ "GenMsgCycleTime" BO_ 1053 1250;
-BA_ "VFrameFormat" BO_ 1052 0;
+BA_ "VFrameFormat" BO_ 1053 0;
 BA_ "GenMsgCycleTime" BO_ 1052 1250;
-BA_ "VFrameFormat" BO_ 1051 0;
+BA_ "VFrameFormat" BO_ 1052 0;
 BA_ "GenMsgCycleTime" BO_ 1051 1250;
-BA_ "VFrameFormat" BO_ 1050 0;
+BA_ "VFrameFormat" BO_ 1051 0;
 BA_ "GenMsgCycleTime" BO_ 1050 1250;
-BA_ "VFrameFormat" BO_ 1049 0;
+BA_ "VFrameFormat" BO_ 1050 0;
 BA_ "GenMsgCycleTime" BO_ 1049 1250;
-BA_ "VFrameFormat" BO_ 1048 0;
+BA_ "VFrameFormat" BO_ 1049 0;
 BA_ "GenMsgCycleTime" BO_ 1048 1250;
-BA_ "VFrameFormat" BO_ 1047 0;
+BA_ "VFrameFormat" BO_ 1048 0;
 BA_ "GenMsgCycleTime" BO_ 1047 1250;
-BA_ "VFrameFormat" BO_ 1046 0;
+BA_ "VFrameFormat" BO_ 1047 0;
 BA_ "GenMsgCycleTime" BO_ 1046 1250;
-BA_ "VFrameFormat" BO_ 1045 0;
+BA_ "VFrameFormat" BO_ 1046 0;
 BA_ "GenMsgCycleTime" BO_ 1045 1250;
-BA_ "VFrameFormat" BO_ 1044 0;
+BA_ "VFrameFormat" BO_ 1045 0;
 BA_ "GenMsgCycleTime" BO_ 1044 1250;
-BA_ "VFrameFormat" BO_ 1043 0;
+BA_ "VFrameFormat" BO_ 1044 0;
 BA_ "GenMsgCycleTime" BO_ 1043 1250;
-BA_ "VFrameFormat" BO_ 1042 0;
+BA_ "VFrameFormat" BO_ 1043 0;
 BA_ "GenMsgCycleTime" BO_ 1042 1250;
-BA_ "VFrameFormat" BO_ 1041 0;
+BA_ "VFrameFormat" BO_ 1042 0;
 BA_ "GenMsgCycleTime" BO_ 1041 1250;
-BA_ "VFrameFormat" BO_ 1040 0;
+BA_ "VFrameFormat" BO_ 1041 0;
 BA_ "GenMsgCycleTime" BO_ 1040 1250;
-BA_ "VFrameFormat" BO_ 1039 0;
+BA_ "VFrameFormat" BO_ 1040 0;
 BA_ "GenMsgCycleTime" BO_ 1039 1250;
-BA_ "VFrameFormat" BO_ 1038 0;
+BA_ "VFrameFormat" BO_ 1039 0;
 BA_ "GenMsgCycleTime" BO_ 1038 1250;
-BA_ "VFrameFormat" BO_ 1037 0;
+BA_ "VFrameFormat" BO_ 1038 0;
 BA_ "GenMsgCycleTime" BO_ 1037 1250;
-BA_ "VFrameFormat" BO_ 1036 0;
+BA_ "VFrameFormat" BO_ 1037 0;
 BA_ "GenMsgCycleTime" BO_ 1036 1250;
-BA_ "VFrameFormat" BO_ 1035 0;
+BA_ "VFrameFormat" BO_ 1036 0;
 BA_ "GenMsgCycleTime" BO_ 1035 1250;
-BA_ "VFrameFormat" BO_ 1034 0;
+BA_ "VFrameFormat" BO_ 1035 0;
 BA_ "GenMsgCycleTime" BO_ 1034 1250;
-BA_ "VFrameFormat" BO_ 1033 0;
+BA_ "VFrameFormat" BO_ 1034 0;
 BA_ "GenMsgCycleTime" BO_ 1033 1250;
-BA_ "VFrameFormat" BO_ 1032 0;
+BA_ "VFrameFormat" BO_ 1033 0;
 BA_ "GenMsgCycleTime" BO_ 1032 1250;
-BA_ "VFrameFormat" BO_ 1031 0;
+BA_ "VFrameFormat" BO_ 1032 0;
 BA_ "GenMsgCycleTime" BO_ 1031 1250;
-BA_ "VFrameFormat" BO_ 1030 0;
+BA_ "VFrameFormat" BO_ 1031 0;
 BA_ "GenMsgCycleTime" BO_ 1030 1250;
+BA_ "VFrameFormat" BO_ 1030 0;
 BA_ "VFrameFormat" BO_ 2147487744 1;
-BA_ "VFrameFormat" BO_ 2147487745 1;
 BA_ "GenMsgCycleTime" BO_ 2147487745 10;
+BA_ "VFrameFormat" BO_ 2147487745 1;
 BA_ "VFrameFormat" BO_ 2147487778 1;
-BA_ "VFrameFormat" BO_ 2147487779 1;
 BA_ "GenMsgCycleTime" BO_ 2147487779 1000;
-BA_ "VFrameFormat" BO_ 2147487776 1;
+BA_ "VFrameFormat" BO_ 2147487779 1;
 BA_ "GenMsgCycleTime" BO_ 2147487776 20;
-BA_ "VFrameFormat" BO_ 2147487777 1;
+BA_ "VFrameFormat" BO_ 2147487776 1;
 BA_ "GenMsgCycleTime" BO_ 2147487777 200;
-BA_ "SystemSignalLongSymbol" SG_ 1784 generic_open_loop_motor_control_ "generic_open_loop_motor_control_3_state";
-BA_ "SystemSignalLongSymbol" SG_ 1784 generic_open_loop_motor_con_0000 "generic_open_loop_motor_control_2_state";
-BA_ "SystemSignalLongSymbol" SG_ 1784 generic_open_loop_motor_con_0001 "generic_open_loop_motor_control_1_state";
+BA_ "VFrameFormat" BO_ 2147487777 1;
+
+BA_ "SystemSignalLongSymbol" SG_ 1784 generic_open_loop_motor_control_0 "generic_open_loop_motor_control_3_state";
+BA_ "SystemSignalLongSymbol" SG_ 1784 generic_open_loop_motor_control_1 "generic_open_loop_motor_control_2_state";
+BA_ "SystemSignalLongSymbol" SG_ 1784 generic_open_loop_motor_control_2 "generic_open_loop_motor_control_1_state";
 BA_ "SystemSignalLongSymbol" SG_ 1783 water_injection_advanced_solenoi "water_injection_advanced_solenoid_duty_cycle";
 BA_ "SystemSignalLongSymbol" SG_ 1005 torque_management_combined_ignit "torque_management_combined_ignition_correction";
-BA_ "SystemSignalLongSymbol" SG_ 1004 torque_management_driveshaft_rpm "torque_management_driveshaft_rpm_target";
-BA_ "SystemSignalLongSymbol" SG_ 1004 torque_management_driveshaf_0000 "torque_management_driveshaft_rpm_timed_ignition_correction";
-BA_ "SystemSignalLongSymbol" SG_ 1004 torque_management_driveshaf_0001 "torque_management_driveshaft_rpm_target_error_ignition_correction";
-BA_ "SystemSignalLongSymbol" SG_ 1004 torque_management_driveshaf_0002 "torque_management_driveshaft_rpm_target_error";
+BA_ "SystemSignalLongSymbol" SG_ 1004 torque_management_driveshaft_rpm0 "torque_management_driveshaft_rpm_target";
+BA_ "SystemSignalLongSymbol" SG_ 1004 torque_management_driveshaft_rpm1 "torque_management_driveshaft_rpm_timed_ignition_correction";
+BA_ "SystemSignalLongSymbol" SG_ 1004 torque_management_driveshaft_rpm2 "torque_management_driveshaft_rpm_target_error_ignition_correction";
+BA_ "SystemSignalLongSymbol" SG_ 1004 torque_management_driveshaft_rpm3 "torque_management_driveshaft_rpm_target_error";
 BA_ "SystemSignalLongSymbol" SG_ 868 injection_stage_4_average_inject "injection_stage_4_average_injection_time";
 BA_ "SystemSignalLongSymbol" SG_ 868 injection_stage_3_average_inject "injection_stage_3_average_injection_time";
 BA_ "SystemSignalLongSymbol" SG_ 868 injection_stage_2_average_inject "injection_stage_2_average_injection_time";
@@ -1251,10 +1227,10 @@ BA_ "SystemSignalLongSymbol" SG_ 1779 front_left_tyre_air_leak_detecte "front_le
 BA_ "SystemSignalLongSymbol" SG_ 1779 rear_right_tyre_air_leak_detecte "rear_right_tyre_air_leak_detected";
 BA_ "GenSigStartValue" SG_ 1779 rear_tyre_recommended_pressure 1013;
 BA_ "GenSigStartValue" SG_ 1779 front_tyre_recommended_pressure 1013;
-BA_ "SystemSignalLongSymbol" SG_ 1139 water_injection_advanced_ov_0000 "water_injection_advanced_override_switch_state";
-BA_ "SystemSignalLongSymbol" SG_ 1139 water_injection_advanced_enable_ "water_injection_advanced_enable_output_state";
-BA_ "SystemSignalLongSymbol" SG_ 1139 water_injection_advanced_ov_0001 "water_injection_advanced_override_output_state";
-BA_ "SystemSignalLongSymbol" SG_ 1139 water_injection_advanced_en_0000 "water_injection_advanced_enable_switch_state";
+BA_ "SystemSignalLongSymbol" SG_ 1139 water_injection_advanced_overrid0 "water_injection_advanced_override_switch_state";
+BA_ "SystemSignalLongSymbol" SG_ 1139 water_injection_advanced_enable_0 "water_injection_advanced_enable_output_state";
+BA_ "SystemSignalLongSymbol" SG_ 1139 water_injection_advanced_overrid1 "water_injection_advanced_override_output_state";
+BA_ "SystemSignalLongSymbol" SG_ 1139 water_injection_advanced_enable_1 "water_injection_advanced_enable_switch_state";
 BA_ "SystemSignalLongSymbol" SG_ 1778 rear_right_tyre_sensor_battery_v "rear_right_tyre_sensor_battery_voltage";
 BA_ "SystemSignalLongSymbol" SG_ 1778 rear_left_tyre_sensor_battery_vo "rear_left_tyre_sensor_battery_voltage";
 BA_ "SystemSignalLongSymbol" SG_ 1778 front_right_tyre_sensor_battery_ "front_right_tyre_sensor_battery_voltage";
@@ -1404,6 +1380,6 @@ BA_ "GenSigStartValue" SG_ 2147487779 auto_shift_rpm_4 -1000;
 BA_ "GenSigStartValue" SG_ 2147487779 auto_shift_rpm_3 -1000;
 BA_ "GenSigStartValue" SG_ 2147487779 auto_shift_rpm_2 -1000;
 BA_ "GenSigStartValue" SG_ 2147487779 auto_shift_rpm_1 -1000;
-VAL_ 2147487744 encoder 1 "PRESSED" 2 "CLOCKWISE" 3 "COUNTER_CLOCKWISE" ;
-VAL_ 2147487744 shift 1 "UP" 2 "DOWN" ;
 
+VAL_ 2147487744 encoder 1 "PRESSED" 2 "CLOCKWISE" 3 "COUNTER_CLOCKWISE";
+VAL_ 2147487744 shift 1 "UP" 2 "DOWN";
