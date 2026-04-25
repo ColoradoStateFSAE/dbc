@@ -806,9 +806,9 @@ BO_ 2147487779 auto_shift_rpm: 8 Vector__XXX
  SG_ auto_shift_rpm_1 : 7|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
 
 BO_ 2147487776 servo: 5 Vector__XXX
- SG_ servo_potentiometer : 27|12@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ servo_potentiometer : 27|12@0+ (0.00122100122,0) [0|0] "v" Vector__XXX
  SG_ servo_percentage : 7|16@0+ (1,0) [0|0] "%" Vector__XXX
- SG_ servo_position : 23|12@0+ (1,0) [0|0] "microseconds" Vector__XXX
+ SG_ servo_position : 23|12@0+ (1,0) [0|0] "us" Vector__XXX
 
 BO_ 2147487777 settings: 8 Vector__XXX
  SG_ set_invert_solenoid : 59|1@0+ (1,0) [0|0] "" Vector__XXX
