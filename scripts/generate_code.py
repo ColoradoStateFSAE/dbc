@@ -32,7 +32,7 @@ for dbc_file in dbc_files:
 
     # Generate C source
     subprocess.run([
-        "python", "-m", "cantools", "generate_c_source",
+        "cantools", "generate_c_source",
         str(dbc_file), "--output-directory", str(output_dir)
     ], check=True)
 
