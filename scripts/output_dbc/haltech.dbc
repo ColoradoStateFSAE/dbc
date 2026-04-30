@@ -36,33 +36,6 @@ BS_:
 BU_: 
 
 
-BO_ 2147487843 acc_group_3: 8 Vector__XXX
- SG_ acc_16 : 55|16@0+ (1,0) [0|5] "V" Vector__XXX
- SG_ acc_15 : 39|16@0+ (1,0) [0|5] "V" Vector__XXX
- SG_ acc_14 : 23|16@0+ (1,0) [0|5] "V" Vector__XXX
- SG_ acc_13 : 7|16@0+ (1,0) [0|5] "V" Vector__XXX
-
-BO_ 2147487841 acc_group_1: 8 Vector__XXX
- SG_ acc_8 : 55|16@0+ (1,0) [0|5] "V" Vector__XXX
- SG_ acc_7 : 39|16@0+ (1,0) [0|5] "V" Vector__XXX
- SG_ acc_6 : 23|16@0+ (1,0) [0|5] "V" Vector__XXX
- SG_ acc_5 : 7|16@0+ (1,0) [0|5] "V" Vector__XXX
-
-BO_ 2147487842 acc_group_2: 8 Vector__XXX
- SG_ acc_12 : 55|16@0+ (1,0) [0|5] "V" Vector__XXX
- SG_ acc_11 : 39|16@0+ (1,0) [0|5] "V" Vector__XXX
- SG_ acc_10 : 23|16@0+ (1,0) [0|5] "V" Vector__XXX
- SG_ acc_9 : 7|16@0+ (1,0) [0|5] "V" Vector__XXX
-
-BO_ 2147487840 acc_group_0: 8 Vector__XXX
- SG_ acc_4 : 55|16@0+ (1,0) [0|5] "V" Vector__XXX
- SG_ acc_3 : 39|16@0+ (1,0) [0|5] "V" Vector__XXX
- SG_ acc_2 : 23|16@0+ (1,0) [0|5] "V" Vector__XXX
- SG_ acc_1 : 7|16@0+ (1,0) [0|5] "V" Vector__XXX
-
-BO_ 2147487809 diagnostics: 2 Vector__XXX
- SG_ display_temp : 7|16@0- (1,0) [0|100] "°C" Vector__XXX
-
 BO_ 1143 group46: 8 Vector__XXX
  SG_ cut_percentage : 23|16@0+ (1,0) [0|0] "%" Vector__XXX
 
@@ -158,61 +131,6 @@ BO_ 864 group00: 8 Vector__XXX
  SG_ map : 23|16@0+ (1,0) [0|0] "kPa (Abs)" Vector__XXX
  SG_ engine_rpm : 7|16@0+ (1,0) [0|0] "RPM" Vector__XXX
 
-BO_ 1292 Aero_Static_Pressure_Array_1_3: 4 Vector__XXX
- SG_ P_Scanner_Temp : 23|16@0- (1,0) [-327.68|327.67] "C" Vector__XXX
- SG_ Aero_Static_REF : 7|16@0- (1,0) [-327.68|327.67] "mbar" Vector__XXX
-
-BO_ 1291 Aero_Static_Pressure_Array_1_2: 8 Vector__XXX
- SG_ Aero_Static_P8 : 55|16@0- (1,0) [-327.68|327.67] "mbar" Vector__XXX
- SG_ Aero_Static_P7 : 39|16@0- (1,0) [-327.68|327.67] "mbar" Vector__XXX
- SG_ Aero_Static_P6 : 23|16@0- (1,0) [-327.68|327.67] "mbar" Vector__XXX
- SG_ Aero_Static_P5 : 7|16@0- (1,0) [-327.68|327.67] "mbar" Vector__XXX
-
-BO_ 1290 Aero_Static_Pressure_Array_1_1: 8 Vector__XXX
- SG_ Aero_Static_P4 : 55|16@0- (1,0) [-327.68|327.67] "mbar" Vector__XXX
- SG_ Aero_Static_P3 : 39|16@0- (1,0) [-327.68|327.67] "mbar" Vector__XXX
- SG_ Aero_Static_P2 : 23|16@0- (1,0) [-327.68|327.67] "mbar" Vector__XXX
- SG_ Aero_Static_P1 : 7|16@0- (1,0) [-327.68|327.67] "mbar" Vector__XXX
-
-BO_ 1262 Angular_Rate_Rear: 8 Vector__XXX
- SG_ rear_angular_z : 39|16@0- (1,0) [-3276.8|3276.7] "deg/sec" Vector__XXX
- SG_ rear_angular_y : 23|16@0- (1,0) [-3276.8|3276.7] "deg/sec" Vector__XXX
- SG_ rear_angular_x : 7|16@0- (1,0) [-3276.8|3276.7] "deg/sec" Vector__XXX
-
-BO_ 1263 Acceleration_Rear: 8 Vector__XXX
- SG_ rear_imu_temp : 55|16@0- (1,0) [-32768|32767] "C" Vector__XXX
- SG_ rear_acc_y : 23|16@0- (1,0) [-327.68|327.67] "g" Vector__XXX
- SG_ rear_acc_x : 7|16@0- (1,0) [-327.68|327.67] "g" Vector__XXX
-
-BO_ 1261 Acceleration_Front: 8 Vector__XXX
- SG_ front_imu_temp : 55|16@0- (1,0) [-32768|32767] "C" Vector__XXX
- SG_ front_acc_y : 23|16@0- (1,0) [-327.68|327.67] "g" Vector__XXX
- SG_ front_acc_x : 7|16@0- (1,0) [-327.68|327.67] "g" Vector__XXX
-
-BO_ 1260 Angular_Rate_Front: 8 Vector__XXX
- SG_ front_angular_z : 39|16@0- (1,0) [-3276.8|3276.7] "deg/sec" Vector__XXX
- SG_ front_angular_y : 23|16@0- (1,0) [-3276.8|3276.7] "deg/sec" Vector__XXX
- SG_ front_angular_x : 7|16@0- (1,0) [-3276.8|3276.7] "deg/sec" Vector__XXX
-
-BO_ 2147487745 clutch: 7 Vector__XXX
- SG_ clutch_right_raw : 45|10@0+ (1,0) [0|0] "" Vector__XXX
- SG_ clutch_left_raw : 39|10@0+ (1,0) [0|0] "" Vector__XXX
- SG_ clutch_right : 23|16@0+ (1,0) [0|100] "%" Vector__XXX
- SG_ clutch_left : 7|16@0+ (1,0) [0|100] "%" Vector__XXX
-
-BO_ 2147487779 auto_shift_rpm: 8 Vector__XXX
- SG_ auto_shift_rpm_4 : 25|10@0+ (1,0) [10000|22276] "RPM" Vector__XXX
- SG_ auto_shift_rpm_3 : 19|10@0+ (1,0) [10000|22276] "RPM" Vector__XXX
- SG_ auto_shift_rpm_2 : 13|10@0+ (1,0) [10000|22276] "RPM" Vector__XXX
- SG_ auto_shift_rpm_1 : 7|10@0+ (1,0) [10000|22276] "RPM" Vector__XXX
-
-BO_ 2147487776 servo: 5 Vector__XXX
- SG_ servo_pot : 27|12@0+ (1,0) [0|0] "v" Vector__XXX
- SG_ servo_position : 23|12@0+ (1,0) [0|0] "us" Vector__XXX
-
-BO_ 2147487777 settings: 8 Vector__XXX
- SG_ auto_shift : 47|1@0+ (1,0) [0|0] "boolean" Vector__XXX
-
 
 
 
@@ -223,10 +141,6 @@ The upper 2 bits determine which letter it is (0b00 = P, 0b01 = B, 0b10 = C, 0b1
 ";
 BA_DEF_ BO_  "GenMsgCycleTime" INT 0 65535;
 BA_DEF_DEF_  "GenMsgCycleTime" 0;
-BA_ "GenMsgCycleTime" BO_ 2147487843 4;
-BA_ "GenMsgCycleTime" BO_ 2147487841 4;
-BA_ "GenMsgCycleTime" BO_ 2147487842 4;
-BA_ "GenMsgCycleTime" BO_ 2147487840 4;
 BA_ "GenMsgCycleTime" BO_ 1143 100;
 BA_ "GenMsgCycleTime" BO_ 1129 200;
 BA_ "GenMsgCycleTime" BO_ 1009 20;
@@ -250,17 +164,6 @@ BA_ "GenMsgCycleTime" BO_ 1136 50;
 BA_ "GenMsgCycleTime" BO_ 880 50;
 BA_ "GenMsgCycleTime" BO_ 865 20;
 BA_ "GenMsgCycleTime" BO_ 864 20;
-BA_ "GenMsgCycleTime" BO_ 1292 4;
-BA_ "GenMsgCycleTime" BO_ 1291 4;
-BA_ "GenMsgCycleTime" BO_ 1290 4;
-BA_ "GenMsgCycleTime" BO_ 1262 20;
-BA_ "GenMsgCycleTime" BO_ 1263 20;
-BA_ "GenMsgCycleTime" BO_ 1261 20;
-BA_ "GenMsgCycleTime" BO_ 1260 20;
-BA_ "GenMsgCycleTime" BO_ 2147487745 10;
-BA_ "GenMsgCycleTime" BO_ 2147487779 1000;
-BA_ "GenMsgCycleTime" BO_ 2147487776 20;
-BA_ "GenMsgCycleTime" BO_ 2147487777 200;
 
 
 
