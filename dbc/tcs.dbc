@@ -40,11 +40,11 @@ BO_ 2147487778 status: 2 Vector__XXX
  SG_ over_rev : 7|1@0+ (1,0) [0|0] "boolean" Vector__XXX
 
 BO_ 2147487779 auto_shift_rpm: 8 Vector__XXX
- SG_ auto_shift_rpm_5 : 47|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
- SG_ auto_shift_rpm_4 : 25|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
- SG_ auto_shift_rpm_3 : 19|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
- SG_ auto_shift_rpm_2 : 13|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
- SG_ auto_shift_rpm_1 : 7|10@0+ (10,10000) [0|1023] "RPM" Vector__XXX
+ SG_ auto_shift_rpm_5 : 47|10@0+ (12,10000) [10000|22276] "RPM" Vector__XXX
+ SG_ auto_shift_rpm_4 : 25|10@0+ (12,10000) [10000|22276] "RPM" Vector__XXX
+ SG_ auto_shift_rpm_3 : 19|10@0+ (12,10000) [10000|22276] "RPM" Vector__XXX
+ SG_ auto_shift_rpm_2 : 13|10@0+ (12,10000) [10000|22276] "RPM" Vector__XXX
+ SG_ auto_shift_rpm_1 : 7|10@0+ (12,10000) [10000|22276] "RPM" Vector__XXX
 
 BO_ 2147487776 servo: 5 Vector__XXX
  SG_ servo_potentiometer : 27|12@0+ (0.00122100122,0) [0|0] "v" Vector__XXX

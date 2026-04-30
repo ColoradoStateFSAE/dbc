@@ -141,17 +141,17 @@ BO_ 1006 group34: 8 Vector__XXX
  SG_ wideband_sensor_5 : 7|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
 
 BO_ 1005 group33: 8 Vector__XXX
- SG_ torque_management_combined_ignit : 7|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ torque_management_combined_ignit : 7|16@0- (0.1,0) [0|0] "deg" Vector__XXX
 
 BO_ 1004 group32: 8 Vector__XXX
  SG_ torque_management_driveshaft_rpm : 7|16@0- (1,0) [0|0] "RPM" Vector__XXX
- SG_ torque_management_driveshaf_0000 : 55|16@0- (0.1,0) [0|0] "°" Vector__XXX
- SG_ torque_management_driveshaf_0001 : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ torque_management_driveshaf_0000 : 55|16@0- (0.1,0) [0|0] "deg" Vector__XXX
+ SG_ torque_management_driveshaf_0001 : 39|16@0- (0.1,0) [0|0] "deg" Vector__XXX
  SG_ torque_management_driveshaf_0002 : 23|16@0- (1,0) [0|0] "RPM" Vector__XXX
 
 BO_ 1003 group31: 8 Vector__XXX
- SG_ ignition_angle_bank_2 : 55|16@0- (0.1,0) [0|0] "°" Vector__XXX
- SG_ ignition_angle_bank_1 : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ ignition_angle_bank_2 : 55|16@0- (0.1,0) [0|0] "deg" Vector__XXX
+ SG_ ignition_angle_bank_1 : 39|16@0- (0.1,0) [0|0] "deg" Vector__XXX
  SG_ race_timer : 7|32@0+ (1,0) [0|0] "ms" Vector__XXX
 
 BO_ 868 group04: 8 Vector__XXX
@@ -161,7 +161,7 @@ BO_ 868 group04: 8 Vector__XXX
  SG_ injection_stage_1_average_inject : 7|16@0+ (0.001,0) [0|0] "ms" Vector__XXX
 
 BO_ 866 group02: 8 Vector__XXX
- SG_ ignition_angle_leading : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ ignition_angle_leading : 39|16@0- (0.1,0) [0|0] "deg" Vector__XXX
  SG_ injection_stage_2_duty_cycle : 23|16@0+ (0.1,0) [0|0] "%" Vector__XXX
  SG_ injection_stage_1_duty_cycle : 7|16@0+ (0.1,0) [0|0] "%" Vector__XXX
 
@@ -204,7 +204,7 @@ BO_ 998 group26: 8 Vector__XXX
 
 BO_ 997 group25: 8 Vector__XXX
  SG_ driveshaft_rpm : 55|16@0+ (1,0) [0|0] "RPM" Vector__XXX
- SG_ steering_wheel_angle : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ steering_wheel_angle : 39|16@0- (0.1,0) [0|0] "deg" Vector__XXX
  SG_ abs_error : 26|1@0+ (1,0) [0|0] "enum" Vector__XXX
  SG_ abs_armed : 24|1@0+ (1,0) [0|0] "enum" Vector__XXX
  SG_ abs_active : 25|1@0+ (1,0) [0|0] "enum" Vector__XXX
@@ -264,12 +264,12 @@ BO_ 879 group12: 8 Vector__XXX
 BO_ 878 group11: 8 Vector__XXX
  SG_ longitudinal_g : 55|16@0- (0.1,0) [0|0] "m/s2" Vector__XXX
  SG_ launch_control_fuel_enrich : 39|16@0- (0.1,0) [0|0] "%" Vector__XXX
- SG_ launch_control_ignition_retard : 23|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ launch_control_ignition_retard : 23|16@0- (0.1,0) [0|0] "deg" Vector__XXX
  SG_ engine_limiting_active : 7|16@0+ (1,0) [0|0] "boolean" Vector__XXX
 
 BO_ 877 group10: 8 Vector__XXX
- SG_ exhaust_cam_angle_2 : 55|16@0- (0.1,0) [0|0] "°" Vector__XXX
- SG_ exhaust_cam_angle_1 : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ exhaust_cam_angle_2 : 55|16@0- (0.1,0) [0|0] "deg" Vector__XXX
+ SG_ exhaust_cam_angle_1 : 39|16@0- (0.1,0) [0|0] "deg" Vector__XXX
 
 BO_ 876 group09: 8 Vector__XXX
  SG_ wheel_speed_rear_right : 55|16@0+ (0.1,0) [0|0] "km/h" Vector__XXX
@@ -417,7 +417,7 @@ BO_ 996 group24: 8 Vector__XXX
 BO_ 882 group15: 8 Vector__XXX
  SG_ barometric_pressure : 55|16@0+ (0.1,0) [0|0] "kPa (Abs)" Vector__XXX
  SG_ target_boost_level : 39|16@0+ (0.1,0) [0|0] "kPa" Vector__XXX
- SG_ battery_voltage : 7|16@0+ (0.1,0) [0|0] "Volts" Vector__XXX
+ SG_ battery_voltage : 7|16@0+ (0.1,0) [0|0] "V" Vector__XXX
 
 BO_ 1136 group39: 8 Vector__XXX
  SG_ gear : 63|8@0- (1,0) [0|0] "enum" Vector__XXX
@@ -427,8 +427,8 @@ BO_ 1136 group39: 8 Vector__XXX
  SG_ wideband_overall : 7|16@0+ (0.001,0) [0|0] "Lambda" Vector__XXX
 
 BO_ 880 group13: 8 Vector__XXX
- SG_ intake_cam_angle_2 : 55|16@0- (0.1,0) [0|0] "°" Vector__XXX
- SG_ intake_cam_angle_1 : 39|16@0- (0.1,0) [0|0] "°" Vector__XXX
+ SG_ intake_cam_angle_2 : 55|16@0- (0.1,0) [0|0] "deg" Vector__XXX
+ SG_ intake_cam_angle_1 : 39|16@0- (0.1,0) [0|0] "deg" Vector__XXX
  SG_ vehicle_speed : 7|16@0+ (0.1,0) [0|0] "km/h" Vector__XXX
 
 BO_ 872 group05: 8 Vector__XXX
@@ -527,42 +527,6 @@ CM_ SG_ 1776 rear_right_tyre_pressure "0 = error (can be No Signal, Calibrating 
 CM_ SG_ 1776 rear_left_tyre_pressure "0 = error (can be No Signal, Calibrating or Device Timeout)";
 CM_ SG_ 1776 front_right_tyre_pressure "0 = error (can be No Signal, Calibrating or Device Timeout)";
 CM_ SG_ 1776 front_left_tyre_pressure "0 = error (can be No Signal, Calibrating or Device Timeout)";
-CM_ SG_ 992 oil_temperature "20-04";
-CM_ SG_ 992 fuel_temperature "20-03";
-CM_ SG_ 992 air_temperature "20-02";
-CM_ SG_ 992 coolant_temperature "20-01";
-CM_ SG_ 996 brake_pedal_switch "24-01";
-CM_ SG_ 996 transient_throttle_active "24-01";
-CM_ SG_ 996 decel_cut_active "24-01";
-CM_ SG_ 996 clutch_switch "24-07";
-CM_ SG_ 996 check_engine_light "24-25";
-CM_ SG_ 996 flat_shift_switch "24-12";
-CM_ SG_ 996 oil_pressure_light "24-08";
-CM_ SG_ 996 gear_switch "24-03";
-CM_ SG_ 996 neutral_switch "24-01";
-CM_ SG_ 882 barometric_pressure "15-03";
-CM_ SG_ 882 target_boost_level "15-02";
-CM_ SG_ 882 battery_voltage "15-01";
-CM_ SG_ 1136 gear "39-05";
-CM_ SG_ 1136 gear_selector_position "39-04";
-CM_ SG_ 1136 wideband_bank_2 "39-03";
-CM_ SG_ 1136 wideband_bank_1 "39-02";
-CM_ SG_ 1136 wideband_overall "39-01";
-CM_ SG_ 880 intake_cam_angle_2 "13-03";
-CM_ SG_ 880 intake_cam_angle_1 "13-02";
-CM_ SG_ 880 vehicle_speed "13-01";
-CM_ SG_ 872 wideband_sensor_4 "05-04";
-CM_ SG_ 872 wideband_sensor_3 "05-03";
-CM_ SG_ 872 wideband_sensor_2 "05-02";
-CM_ SG_ 872 wideband_sensor_1 "05-01";
-CM_ SG_ 865 wastegate_pressure "01-04";
-CM_ SG_ 865 engine_demand "01-03";
-CM_ SG_ 865 oil_pressure "01-02";
-CM_ SG_ 865 fuel_pressure "01-01";
-CM_ SG_ 864 coolant_pressure "00-04";
-CM_ SG_ 864 throttle_position "00-03";
-CM_ SG_ 864 manifold_pressure "00-02";
-CM_ SG_ 864 rpm "00-01";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
 BA_DEF_ SG_  "SystemSignalLongSymbol" STRING ;
