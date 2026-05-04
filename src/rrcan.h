@@ -29,3 +29,6 @@
 #include "tcs/tcs.h"
 #include "tcs/tcs_aliases.h"
 
+#include "xlog/xlog.h"
+#include "xlog/xlog_aliases.h"
+
