@@ -18,6 +18,7 @@
 #define swc_clutch_name SWC_CLUTCH_NAME
 #define swc_buttons_shift_name SWC_BUTTONS_SHIFT_NAME
 #define swc_buttons_encoder_name SWC_BUTTONS_ENCODER_NAME
+#define swc_buttons_encoder_amount_name SWC_BUTTONS_ENCODER_AMOUNT_NAME
 #define swc_clutch_clutch_left_name SWC_CLUTCH_CLUTCH_LEFT_NAME
 #define swc_clutch_clutch_right_name SWC_CLUTCH_CLUTCH_RIGHT_NAME
 #define swc_clutch_clutch_left_raw_name SWC_CLUTCH_CLUTCH_LEFT_RAW_NAME

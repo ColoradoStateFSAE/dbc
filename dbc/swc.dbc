@@ -36,8 +36,9 @@ BS_:
 BU_:
 
 
-BO_ 2147487744 buttons: 1 Vector__XXX
- SG_ encoder : 5|2@0+ (1,0) [0|0] "" Vector__XXX
+BO_ 2147487744 buttons: 3 Vector__XXX
+ SG_ encoder_amount : 15|16@0- (1,0) [0|0] "" Vector__XXX
+ SG_ encoder_button : 5|1@0+ (1,0) [0|0] "" Vector__XXX
  SG_ shift : 7|2@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147487745 clutch: 7 Vector__XXX
@@ -53,6 +54,5 @@ BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
 BA_DEF_DEF_  "BusType" "CAN";
 BA_DEF_DEF_  "GenMsgCycleTime" 0;
 BA_ "GenMsgCycleTime" BO_ 2147487745 10;
-VAL_ 2147487744 encoder 3 "COUNTER_CLOCKWISE" 2 "CLOCKWISE" 1 "PRESSED" ;
 VAL_ 2147487744 shift 2 "DOWN" 1 "UP" ;
 
