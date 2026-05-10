@@ -1,13 +1,13 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(dbc LANGUAGES C)
+project(rrcan LANGUAGES C)
 
-add_library(
-    dbc STATIC
-    src/haltech/haltech.c
-    src/tcs/tcs.c
-    src/swc/swc.c
-    src/display/display.c
+file(GLOB_RECURSE RRCAN_SOURCES CONFIGURE_DEPENDS
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/*.c
 )
 
-target_include_directories(dbc PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src)
+add_library(rrcan STATIC ${RRCAN_SOURCES})
+
+target_include_directories(rrcan PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+)

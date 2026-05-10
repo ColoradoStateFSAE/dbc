@@ -36,7 +36,20 @@ BS_:
 BU_:
 
 
-BO_ 2147487809 neopixel: 64 Vector__XXX
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ led_21 : 0|24@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2147487809 diagnostics: 2 Vector__XXX
+ SG_ cpu_temperature : 7|16@0- (0.01,0) [0|100] "°C" Vector__XXX
+
+BO_ 2147487808 neopixel: 64 Vector__XXX
+ SG_ brightness : 511|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_20 : 487|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_19 : 463|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_18 : 439|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_17 : 415|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_16 : 391|24@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_15 : 367|24@0+ (1,0) [0|0] "" Vector__XXX
  SG_ led_00 : 7|24@0+ (1,0) [0|0] "" Vector__XXX
  SG_ led_01 : 31|24@0+ (1,0) [0|0] "" Vector__XXX
  SG_ led_02 : 55|24@0+ (1,0) [0|0] "" Vector__XXX
@@ -52,15 +65,10 @@ BO_ 2147487809 neopixel: 64 Vector__XXX
  SG_ led_12 : 295|24@0+ (1,0) [0|0] "" Vector__XXX
  SG_ led_13 : 319|24@0+ (1,0) [0|0] "" Vector__XXX
  SG_ led_14 : 343|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ led_15 : 367|24@0+ (1,0) [0|0] "" Vector__XXX
- SG_ brightness : 384|8@1+ (1,0) [0|0] "" Vector__XXX
-
-BO_ 2147487808 encoder: 8 Vector__XXX
- SG_ button : 23|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ rotary_dial : 7|16@0- (1,0) [0|0] "" Vector__XXX
 
 
 
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
 BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
@@ -68,6 +76,6 @@ BA_DEF_DEF_  "VFrameFormat" "ExtendedCAN_FD";
 BA_DEF_DEF_  "BusType" "CAN";
 BA_DEF_DEF_  "GenMsgCycleTime" 0;
 BA_ "BusType" "CAN FD";
-BA_ "VFrameFormat" BO_ 2147487809 15;
-BA_ "VFrameFormat" BO_ 2147487808 1;
+BA_ "VFrameFormat" BO_ 2147487809 1;
+BA_ "VFrameFormat" BO_ 2147487808 15;
 

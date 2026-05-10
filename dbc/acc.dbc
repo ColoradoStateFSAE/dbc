@@ -36,29 +36,29 @@ BS_:
 BU_:
 
 
-BO_ 2147487843 group_3: 8 Vector__XXX
- SG_ channel_15 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_13 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_16 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_14 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+BO_ 2147487843 acc_group_3: 8 Vector__XXX
+ SG_ acc_15 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ acc_13 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ acc_16 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ acc_14 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
 
-BO_ 2147487841 group_1: 8 Vector__XXX
- SG_ channel_8 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_7 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_6 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_5 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+BO_ 2147487841 acc_group_1: 8 Vector__XXX
+ SG_ acc_8 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ acc_7 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ acc_6 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ acc_5 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
 
-BO_ 2147487842 group_2: 8 Vector__XXX
- SG_ channel_9 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_11 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_12 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_10 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+BO_ 2147487842 acc_group_2: 8 Vector__XXX
+ SG_ acc_9 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ acc_11 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ acc_12 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ acc_10 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
 
-BO_ 2147487840 group_0: 8 Vector__XXX
- SG_ channel_4 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_2 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_3 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
- SG_ channel_1 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+BO_ 2147487840 acc_group_0: 8 Vector__XXX
+ SG_ acc_4 : 55|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ acc_2 : 23|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ acc_3 : 39|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
+ SG_ acc_1 : 7|16@0+ (7.62951E-05,0) [0|5] "V" Vector__XXX
 
 
 
@@ -72,4 +72,3 @@ BA_ "GenMsgCycleTime" BO_ 2147487843 4;
 BA_ "GenMsgCycleTime" BO_ 2147487841 4;
 BA_ "GenMsgCycleTime" BO_ 2147487842 4;
 BA_ "GenMsgCycleTime" BO_ 2147487840 4;
-

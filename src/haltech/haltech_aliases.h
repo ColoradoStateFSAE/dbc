@@ -1,6 +1,7 @@
 #pragma once
 #include "haltech.h"
 
+#define haltech_h HALTECH_H
 #define haltech_io12b_avi_frame_id HALTECH_IO12B_AVI_FRAME_ID
 #define haltech_io12b_dpi_1_2_frame_id HALTECH_IO12B_DPI_1_2_FRAME_ID
 #define haltech_io12b_dpi_3_4_frame_id HALTECH_IO12B_DPI_3_4_FRAME_ID
